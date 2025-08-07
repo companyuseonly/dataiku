@@ -1,9 +1,9 @@
 <?php
-if (!isset($menuMode)) {
-    $menuMode = "1";
-}
-
-if ($menuMode == "1") {
+    if (!isset($menuMode)) {
+        $menuMode = "1";
+    }
+    
+    if ($menuMode == "1") {
 ?>
 
     <div>

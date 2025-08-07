@@ -1,9 +1,9 @@
 <?php
-if (!isset($clientMode)) {
-    $clientMode = "1";
-}
-
-if ($clientMode == "1") {
+    if (!isset($clientMode)) {
+        $clientMode = "1";
+    }
+    
+    if ($clientMode == "1") {
 ?>
 
     <div class="center-xs container-2025 mr-auto ml-auto hide-tab-mobile">

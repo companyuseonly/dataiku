@@ -1,14 +1,14 @@
 <?php
-$folderPath = "";
-$pageTitle = "Dataiku | The Universal AI Platform™ ";
-$pageMeta = "";
-$pageDescription = "";
-$thisPage = "Dataiku | The Universal AI Platform™ ";
-
-include($folderPath . "Components/header.php");
+    $folderPath = "";
+    $pageTitle = "Dataiku | The Universal AI Platform™ ";
+    $pageMeta = "";
+    $pageDescription = "";
+    $thisPage = "Dataiku | The Universal AI Platform™ ";
+    
+    include($folderPath . "Components/header.php");
 ?>
 
-<section class="with-banner" >
+<section class="with-banner" style="display: none;">
     <div data-bg="<?php echo $folderPath ?>assets/uploads/2025/06/desktop-1-min.png"
         class="center-xs container-2025 mr-auto ml-auto mt-108 hide-tab-mobile rocket-lazyload"
         style="  background-size: cover; background-position: center; background-repeat: no-repeat; height: 300px;">
@@ -41,7 +41,7 @@ include($folderPath . "Components/header.php");
             <div class="row-2025 center-xs">
                 <div class="col-xs-10">
                     <h1 class="pb-16 pt-16 font-64 pt-24">
-                        The Universal AI Platform™<br />
+                        <?php echo $topThemeName ?><br />
                         for Orchestrating Enterprise AI </h1>
                 </div>
             </div>

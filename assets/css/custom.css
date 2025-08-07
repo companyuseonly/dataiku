@@ -4678,23 +4678,23 @@ element.style {
 	}
 }
 
- .wrapper {
-      overflow-x: hidden;
-      overflow-y: hidden;
-    }
+.wrapper {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
 
-    .tab-label:hover {
-      top: 0px;
-      transition: top 0.25s;
-      background-color: #dce1e6;
-      color: #221C35 !important;
-      border-bottom: none;
-    }
+.tab-label:hover {
+	top: 0px;
+	transition: top 0.25s;
+	background-color: #dce1e6;
+	color: #221C35 !important;
+	border-bottom: none;
+}
 
-    .tab-label-deploy:hover {
-      top: 0px;
-      transition: top 0.25s;
-      background-color: #dce1e6;
-      color: #221C35 !important;
-      border-bottom: none;
-    }
+.tab-label-deploy:hover {
+	top: 0px;
+	transition: top 0.25s;
+	background-color: #dce1e6;
+	color: #221C35 !important;
+	border-bottom: none;
+}

@@ -1,9 +1,9 @@
 <?php
-if (!isset($hookMode)) {
-    $hookMode = "1";
-}
-
-if ($hookMode == "1") {
+  if (!isset($hookMode)) {
+      $hookMode = "1";
+  }
+  
+  if ($hookMode == "1") {
 ?>
 
   <section class="mt-104">

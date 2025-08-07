@@ -1,9 +1,9 @@
 <?php
-if (!isset($blogMode)) {
-    $blogMode = "1";
-}
-
-if ($blogMode == "1") {
+  if (!isset($blogMode)) {
+      $blogMode = "1";
+  }
+  
+  if ($blogMode == "1") {
 ?>
 
   <div class="insights-section has-animation indent-top indent-bottom">

@@ -1,9 +1,9 @@
 <?php
-if (!isset($serviceMode)) {
-    $serviceMode = "1";
-}
+    if (!isset($serviceMode)) {
+        $serviceMode = "1";
+    }
 
-if ($serviceMode == "1") {
+    if ($serviceMode == "1") {
 ?>
 
     <div class="center-xs container-2025 mr-auto ml-auto mt-56" style="clear:both;">
@@ -209,9 +209,9 @@ if ($serviceMode == "1") {
         </div>
     </div>
 
-<?php }
-
-if ($serviceMode == "2") {
+<?php
+    }
+    if ($serviceMode == "2") {
 ?>
 
     <div class="center-xs container-2025-short mr-auto ml-auto pr-0 pl-0 mobie-mt48">
@@ -343,9 +343,9 @@ if ($serviceMode == "2") {
         </div>
     </div>
 
-<?php }
-
-if ($serviceMode == "3") {
+<?php
+    }
+    if ($serviceMode == "3") {
 ?>
 
     <div class="center-xs container-2025 mr-auto ml-auto mt-104" style="clear:both;">

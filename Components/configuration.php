@@ -11,8 +11,8 @@
     $shotCoNameOld = "";
     $shotCoNameOldDesign = "";
 
-    $topThemeName = "";
-    $themeName = "";
+    $topThemeName = "The Universal AI Platform™";
+    $themeName = "The Universal AI Platform™ for Orchestrating Enterprise AI";
 
     $ogTitle = "";
     $ogPageUrl = "";

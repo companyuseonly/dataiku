@@ -1,9 +1,9 @@
 <?php
-if (!isset($counterMode)) {
-    $counterMode = "1";
-}
-
-if ($counterMode == "1") {
+    if (!isset($counterMode)) {
+        $counterMode = "1";
+    }
+    
+    if ($counterMode == "1") {
 ?>
 
     <div class="forrester-section has-animation none none">
@@ -62,7 +62,7 @@ if ($counterMode == "1") {
                     <div class="info-block-bg">
                         <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="image"
                             data-lazy-src="<?php echo $folderPath ?>assets/uploads/2025/04/forrester-image-742x1024.png"><noscript>
-                            <img src="<?php echo $folderPath ?>assets/uploads/2025/04/forrester-image-742x1024.png" alt=""></noscript>
+                            <img src="<?php echo $folderPath ?>assets/uploads/2025/04/forrester-image.png" alt=""></noscript>
                     </div>
                     <div class="info-block-text-widget">
                         <div class="row-2025 center-xs">

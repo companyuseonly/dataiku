@@ -1,9 +1,9 @@
 <?php
-if (!isset($testimonialMode)) {
-    $testimonialMode = "1";
-}
-
-if ($testimonialMode == "1") {
+  if (!isset($testimonialMode)) {
+      $testimonialMode = "1";
+  }
+  
+  if ($testimonialMode == "1") {
 ?>
 
   <div class="case-study-section has-animation indent-top-medium indent-bottom-medium">
