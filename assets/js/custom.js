@@ -146,3 +146,13 @@ setInterval(() => {
   // Also update the link class for the underline animation.
   nextLink.classList.add('active');
 }, interval);
+
+
+GartnerPI_Widget({
+  size: "small",
+  theme: "light",
+  sourcingLink: "",
+  widget_id: "YzNiMDAwOGItZTUxNC00MjhlLTk2ZGEtMzljMTY5ODNjNmJi",
+  version: "2",
+  container: document.querySelector("#myNodeContainer")
+})

@@ -271,6 +271,7 @@
 <script type="text/javascript" src="<?php echo $folderPath ?>assets/js/hoverIntent.mind513.js?ver=1733908495" id="hoverIntent-js"></script>
 <script type="text/javascript" src="<?php echo $folderPath ?>assets/plugins/megamenu/js/maxmegamenu88fb.js?ver=1742220255" id="megamenu-js"></script>
 <script type="text/javascript" src="<?php echo $folderPath ?>assets/plugins/megamenu-pro/assets/public32a1.js?ver=1742220249" id="megamenu-pro-js"></script>
+<script type="text/javascript" src="../www.gartner.com/peer-insights/vendor-portal/public/Widget/js/widget.js"> </script>
 
 <script type="text/javascript" id="flying-scripts">
   const loadScriptsTimer = setTimeout(loadScripts, 5000 * 1000); const userInteractionEvents = ['click', 'mousemove', 'keydown', 'touchstart', 'touchmove', 'wheel']; userInteractionEvents.forEach(function (event) { window.addEventListener(event, triggerScriptLoader, { passive: !0 }) }); function triggerScriptLoader() { loadScripts(); clearTimeout(loadScriptsTimer); userInteractionEvents.forEach(function (event) { window.removeEventListener(event, triggerScriptLoader, { passive: !0 }) }) }
