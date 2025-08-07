@@ -36,6 +36,10 @@
     $happyclient = 0;
     $industries = 0;
     $projects = 0;
+    $reductionDA = 70;
+    $reductionML = 42;
+    $investment = 413;
+    $netpresent = 23;
 
     $fbPageLink = "";
     $twitterPageLink = "";

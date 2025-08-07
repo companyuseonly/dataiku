@@ -8,7 +8,7 @@ $thisPage = "Dataiku | The Universal AI Platform™ ";
 include($folderPath . "Components/header.php");
 ?>
 
-<section class="with-banner" style="display: none;">
+<section class="with-banner" >
     <div data-bg="<?php echo $folderPath ?>assets/uploads/2025/06/desktop-1-min.png"
         class="center-xs container-2025 mr-auto ml-auto mt-108 hide-tab-mobile rocket-lazyload"
         style="  background-size: cover; background-position: center; background-repeat: no-repeat; height: 300px;">
@@ -119,6 +119,9 @@ include($folderPath . "Components/header.php");
 <?php $serviceMode = "2"; include($folderPath . "Components/services.php"); ?>
 <?php $serviceMode = "3"; include($folderPath . "Components/services.php"); ?>
 <?php $counterMode = "1"; include($folderPath . "Components/counter.php"); ?>
+<?php $testimonialMode = "1"; include($folderPath . "Components/testimonial.php"); ?>
+<?php $blogMode = "1"; include($folderPath . "Components/blog.php"); ?>
+<?php $hookMode = "1"; include($folderPath . "Components/hooks.php"); ?>
 
 
 
