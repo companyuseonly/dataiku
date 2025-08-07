@@ -4698,3 +4698,17 @@ element.style {
 	color: #221C35 !important;
 	border-bottom: none;
 }
+
+  .dark-text .languages .current {
+        color: #000 !important;
+    }
+
+
+    .reverse-colors .languages .current::before {
+        border-top-color: #000;
+    border-right-color: #000;
+    }
+
+    .breadcrumbs {
+        padding-top: 80px;
+    }
