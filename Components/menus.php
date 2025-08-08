@@ -110,7 +110,7 @@
                 data-overlay-desktop="false" data-overlay-mobile="false">
                 <li
                     class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-hide-on-mobile mega-menu-item-34391'
-                    id='mega-menu-item-34391'><a class='mega-menu-link mega-menu-logo' href='index.html'><img
+                    id='mega-menu-item-34391'><a class='mega-menu-link mega-menu-logo' href='<?php echo $folderPath ?>index.php'><img
                             class='mega-menu-logo mega-svg' width='100' height='60'
                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%2060'%3E%3C/svg%3E"
                             data-lazy-src="<?php echo $folderPath ?>assets/uploads/2025/04/DKU_LOGO_Teal.svg" /><noscript><img

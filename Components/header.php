@@ -5,7 +5,7 @@
 <head>
     
     <?php
-        // require_once($folderPath . "Components/DBConfig.php");
+        require_once($folderPath . "Components/DBConfig.php");
         require_once($folderPath . "Components/configuration.php");
         $today = date("d-m-y");
     ?>
@@ -45,7 +45,7 @@
     <link rel="alternate" hreflang="de" href="de/index.html" />
     <link rel="alternate" hreflang="ja" href="ja/index.html" />
     <link rel="alternate" hreflang="x-default" href="index.html" />
-    <title><?php echo $thisPage . "::" . $coName ?></title>
+    <title><?php echo $thisPage . " :: " . $coName ?></title>
 
     <meta name="description" content="Build, deploy, and manage data, analytics, and AI projects, realizing your Everyday AI vision with The Universal AI Platform™" />
     <link rel="canonical" href="index.html" />

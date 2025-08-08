@@ -156,3 +156,17 @@ GartnerPI_Widget({
   version: "2",
   container: document.querySelector("#myNodeContainer")
 })
+function launchLightbox(val) {
+                                var players = VidyardV4.api.getPlayersByUUID(val);
+                                var player = players[0];
+                                player.showLightbox();
+                            }
+
+                              GartnerPI_Widget({
+                            size: "line",
+                            theme: "light",
+                            sourcingLink: "",
+                            widget_id: "NTc0MTljY2UtMjhhYS00YTlkLTkxNDQtNDA4OWVkMmRhNGNj",
+                            version: "2",
+                            container: document.querySelector("#myNodeContainer")
+                        })
