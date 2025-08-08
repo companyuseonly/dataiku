@@ -273,6 +273,7 @@
 <script type="text/javascript" src="<?php echo $folderPath ?>assets/plugins/megamenu-pro/assets/public32a1.js?ver=1742220249" id="megamenu-pro-js"></script>
 <script type="text/javascript" src="../www.gartner.com/peer-insights/vendor-portal/public/Widget/js/widget.js"> </script>
 <script src="<?php echo $folderPath ?>assets/cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script charset="utf-8" type="text/javascript" src="<?php echo $folderPath ?>assets/js.hsforms.net/forms/v2.js"></script>
 
 <script type="text/javascript" id="flying-scripts">
   const loadScriptsTimer = setTimeout(loadScripts, 5000 * 1000); const userInteractionEvents = ['click', 'mousemove', 'keydown', 'touchstart', 'touchmove', 'wheel']; userInteractionEvents.forEach(function (event) { window.addEventListener(event, triggerScriptLoader, { passive: !0 }) }); function triggerScriptLoader() { loadScripts(); clearTimeout(loadScriptsTimer); userInteractionEvents.forEach(function (event) { window.removeEventListener(event, triggerScriptLoader, { passive: !0 }) }) }

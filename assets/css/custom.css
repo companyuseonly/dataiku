@@ -4995,3 +4995,88 @@ element.style {
 		margin-left: auto;
 	}
 }
+
+.slick-slider.slick-dots {
+	display: none;
+}
+
+.customer-testimonal .slick-dots ul {
+	display: none;
+}
+
+.slick-dots ul button {
+	background: #1B2031;
+	color: #1B2031;
+	width: 11px;
+	height: 11px;
+	margin: 0px;
+	font-size: 0;
+	border-radius: 50%;
+	border: none;
+}
+
+.slick-dots ul button:hover {
+	background: #cccccc;
+	color: #1B2031;
+	width: 11px;
+	height: 11px;
+	margin: 0px;
+	font-size: 0;
+	border-radius: 50%;
+	border: none;
+}
+
+.slick-dots .slick-active button {
+	background: #2AB1AC;
+	color: #2AB1AC;
+}
+
+.slick-dots li button:before {
+	list-style: none;
+}
+
+.slider ul li:before {
+	display: none;
+}
+
+.slider ul li:before {
+	margin: 0px;
+	text-align: center;
+}
+
+.slick-dots button {
+	background: #1B2031;
+	color: #1B2031;
+	width: 1px;
+	height: 1px;
+	margin: 0px;
+	font-size: 0;
+	border-radius: 50%;
+	border: none;
+	padding: 5px;
+	min-height: 10px;
+}
+
+.slick-dots button:hover {
+	background: #cccccc !important;
+	color: #1B2031;
+	width: 1px;
+	height: 1px;
+	margin: 0px;
+	font-size: 0;
+	border-radius: 50%;
+
+	padding: 5px;
+	min-height: 10px;
+}
+
+.content ul li {}
+
+.slick-dots {
+	text-align: center;
+
+}
+
+.slick-dots li {
+	padding: 10px 4px 10px 4px;
+}

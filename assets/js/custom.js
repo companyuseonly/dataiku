@@ -157,16 +157,44 @@ GartnerPI_Widget({
   container: document.querySelector("#myNodeContainer")
 })
 function launchLightbox(val) {
-                                var players = VidyardV4.api.getPlayersByUUID(val);
-                                var player = players[0];
-                                player.showLightbox();
-                            }
+  var players = VidyardV4.api.getPlayersByUUID(val);
+  var player = players[0];
+  player.showLightbox();
+}
 
-                              GartnerPI_Widget({
-                            size: "line",
-                            theme: "light",
-                            sourcingLink: "",
-                            widget_id: "NTc0MTljY2UtMjhhYS00YTlkLTkxNDQtNDA4OWVkMmRhNGNj",
-                            version: "2",
-                            container: document.querySelector("#myNodeContainer")
-                        })
+GartnerPI_Widget({
+  size: "line",
+  theme: "light",
+  sourcingLink: "",
+  widget_id: "NTc0MTljY2UtMjhhYS00YTlkLTkxNDQtNDA4OWVkMmRhNGNj",
+  version: "2",
+  container: document.querySelector("#myNodeContainer")
+})
+
+hbspt.forms.create({
+  portalId: "2123903",
+  formId: "3b336f1e-2293-47ee-86a1-5cdc6625c435",
+
+  onFormReady: function ($form) {
+    window.initCustomForms($form);
+    console.log("Demo Form - onFormReady");
+  },
+  onFormSubmitted: function ($form) {
+    console.log("Demo Form - onFormSubmitted");
+    analytics.track("Demo Form", {});
+  },
+  onFormSubmit: function ($form) {
+    document.querySelector('input[name=wt1_id]').value = getCookie("__wt1vic");
+  },
+  onFormReady: function () {
+
+    jcf.setOptions({
+      wrapNative: false,
+      fakeDropInBody: false,
+      maxVisibleItems: 6,
+      useCustomScroll: true
+    });
+
+    jcf.replaceAll();
+  }
+});

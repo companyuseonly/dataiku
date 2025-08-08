@@ -52,7 +52,7 @@
             <div class="text box-shadow" style="background-color: #fff; padding:40px; margin:30px; ">
                 <div class="info">
                     <h3>
-                        <a href="<?php echo $folderPath ?>generative-ai/">
+                        <a href="generative-ai/">
                             GenAI & Agents</a>
                     </h3>
 
@@ -60,7 +60,7 @@
                         teams a secure large language model (LLM) gateway, no-code to full-code development tools,
                         and AI-powered assistants to help everyone do more with GenAI &amp; Agents.</p>
 
-                    <a href="<?php echo $folderPath ?>generative-ai/" class="uppercase button border">
+                    <a href="generative-ai/" class="uppercase button border">
                         <span class="icon"></span>
                         Explore </a>
                 </div>
@@ -76,7 +76,7 @@
             <div class="text box-shadow" style="background-color: #fff; padding:40px; margin:30px; ">
                 <div class="info">
                     <h3>
-                        <a href="<?php echo $folderPath ?>machine-learning/">
+                        <a href="machine-learning/">
                             Machine Learning</a>
                     </h3>
 
@@ -84,7 +84,7 @@
                         build and evaluate machine learning (ML) models faster — all with the highest standards of
                         explainability.</p>
 
-                    <a href="<?php echo $folderPath ?>machine-learning/" class="uppercase button border">
+                    <a href="machine-learning/" class="uppercase button border">
                         <span class="icon"></span>
                         EXPLORE </a>
                 </div>
@@ -100,7 +100,7 @@
             <div class="text box-shadow" style="background-color: #fff; padding:40px; margin:30px; ">
                 <div class="info">
                     <h3>
-                        <a href="<?php echo $folderPath ?>data-insights/">
+                        <a href="data-insights/">
                             Analytics & Insights</a>
                     </h3>
 
@@ -109,7 +109,7 @@
                         capabilities like visualization, dashboards, GenAI-powered storytelling, and more — all in
                         one unified platform.</p>
 
-                    <a href="<?php echo $folderPath ?>data-insights/" class="uppercase button border">
+                    <a href="data-insights/" class="uppercase button border">
                         <span class="icon"></span>
                         EXPLORE </a>
                 </div>
@@ -125,7 +125,7 @@
             <div class="text box-shadow" style="background-color: #fff; padding:40px; margin:30px; ">
                 <div class="info">
                     <h3>
-                        <a href="<?php echo $folderPath ?>data-preparation/">
+                        <a href="data-preparation/">
                             Data Prep for AI</a>
                     </h3>
 
@@ -133,7 +133,7 @@
                         effortlessly transition to anything from basic analysis, to modeling, and even deployment —
                         all within a single environment.</p>
 
-                    <a href="<?php echo $folderPath ?>data-preparation/" class="uppercase button border">
+                    <a href="data-preparation/" class="uppercase button border">
                         <span class="icon"></span>
                         EXPLORE </a>
                 </div>
@@ -149,7 +149,7 @@
             <div class="text box-shadow" style="background-color: #fff; padding:40px; margin:30px; ">
                 <div class="info">
                     <h3>
-                        <a href="<?php echo $folderPath ?>ai-governance/">
+                        <a href="ai-governance/">
                             AI Governance</a>
                     </h3>
 
@@ -157,7 +157,7 @@
                         and self-service analytics to machine learning and generative AI applications or projects,
                         maintain visibility and reduce risk as your AI portfolio scales with <?php echo $coName ?>.</p>
 
-                    <a href="<?php echo $folderPath ?>ai-governance/" class="uppercase button border">
+                    <a href="ai-governance/" class="uppercase button border">
                         <span class="icon"></span>
                         EXPLORE </a>
                 </div>
@@ -173,7 +173,7 @@
             <div class="text box-shadow" style="background-color: #fff; padding:40px; margin:30px; ">
                 <div class="info">
                     <h3>
-                        <a href="<?php echo $folderPath ?>xops/">
+                        <a href="xops/">
                             AI Engineering Operations</a>
                     </h3>
 
@@ -182,7 +182,7 @@
                         deploying and managing machine learning models and GenAI applications in production, <?php echo $coName ?>
                         brings all your project operations together seamlessly.</p>
 
-                    <a href="<?php echo $folderPath ?>xops/" class="uppercase button border">
+                    <a href="xops/" class="uppercase button border">
                         <span class="icon"></span>
                         EXPLORE </a>
                 </div>
@@ -198,7 +198,7 @@
             <div class="text box-shadow" style="background-color: #fff; padding:40px; margin:30px; ">
                 <div class="info">
                     <h3>
-                        <a href="<?php echo $folderPath ?>optionality-with-dataiku/">
+                        <a href="optionality-with-dataiku/">
                             AI Ecosystem</a>
                     </h3>
 
@@ -207,7 +207,7 @@
                         analysis with outcome optimization and interactive web apps — developed with or without code
                         — are just a few ways to empower your organization with self-service analytics.</p>
 
-                    <a href="<?php echo $folderPath ?>optionality-with-dataiku/" class="uppercase button border">
+                    <a href="optionality-with-dataiku/" class="uppercase button border">
                         <span class="icon"></span>
                         EXPLORE </a>
                 </div>
