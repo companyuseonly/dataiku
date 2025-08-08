@@ -24,7 +24,7 @@
                         <!-- Three links; only one is active at a time -->
                         <p class="font-14 mobie-pb64">
                             Trusted by <a href="#/" class="animated-link active">Customers</a>, <a href="#/"
-                                class="animated-link">Partners</a> & the <a href="#/" class="animated-link">AI Ecosystem</a>
+                                class="animated-link">Partners</a>
                         </p>
                     </div>
                 </div>

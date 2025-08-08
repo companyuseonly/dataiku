@@ -50397,7 +50397,7 @@ main.main {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    margin-top: -65px !important
+    margin-top: 0px !important
 }
 
 @media (min-width:1201px) {
