@@ -1,39 +1,14 @@
 <?php
     $folderPath = "";
-    $pageTitle = "Dataiku | The Universal AI Platform™ ";
+    $pageTitle = "Home";
     $pageMeta = "";
     $pageDescription = "";
-    $thisPage = "Dataiku | The Universal AI Platform™ ";
+    $thisPage = "Home";
     
     include($folderPath . "Components/header.php");
 ?>
 
-<section class="with-banner" style="display: none;">
-    <div data-bg="<?php echo $folderPath ?>assets/uploads/2025/06/desktop-1-min.png"
-        class="center-xs container-2025 mr-auto ml-auto mt-108 hide-tab-mobile rocket-lazyload"
-        style="  background-size: cover; background-position: center; background-repeat: no-repeat; height: 300px;">
-        <div class="row-2025 center-xs">
-            <div class="col-xs-12 pt-16 mt-108">
-                <div class="row-2025 center-xs">
-                    <div class="col-xs-10">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div data-bg="<?php echo $folderPath ?>assets/uploads/2025/06/Mobile-1-min.png"
-        class="center-xs container-2025 mr-auto ml-auto mt-80 stack-tabs rocket-lazyload"
-        style="  background-size: cover; background-position: center; background-repeat: no-repeat; height: 250px; ">
-        <div class="row-2025 center-xs  mt-104">
-            <div class="col-xs-12 pt-16 mt-104">
-                <div class="row-2025 center-xs">
-                    <div class="col-xs-10">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<?php $bannerMode = "1"; include($folderPath . "Components/banner.php"); ?>
 
 <div class="center-xs container-2025 mr-auto ml-auto">
     <div class="row-2025 center-xs">
@@ -41,12 +16,10 @@
             <div class="row-2025 center-xs">
                 <div class="col-xs-10">
                     <h1 class="pb-16 pt-16 font-64 pt-24">
-                        <?php echo $topThemeName ?><br />
-                        for Orchestrating Enterprise AI </h1>
+                        Global Consulting Partner <br> Driving Business Growth
                 </div>
             </div>
-            <p>Unlock the creation of analytics, models, & agents that people trust — with the control you need to
-                scale.</p>
+            <p>RESURGENT combines Big Four expertise with start-up agility to deliver faster innovation, smarter operations, and scalable success. Our Global Delivery Model and Head Start Kits empower enterprises worldwide.</p>
 
             <div class="row-2025 center-xs mb-24 mt-40">
                 <div class="col-xs-6">
@@ -55,12 +28,11 @@
                         <img class="vidyard-player-embed" data-uuid="rFW4SfsabR7C8PGUeHoV6N" data-v="4" data-type="lightbox">
                         </img>
                     </div>
-                    <a href="#/"
-                        class="button dataiku-new-2025-button mr-16 font-18 mob-header-buttons-solid hp-header-main nav_dropdown_feature_content"
-                        onclick="launchLightbox('rFW4SfsabR7C8PGUeHoV6N')">See it in Action</a>
+                    <a href="<?php echo $folderPath ?>Solutions/"
+                        class="button dataiku-new-2025-button mr-16 font-18 mob-header-buttons-solid hp-header-main nav_dropdown_feature_content">Explore Our Solutions</a>
 
                     <a class="learn-more-text-only uppercase ml-16 mob-header-buttons hp-header-second"
-                        href="<?php echo $folderPath ?>product/get-started/" target="_self">Start Building</a>
+                        href="<?php echo $folderPath ?>Contact-Us/" target="_self">Work With Us</a>
 
                 </div>
             </div>

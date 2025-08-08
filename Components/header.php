@@ -95,7 +95,8 @@
         </style>
     </noscript>
 
-    <link rel="stylesheet" href="assets/css/custom.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="<?php echo $folderPath ?>assets/css/banner.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="<?php echo $folderPath ?>assets/css/custom.css" type="text/css" media="all" />
 
 </head>
 

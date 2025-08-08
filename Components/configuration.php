@@ -1,18 +1,18 @@
 <?php
 
-    $coName = "Dataiku";
+    $coName = "Resurgent";
     $coNameFull = "";
     $shotCoName = "";
     $shotCoNameDesign = "";
     $coNameDesign = "";
-    $coNameFullDesign = "";
+    $coNameFullDesign = "RESURGENT";
     $coNameOld = "";
     $coNameOldDesign = "";
     $shotCoNameOld = "";
     $shotCoNameOldDesign = "";
 
-    $topThemeName = "The Universal AI Platform™";
-    $themeName = "The Universal AI Platform™ for Orchestrating Enterprise AI";
+    $topThemeName = "";
+    $themeName = "";
 
     $ogTitle = "";
     $ogPageUrl = "";

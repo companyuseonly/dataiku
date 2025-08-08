@@ -198,3 +198,6 @@ hbspt.forms.create({
     jcf.replaceAll();
   }
 });
+
+// banner
+
