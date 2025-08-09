@@ -6,8 +6,7 @@
   <!-- footer menu -->
   <div id="menu-footer-primary" class="footer-nav">
     
-    <div id=""
-      class="">
+    <div id="" class="footer-para">
       <h5 class="bold"><b>About <?php echo $coName; ?></b></h5>
       <p class=""><?php echo $footerText; ?></p>
     </div>
@@ -46,9 +45,8 @@
 
     <div id=""
       class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children footer-accordion-item">
-      <h6
-        class="">Partners</h6>
-      <img src="<?php echo $folderPath ?>images/partners-logo.png" alt="Partners Logo">
+      <h6 class="footer-partner-title">Partners</h6>
+      <img src="<?php echo $folderPath ?>assets/images/clients/O-Gold-Partner.png" class="img-fluid footer-partner" alt="Partners Logo">
     </div>
 
   </div>
@@ -115,15 +113,15 @@
 </script>
 <script type="text/javascript" src="<?php echo $folderPath ?>assets/plugins/real-time-auto-find-and-replace/assets/js/rtafar.local2924.js?ver=1742220280" id="rtrar.appLocal-js"></script>
 <script type="text/javascript" src="<?php echo $folderPath ?>assets/cdn.jsdelivr.net/npm/%40fancyapps/ui%404.0/dist/fancybox.umd.js" id="fancybox4-js"></script>
-<script type="text/javascript" src="<?php echo $folderPath ?>assets/play.vidyard.com/embed/v4.js" id="play-vidyard-js"></script>
+<!-- <script type="text/javascript" src="<?php echo $folderPath ?>assets/play.vidyard.com/embed/v4.js" id="play-vidyard-js"></script> -->
 <script type="text/javascript" src="<?php echo $folderPath ?>assets/themes/dataiku/slice/dist/js/global.mine213.js?ver=1754311673" id="global-script-js"></script>
 <script type="text/javascript" src="<?php echo $folderPath ?>assets/plugins/real-time-auto-find-and-replace/assets/js/rtafar.app.min2924.js?ver=1742220280" id="rtrar.app-js"></script>
 <script type="text/javascript" src="<?php echo $folderPath ?>assets/js/hoverIntent.mind513.js?ver=1733908495" id="hoverIntent-js"></script>
 <script type="text/javascript" src="<?php echo $folderPath ?>assets/plugins/megamenu/js/maxmegamenu88fb.js?ver=1742220255" id="megamenu-js"></script>
 <script type="text/javascript" src="<?php echo $folderPath ?>assets/plugins/megamenu-pro/assets/public32a1.js?ver=1742220249" id="megamenu-pro-js"></script>
-<script type="text/javascript" src="../www.gartner.com/peer-insights/vendor-portal/public/Widget/js/widget.js"> </script>
+<!-- <script type="text/javascript" src="../www.gartner.com/peer-insights/vendor-portal/public/Widget/js/widget.js"> </script> -->
 <script src="<?php echo $folderPath ?>assets/cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script charset="utf-8" type="text/javascript" src="<?php echo $folderPath ?>assets/js.hsforms.net/forms/v2.js"></script>
+
 
 <script type="text/javascript" id="flying-scripts">
   const loadScriptsTimer = setTimeout(loadScripts, 5000 * 1000); const userInteractionEvents = ['click', 'mousemove', 'keydown', 'touchstart', 'touchmove', 'wheel']; userInteractionEvents.forEach(function (event) { window.addEventListener(event, triggerScriptLoader, { passive: !0 }) }); function triggerScriptLoader() { loadScripts(); clearTimeout(loadScriptsTimer); userInteractionEvents.forEach(function (event) { window.removeEventListener(event, triggerScriptLoader, { passive: !0 }) }) }

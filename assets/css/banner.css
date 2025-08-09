@@ -235,3 +235,180 @@
 .crafted {
 	color: #ffc107;
 }
+
+.hbspt-form {
+	display: none !important;
+}
+
+.footer-partner-title {
+	font-weight: bolder;
+	font-size: 1.2rem;
+	padding: 0;
+	margin: 0%;
+}
+
+.footer-para p {
+	padding: 20px 0;
+}
+
+.footer-partner {
+	padding: 4%;
+}
+
+/* Container */
+.industry-section {
+  background: #fff;
+  padding: 60px 20px;
+  color: #222;
+}
+
+/* Titles */
+.industry-section .section-subtitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #08374e4d;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.industry-section .section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.industry-section .verticals-subtitle {
+  margin-top: 60px;
+}
+
+.industry-section .domain-title {
+  margin-bottom: 30px;
+}
+
+/* Buttons Container */
+.industry-buttons,
+.domain-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Industry Buttons */
+.industry-btn,
+.domain-btn {
+  background: transparent;
+  color: #00a8ff;
+  padding: 20px 30px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  cursor: pointer;
+  min-width: 130px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.industry-btn:hover,
+.domain-btn:hover {
+  background-color: #00a8ff;
+  color: white;
+}
+
+.padlr {
+	padding: 0 2%;
+}
+
+/* Titles */
+
+.industry-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Example icon backgrounds - replace URLs with your icon paths */
+.banking-icon {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/484/484101.png');
+}
+.automobile-icon {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/743/743922.png');
+}
+.fmcg-icon {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/616/616408.png');
+}
+.oilgas-icon {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/3793/3793813.png');
+}
+.insurance-icon {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/126/126509.png');
+}
+.government-icon {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/565/565547.png');
+}
+.healthcare-icon {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/2965/2965567.png');
+}
+.realestate-icon {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/684/684908.png');
+}
+.media-icon {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/271/271210.png');
+}
+.telecom-icon {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/3300/3300439.png');
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .industry-buttons,
+  .domain-buttons {
+    gap: 12px;
+  }
+
+  .industry-btn,
+  .domain-btn {
+    min-width: 100px;
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .industry-buttons,
+  .domain-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .industry-btn,
+  .domain-btn {
+    min-width: auto;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.client-icon {
+	width: 60px;
+	height: 60px;
+}
+
+.padtb {
+	padding: 3% 0;
+}
+
+.clientp-logo {
+	width: 40%;
+	padding: 5%;
+}

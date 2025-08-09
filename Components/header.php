@@ -80,6 +80,8 @@
     <link rel="icon" href="<?php echo $folderPath ?>assets/uploads/2019/11/cropped-Dataiku_logo_circle-1-scaled-1-192x192.png" sizes="192x192" />
     <link rel="apple-touch-icon" href="<?php echo $folderPath ?>assets/uploads/2019/11/cropped-Dataiku_logo_circle-1-scaled-1-180x180.png" />
 
+    <link rel="stylesheet" href="<?php echo $folderPath ?>assets/css/fontawesome.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo $folderPath ?>assets/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" id="wp-custom-css" href="<?php echo $folderPath ?>assets/css/custom.css" type="text/css" media="all">
 
     <!-- Segment Tracking Code -->

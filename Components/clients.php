@@ -1,19 +1,19 @@
 <?php
-    if (!isset($clientMode)) {
-        $clientMode = "1";
-    }
-    // Single query to fetch all active clients
-    $clientQuery = "SELECT * FROM CLIENTS_RMM WHERE Is_Active = 1 ORDER BY Group_ID, Display_Order ASC";
-    $clientResult = mysqli_query($con, $clientQuery);
-    
-    // Group clients by Group_ID
-    $clientsByGroup = [];
-    $allClients = [];
-    while ($client = mysqli_fetch_assoc($clientResult)) {
-        $clientsByGroup[$client['Group_ID']][] = $client;
-        $allClients[] = $client; // For mobile slider
-    }
-    if ($clientMode == "1") {
+if (!isset($clientMode)) {
+    $clientMode = "1";
+}
+// Single query to fetch all active clients
+$clientQuery = "SELECT * FROM CLIENTS_RMM WHERE Is_Active = 1 ORDER BY Group_ID, Display_Order ASC";
+$clientResult = mysqli_query($con, $clientQuery);
+
+// Group clients by Group_ID
+$clientsByGroup = [];
+$allClients = [];
+while ($client = mysqli_fetch_assoc($clientResult)) {
+    $clientsByGroup[$client['Group_ID']][] = $client;
+    $allClients[] = $client; // For mobile slider
+}
+if ($clientMode == "1") {
 ?>
 
     <div class="center-xs container-2025 mr-auto ml-auto hide-tab-mobile">
@@ -141,5 +141,31 @@
             </div>
         </div>
     </section>
+
+
+<?php }
+if ($clientMode == "2") {
+?>
+
+    <div class="center-xs container-2025 mr-auto ml-auto hide-tab-mobile">
+        <div class="row-2025 center-xs mt-48">
+            <div class="col-xs-10 pt-16">
+                <div class="row-2025 center-xs">
+                    <div class="col-xs-8" style="display:block; z-index: 2;">
+                        <!-- <h4>Our Clients & Partners</h4> -->
+                        <h4 class="">
+                            Trusted by Our Clients
+                        </h4>
+                        <p>Direct and Through Principals</p>
+                    </div>
+                </div>
+
+                <!-- client logos -->
+                
+
+
+            </div>
+        </div>
+    </div>
 
 <?php } ?>

@@ -1,13 +1,13 @@
 <?php
-  if (!isset($hookMode)) {
-    $hookMode = "1";
-  }
-  
-  if ($hookMode == "1") {
+if (!isset($hookMode)) {
+  $hookMode = "1";
+}
+
+if ($hookMode == "1") {
 ?>
 
   <section class="mt-104">
-    <div data-bg="<?php echo $folderPath ?>assets/uploads/2025/04/0_21.png"
+    <div data-bg="<?php echo $folderPath ?>assets/images/background/0_21.png"
       class="container updated ml-auto mr-auto rocket-lazyload"
       style=" background-size: cover; background-position: center; background-repeat: no-repeat;">
 
@@ -31,8 +31,8 @@
   </section>
 
 <?php
-  }
-  if ($hookMode == "2") {
+}
+if ($hookMode == "2") {
 ?>
 
   <section class="in-line-survey-section pad-mob48-top margin-top-80">
@@ -42,22 +42,22 @@
         <div class="in-line-survey-bg-demo">
           <picture class="hide-mobile">
             <source class="hide-mobile" media="(max-width:768px)"
-              srcset="<?php echo $folderPath ?>assets/uploads/2023/10/demo-min.png">
+              srcset="<?php echo $folderPath ?>assets/images/background/demo-min.png">
             <img class="parallax-bg hide-mobile" data-scroll-speed="15"
               src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-              alt="" data-lazy-src="<?php echo $folderPath ?>assets/uploads/2023/10/demo-min.png"><noscript><img
+              alt="" data-lazy-src="<?php echo $folderPath ?>assets/images/background/demo-min.png"><noscript><img
                 class="parallax-bg hide-mobile" data-scroll-speed="15"
-                src="<?php echo $folderPath ?>assets/uploads/2023/10/demo-min.png" alt=""></noscript>
+                src="<?php echo $folderPath ?>assets/images/background/demo-min.png" alt=""></noscript>
           </picture>
           <picture class="hide-desktop">
             <source class="hide-mobile hide-desktop" media="(max-width:768px)"
-              srcset="<?php echo $folderPath ?>assets/uploads/2023/10/demo-mobile-min.png">
+              srcset="<?php echo $folderPath ?>assets/images/background/demo-mobile-min.png">
             <img class="parallax-bg hide-desktop" data-scroll-speed="15"
               src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
               alt=""
-              data-lazy-src="<?php echo $folderPath ?>assets/uploads/2023/10/demo-mobile-min.png"><noscript><img
+              data-lazy-src="<?php echo $folderPath ?>assets/images/background/demo-mobile-min.png"><noscript><img
                 class="parallax-bg hide-desktop" data-scroll-speed="15"
-                src="<?php echo $folderPath ?>assets/uploads/2023/10/demo-mobile-min.png" alt=""></noscript>
+                src="<?php echo $folderPath ?>assets/images/background/demo-mobile-min.png" alt=""></noscript>
           </picture>
 
         </div>
@@ -70,8 +70,7 @@
             <p>Discover Dataiku&#039;s end to end capabilities by exploring a real life use case
               around environmental impact - in just 13 minutes.</p>
             <div class="buttons-holder">
-              <a href="<?php echo $folderPath ?>dataiku-demo/" target="_self" class="button medium"> WATCH
-                NOW</a>
+              <a href="<?php echo $folderPath ?>Contact-Us/" target="_self" class="button medium"> CCONTACT US NOW</a>
             </div>
           </div>
         </div>
@@ -80,75 +79,75 @@
   </section>
 
 <?php
-  }
-  if ($hookMode == "3") {
+}
+if ($hookMode == "3") {
 ?>
 
-<section class="footer-cta-section margin-top-80 has-animation">
-                <div class="container updated">
-                    <div class="footer-cta-inner">
-                        <div class="footer-cta-media"
-                            data-src-path="<?php echo $folderPath ?>assets/themes/dataiku/slice/dist/json/footer_1.json">
-                        </div>
-                        <div class="footer-cta-text">
-                            <h3>Ready to Dive In? Start Your Free Trial Today</h3>
-                            <div class="buttons-holder">
+  <section class="footer-cta-section margin-top-80 has-animation">
+    <div class="container updated">
+      <div class="footer-cta-inner">
+        <div class="footer-cta-media"
+          data-src-path="<?php echo $folderPath ?>assets/themes/dataiku/slice/dist/json/footer_1.json">
+        </div>
+        <div class="footer-cta-text">
+          <h3>Ready to Dive In? Start Your Free Trial Today</h3>
+          <div class="buttons-holder">
 
-                                <a href="<?php echo $folderPath ?>get-started/" target="_self" class="button medium">Get Started</a>
+            <a href="<?php echo $folderPath ?>Contact-Us/" target="_self" class="button medium">Get Started</a>
 
-                                <a href="<?php echo $folderPath ?>home/contact-us/" target="_self"
-                                    class="white button medium">Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-</section>
+            <a href="<?php echo $folderPath ?>Contact-Us/" target="_self"
+              class="white button medium">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <?php
-  }
-  if ($hookMode == "4") {
+}
+if ($hookMode == "4") {
 ?>
 
-<section class="in-line-survey-section pad-mob48-top margin-top-80">
+  <section class="in-line-survey-section pad-mob48-top margin-top-80">
 
     <div class="container updated">
-        <div class="in-line-survey-inner">
-            <div class="in-line-survey-bg-demo">
-                <picture class="hide-mobile">
-                    <source class="hide-mobile" media="(max-width:768px)"
-                        srcset="<?php echo $folderPath ?>assets/uploads/2024/05/banner-AIML.png">
-                    <img class="parallax-bg hide-mobile" data-scroll-speed="15"
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                        alt="" data-lazy-src="<?php echo $folderPath ?>assets/uploads/2024/05/banner-AIML.png"><noscript><img
-                            class="parallax-bg hide-mobile" data-scroll-speed="15"
-                            src="<?php echo $folderPath ?>assets/uploads/2024/05/banner-AIML.png" alt=""></noscript>
-                </picture>
-                <picture class="hide-desktop">
-                    <source class="hide-mobile hide-desktop" media="(max-width:768px)"
-                        srcset="<?php echo $folderPath ?>assets/uploads/2024/05/banner-AIML-copy.png">
-                    <img class="parallax-bg hide-desktop" data-scroll-speed="15"
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                        alt="" data-lazy-src="<?php echo $folderPath ?>assets/uploads/2024/05/banner-AIML-copy.png"><noscript><img
-                            class="parallax-bg hide-desktop" data-scroll-speed="15"
-                            src="<?php echo $folderPath ?>assets/uploads/2024/05/banner-AIML-copy.png" alt=""></noscript>
-                </picture>
+      <div class="in-line-survey-inner">
+        <div class="in-line-survey-bg-demo">
+          <picture class="hide-mobile">
+            <source class="hide-mobile" media="(max-width:768px)"
+              srcset="<?php echo $folderPath ?>assets/images/background/banner-AIML.png">
+            <img class="parallax-bg hide-mobile" data-scroll-speed="15"
+              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+              alt="" data-lazy-src="<?php echo $folderPath ?>assets/images/background/banner-AIML.png"><noscript><img
+                class="parallax-bg hide-mobile" data-scroll-speed="15"
+                src="<?php echo $folderPath ?>assets/images/background/banner-AIML.png" alt=""></noscript>
+          </picture>
+          <picture class="hide-desktop">
+            <source class="hide-mobile hide-desktop" media="(max-width:768px)"
+              srcset="<?php echo $folderPath ?>assets/images/background/banner-AIML-copy.png">
+            <img class="parallax-bg hide-desktop" data-scroll-speed="15"
+              src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+              alt="" data-lazy-src="<?php echo $folderPath ?>assets/images/background/banner-AIML-copy.png"><noscript><img
+                class="parallax-bg hide-desktop" data-scroll-speed="15"
+                src="<?php echo $folderPath ?>assets/images/background/banner-AIML-copy.png" alt=""></noscript>
+          </picture>
 
-            </div>
-            <div class="in-line-survey-content">
-                <div class="in-line-survey-media-demo">
-
-                </div>
-                <div class="in-line-survey-text">
-                    <h3> Try Dataiku </h3>
-                    <p>Time is a data science team’s most precious resource, so what are you waiting for? Start your
-                        14-day free trial of Dataiku.</p>
-                    <div class="buttons-holder">
-                        <a href="../get-started/index.html" target="_blank" class="button medium"> Get Started</a>
-                    </div>
-                </div>
-            </div>
         </div>
+        <div class="in-line-survey-content">
+          <div class="in-line-survey-media-demo">
+
+          </div>
+          <div class="in-line-survey-text">
+            <h3> Try Dataiku </h3>
+            <p>Time is a data science team’s most precious resource, so what are you waiting for? Start your
+              14-day free trial of Dataiku.</p>
+            <div class="buttons-holder">
+              <a href="<?php echo $folderPath ?>Contact-Us" target="_blank" class="button medium"> Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
 <?php } ?>

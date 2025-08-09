@@ -170,34 +170,3 @@ GartnerPI_Widget({
   version: "2",
   container: document.querySelector("#myNodeContainer")
 })
-
-hbspt.forms.create({
-  portalId: "2123903",
-  formId: "3b336f1e-2293-47ee-86a1-5cdc6625c435",
-
-  onFormReady: function ($form) {
-    window.initCustomForms($form);
-    console.log("Demo Form - onFormReady");
-  },
-  onFormSubmitted: function ($form) {
-    console.log("Demo Form - onFormSubmitted");
-    analytics.track("Demo Form", {});
-  },
-  onFormSubmit: function ($form) {
-    document.querySelector('input[name=wt1_id]').value = getCookie("__wt1vic");
-  },
-  onFormReady: function () {
-
-    jcf.setOptions({
-      wrapNative: false,
-      fakeDropInBody: false,
-      maxVisibleItems: 6,
-      useCustomScroll: true
-    });
-
-    jcf.replaceAll();
-  }
-});
-
-// banner
-
