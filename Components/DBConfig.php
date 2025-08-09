@@ -3,7 +3,7 @@
     $dbhost = "localhost";
     $dbusername = "root";
     $dbpass = '';
-    $dbname = "dataiku";
+    $dbname = "resurgent";
     $timezone = "Asia/Kolkata";
     
     $con = mysqli_connect($dbhost,$dbusername,$dbpass);

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 08, 2025 at 02:45 PM
+-- Generation Time: Aug 09, 2025 at 01:44 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dataiku`
+-- Database: `resurgent`
 --
 
 -- --------------------------------------------------------
@@ -75,24 +75,55 @@ CREATE TABLE `clients_rmm` (
 --
 
 INSERT INTO `clients_rmm` (`ID`, `Client_Image_URL`, `Group_ID`, `Display_Order`, `Is_Active`, `Created_By`, `Created_On`, `Modified_By`, `Modified_On`) VALUES
-(1, 'assets/uploads/2025/04/JJ-2.svg', 1, 1, 1, 'admin', '2025-08-08 11:45:34', NULL, '2025-08-08 11:45:34'),
-(2, 'assets/uploads/2025/04/LVMH.svg', 1, 2, 1, 'admin', '2025-08-08 11:45:34', NULL, '2025-08-08 11:45:34'),
-(3, 'assets/uploads/2025/07/Michelin.svg', 1, 3, 1, 'admin', '2025-08-08 11:45:34', NULL, '2025-08-08 11:45:34'),
-(4, 'assets/uploads/2025/04/BMO.svg', 1, 4, 1, 'admin', '2025-08-08 11:45:34', NULL, '2025-08-08 11:45:34'),
-(5, 'assets/uploads/2025/04/Novartis.svg', 1, 5, 1, 'admin', '2025-08-08 11:45:34', NULL, '2025-08-08 11:45:34'),
-(6, 'assets/uploads/2025/04/Unilever.svg', 1, 6, 1, 'admin', '2025-08-08 11:45:34', NULL, '2025-08-08 11:45:34'),
-(7, 'assets/uploads/2025/04/Accenture.svg', 2, 1, 1, 'admin', '2025-08-08 11:45:34', NULL, '2025-08-08 11:45:34'),
-(8, 'assets/uploads/2025/04/AWS.svg', 2, 2, 1, 'admin', '2025-08-08 11:45:34', NULL, '2025-08-08 11:45:34'),
-(9, 'assets/uploads/2025/04/Databricks.svg', 2, 3, 1, 'admin', '2025-08-08 11:45:34', NULL, '2025-08-08 11:45:34'),
-(10, 'assets/uploads/2025/04/Deloitte.svg', 2, 4, 1, 'admin', '2025-08-08 11:45:34', NULL, '2025-08-08 11:45:34'),
-(11, 'assets/uploads/2025/04/Snowflake.svg', 2, 5, 1, 'admin', '2025-08-08 11:45:34', NULL, '2025-08-08 11:45:34'),
-(12, 'assets/uploads/2025/04/SLB.svg', 2, 6, 1, 'admin', '2025-08-08 11:45:34', NULL, '2025-08-08 11:45:34'),
-(13, 'assets/uploads/2025/04/Pinecone.svg', 3, 1, 1, 'admin', '2025-08-08 11:45:34', NULL, '2025-08-08 11:45:34'),
-(14, 'assets/uploads/2025/04/Anthropic.svg', 3, 2, 1, 'admin', '2025-08-08 11:45:34', NULL, '2025-08-08 11:45:34'),
-(15, 'assets/uploads/2025/04/Hugging-Face.svg', 3, 3, 1, 'admin', '2025-08-08 11:45:34', NULL, '2025-08-08 11:45:34'),
-(16, 'assets/uploads/2025/04/Mistral-1.svg', 3, 4, 1, 'admin', '2025-08-08 11:45:34', NULL, '2025-08-08 11:45:34'),
-(17, 'assets/uploads/2025/04/NVIDIA.svg', 3, 5, 1, 'admin', '2025-08-08 11:45:34', NULL, '2025-08-08 11:45:34'),
-(18, 'assets/uploads/2025/04/OpenAI.svg', 3, 6, 1, 'admin', '2025-08-08 11:45:34', NULL, '2025-08-08 11:45:34');
+(0, 'assets/images/Clients/1.png', 1, 1, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/2.png', 1, 2, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/3.png', 1, 3, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/4.png', 1, 4, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/5.png', 1, 5, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/6.png', 1, 6, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/7.png', 1, 7, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/8.png', 1, 8, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/9.png', 1, 9, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/10.png', 1, 10, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/11.png', 1, 11, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/12.png', 1, 12, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/13.png', 1, 13, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/14.png', 1, 14, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/15.png', 1, 15, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/16.png', 1, 16, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/17.png', 1, 17, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/18.png', 1, 18, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/19.png', 1, 19, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/20.png', 1, 20, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/21.png', 1, 21, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/22.png', 1, 22, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/23.png', 1, 23, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/24.png', 1, 24, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/25.png', 1, 25, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/26.png', 1, 26, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/27.png', 1, 27, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/28.png', 1, 28, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/29.png', 1, 29, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/30.png', 1, 30, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/31.png', 1, 31, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/32.png', 1, 32, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/33.png', 1, 33, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/34.png', 1, 34, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/35.png', 1, 35, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/36.png', 1, 36, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/37.png', 1, 37, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/38.png', 1, 38, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/39.png', 1, 39, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/40.png', 1, 40, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/41.png', 1, 41, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/42.png', 1, 42, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/43.png', 1, 43, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/44.png', 1, 44, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/45.png', 1, 45, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/46.png', 1, 46, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/47.png', 1, 47, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/48.png', 1, 48, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
+(0, 'assets/images/Clients/49.png', 1, 49, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36');
 
 -- --------------------------------------------------------
 
@@ -169,13 +200,6 @@ ALTER TABLE `banners_rmm`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `clients_rmm`
---
-ALTER TABLE `clients_rmm`
-  ADD PRIMARY KEY (`ID`),
-  ADD KEY `idx_group_order` (`Group_ID`,`Display_Order`);
-
---
 -- Indexes for table `testimonials2_rmm`
 --
 ALTER TABLE `testimonials2_rmm`
@@ -198,12 +222,6 @@ ALTER TABLE `testimonials_rmm`
 --
 ALTER TABLE `banners_rmm`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `clients_rmm`
---
-ALTER TABLE `clients_rmm`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `testimonials2_rmm`
