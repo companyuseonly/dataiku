@@ -8,7 +8,7 @@
     include($folderPath . "Components/header.php");
 ?>
 
-<section data-bg="<?php echo $folderPath ?>assets/images/background/2149241213.jpg" class="page-title js-color-change rocket-lazyload" >
+<section data-bg="<?php echo $folderPath ?>assets/images/background/2149241213.jpg" class="page-title js-color-change rocket-lazyload">
     <span class="overlay"></span>
     <div class="breadcrumbs">
         <div class="container">
@@ -50,12 +50,9 @@
 
         <div class="six columns top10 pad-mob80-top">
 
-            <a class="lightboxlaunch" onclick="launchLightbox('H4A1vdGLttGXtUrEYENh15')">
-                <div class="vidyard-video">
-                    <div class="main-button-products-heading rocket-lazyload">
-                        <img src="<?php echo $folderPath ?>assets/images/background/2150041849.jpg" alt="<?php echo $coName ?>">
-                    </div>
-            </a>
+            <div class="main-button-products-heading rocket-lazyload">
+                <img src="<?php echo $folderPath ?>assets/images/background/2150041849.jpg" alt="<?php echo $coName ?>">
+            </div>
 
         </div>
     </div>
