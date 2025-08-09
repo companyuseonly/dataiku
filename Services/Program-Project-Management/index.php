@@ -1,9 +1,9 @@
 <?php
     $folderPath = "../../";
-    $pageTitle = "Managed Services";
+    $pageTitle = "Program & Project Management Services";
     $pageMeta = "";
     $pageDescription = "";
-    $thisPage = "Managed Services";
+    $thisPage = "Program & Project Management Services";
 
     include($folderPath . "Components/header.php");
 ?>

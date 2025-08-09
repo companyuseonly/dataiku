@@ -1,15 +1,14 @@
 <?php
-$folderPath = "";
-$pageTitle = "Home";
-$pageMeta = "";
-$pageDescription = "";
-$thisPage = "Home";
+    $folderPath = "";
+    $pageTitle = "Home";
+    $pageMeta = "";
+    $pageDescription = "";
+    $thisPage = "Home";
 
-include($folderPath . "Components/header.php");
+    include($folderPath . "Components/header.php");
 ?>
 
-<?php $bannerMode = "1";
-include($folderPath . "Components/banner.php"); ?>
+<?php $bannerMode = "1"; include($folderPath . "Components/banner.php"); ?>
 
 <div class="center-xs container-2025 mr-auto ml-auto">
     <div class="row-2025 center-xs">
@@ -42,26 +41,18 @@ include($folderPath . "Components/banner.php"); ?>
     </div>
 </div>
 
-<?php $clientMode = "1";
-include($folderPath . "Components/clients.php"); ?>
+<?php $clientMode = "1"; include($folderPath . "Components/clients.php"); ?>
 
-<?php $serviceMode = "5";
-include($folderPath . "Components/services.php"); ?>
-<?php $serviceMode = "1";
-include($folderPath . "Components/services.php"); ?>
-<?php $serviceMode = "2";
-include($folderPath . "Components/services.php"); ?>
-<?php $serviceMode = "3";
-include($folderPath . "Components/services.php"); ?>
-<?php $counterMode = "1";
-include($folderPath . "Components/counter.php"); ?>
-<?php $testimonialMode = "1";
-include($folderPath . "Components/testimonial.php"); ?>
+<?php $serviceMode = "5"; include($folderPath . "Components/services.php"); ?>
+<?php $serviceMode = "1"; include($folderPath . "Components/services.php"); ?>
+<?php $serviceMode = "2"; include($folderPath . "Components/services.php"); ?>
+<?php $serviceMode = "3"; include($folderPath . "Components/services.php"); ?>
+<?php $counterMode = "1"; include($folderPath . "Components/counter.php"); ?>
+<?php $testimonialMode = "1"; include($folderPath . "Components/testimonial.php"); ?>
 <?php
 // $blogMode = "1";
 // include($folderPath . "Components/blog.php");
  ?>
-<?php $hookMode = "1";
-include($folderPath . "Components/hooks.php"); ?>
+<?php $hookMode = "1"; include($folderPath . "Components/hooks.php"); ?>
 
 <?php include($folderPath . "Components/footer.php"); ?>
