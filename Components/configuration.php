@@ -1,7 +1,7 @@
 <?php
 
     $coName = "Resurgent";
-    $coNameFull = "";
+    $coNameFull = "Resurgent Consulting Inc";
     $shotCoName = "";
     $shotCoNameDesign = "";
     $coNameDesign = "";
@@ -30,22 +30,18 @@
     $introText2 = "";
     $introText3 = "";
 
-    $footerText = "";
+    $yearStarted = 2004;
+    $happyclient = 60;
+    $skilledRate = 96;
+    $expertise = 10;
 
-    $yearStarted = 0;
-    $happyclient = 0;
-    $industries = 0;
-    $projects = 0;
-    $reductionDA = 70;
-    $reductionML = 42;
-    $investment = 413;
-    $netpresent = 23;
+    $footerText = "Founded in $yearStarted, RESURGENT is a global business consulting, information technology and enterprise applications organization providing implementation and support services to a large number of clients around the world. ";
 
-    $fbPageLink = "";
-    $twitterPageLink = "";
-    $linPageUrl = "";
-    $youtubeLink = "";
-    $instaLink = "";
+    $fbPageLink = "#";
+    $twitterPageLink = "#";
+    $linPageUrl = "#";
+    $youtubeLink = "#";
+    $instaLink = "#";
 
     $contactEmail1 = "";
     $contactEmail2 = "";

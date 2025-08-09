@@ -226,3 +226,12 @@
 		height: 10px;
 	}
 }
+
+.statistic-num {
+	font-weight: bolder !important;
+	font-size: 2.5rem !important;
+}
+
+.crafted {
+	color: #ffc107;
+}
