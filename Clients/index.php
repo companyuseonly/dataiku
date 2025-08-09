@@ -8,7 +8,7 @@
     include($folderPath . "Components/header.php");
 ?>
 
-<section data-bg="<?php echo $folderPath ?>assets/images/background/2386.jpg" class="page-title js-color-change rocket-lazyload" style="">
+<section data-bg="<?php echo $folderPath ?>assets/images/background/4637.jpg" class="page-title js-color-change rocket-lazyload" style="">
     <span class="overlay" style="background-image: linear-gradient(180deg,rgba(0,0,0,0.4),rgba(0,0,0,0.2));"></span>
     <div class="breadcrumbs">
         <div class="container">

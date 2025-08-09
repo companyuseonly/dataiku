@@ -1,9 +1,9 @@
 <?php
-if (!isset($hookMode)) {
-  $hookMode = "1";
-}
-
-if ($hookMode == "1") {
+  if (!isset($hookMode)) {
+    $hookMode = "1";
+  }
+  
+  if ($hookMode == "1") {
 ?>
 
   <section class="mt-104">
@@ -66,13 +66,15 @@ if ($hookMode == "2") {
 
           </div>
           <div class="in-line-survey-text">
-            <h3> Watch a Demo </h3>
-            <p>Discover Dataiku&#039;s end to end capabilities by exploring a real life use case
-              around environmental impact - in just 13 minutes.</p>
+            <h3> Enquiry Our Services </h3>
+            <p>Discover how our Managed Services, Program & Project Management, Business Engagement, Technology Delivery, and Infrastructure Management can help your business achieve greater efficiency, reduced risks, and measurable results.</p>
             <div class="buttons-holder">
-              <a href="<?php echo $folderPath ?>Contact-Us/" target="_self" class="button medium"> CCONTACT US NOW</a>
+              <a href="<?php echo $folderPath ?>Contact-Us/" target="_self" class="button medium">
+                Contact Us Now
+              </a>
             </div>
           </div>
+
         </div>
       </div>
     </div>

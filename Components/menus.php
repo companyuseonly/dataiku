@@ -128,7 +128,9 @@
                         </div>
                     </div>
                 </li> -->
-
+                <li class='mega-parent mega-top-16-menu mega-nav_main mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-34398 parent top-16-menu nav_main'
+                    id='mega-menu-item-'><a class="mega-menu-link" href="<?php echo $folderPath ?>index.php" tabindex="0">Home</a>
+                </li>
               
                 <li
                     class='mega-parent mega-top-16-menu mega-nav_main mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-hide-arrow mega-has-icon mega-icon-right mega-close-after-click mega-disable-link mega-menu-item-34393 parent top-16-menu nav_main'
@@ -356,9 +358,9 @@
                     </ul>
                 </li>
                 
-                <li
-                    class='mega-parent mega-top-16-menu mega-nav_main mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-34398 parent top-16-menu nav_main'
-                    id='mega-menu-item-34398'><a class="mega-menu-link" href="<?php echo $folderPath ?>About-Us/" tabindex="0">About Us</a></li>
+                <li class='mega-parent mega-top-16-menu mega-nav_main mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-34398 parent top-16-menu nav_main'
+                    id='mega-menu-item-34398'><a class="mega-menu-link" href="<?php echo $folderPath ?>About-Us/" tabindex="0">About Us</a>
+                </li>
 
                 <li
                     class='mega-parent mega-top-16-menu mega-nav_main mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-34398 parent top-16-menu nav_main'

@@ -170,3 +170,193 @@ GartnerPI_Widget({
   version: "2",
   container: document.querySelector("#myNodeContainer")
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    const formStatus = document.getElementById('form-status');
+    const submitButton = contactForm.querySelector('.submit-button');
+    const buttonText = submitButton.querySelector('.button-text');
+    const buttonLoader = submitButton.querySelector('.button-loader');
+
+    // Form submission handler
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Show loading state
+        setLoadingState(true);
+        hideStatus();
+        
+        // Get form data
+        const formData = new FormData(contactForm);
+        
+        // Validate form
+        if (!validateForm(formData)) {
+            setLoadingState(false);
+            showStatus('Please fill in all required fields.', 'error');
+            return;
+        }
+        
+        // Submit form
+        fetch('contact.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            setLoadingState(false);
+            
+            if (data.success) {
+                showStatus(data.message, 'success');
+                contactForm.reset();
+            } else {
+                showStatus(data.message, 'error');
+            }
+        })
+        .catch(error => {
+            setLoadingState(false);
+            showStatus('An error occurred. Please try again later.', 'error');
+            console.error('Form submission error:', error);
+        });
+    });
+
+    // Input validation and styling
+    const inputs = contactForm.querySelectorAll('input, textarea');
+    inputs.forEach(input => {
+        input.addEventListener('blur', function() {
+            validateField(this);
+        });
+
+        input.addEventListener('input', function() {
+            if (this.classList.contains('error')) {
+                this.classList.remove('error');
+            }
+        });
+    });
+
+    // Functions
+    function setLoadingState(loading) {
+        if (loading) {
+            submitButton.disabled = true;
+            buttonText.style.display = 'none';
+            buttonLoader.style.display = 'inline';
+        } else {
+            submitButton.disabled = false;
+            buttonText.style.display = 'inline';
+            buttonLoader.style.display = 'none';
+        }
+    }
+
+    function validateForm(formData) {
+        const requiredFields = ['name', 'email', 'subject', 'message'];
+        let isValid = true;
+
+        requiredFields.forEach(field => {
+            const value = formData.get(field);
+            const input = contactForm.querySelector(`[name="${field}"]`);
+            
+            if (!value || value.trim() === '') {
+                markFieldError(input);
+                isValid = false;
+            }
+        });
+
+        // Validate email format
+        const email = formData.get('email');
+        const emailInput = contactForm.querySelector('[name="email"]');
+        if (email && !isValidEmail(email)) {
+            markFieldError(emailInput);
+            isValid = false;
+        }
+
+        return isValid;
+    }
+
+    function validateField(field) {
+        const value = field.value.trim();
+        
+        if (field.hasAttribute('required') && value === '') {
+            markFieldError(field);
+            return false;
+        }
+        
+        if (field.type === 'email' && value && !isValidEmail(value)) {
+            markFieldError(field);
+            return false;
+        }
+        
+        markFieldValid(field);
+        return true;
+    }
+
+    function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+
+    function markFieldError(field) {
+        field.classList.add('error');
+        field.style.borderColor = '#e53e3e';
+        field.style.backgroundColor = '#fed7d7';
+    }
+
+    function markFieldValid(field) {
+        field.classList.remove('error');
+        field.style.borderColor = '#e2e8f0';
+        field.style.backgroundColor = '#f8fafc';
+    }
+
+    function showStatus(message, type) {
+        formStatus.textContent = message;
+        formStatus.className = `form-status ${type}`;
+        formStatus.style.display = 'block';
+        
+        // Auto hide after 5 seconds for success messages
+        if (type === 'success') {
+            setTimeout(() => {
+                hideStatus();
+            }, 5000);
+        }
+    }
+
+    function hideStatus() {
+        formStatus.style.display = 'none';
+        formStatus.className = 'form-status';
+    }
+
+    // Smooth scrolling for any anchor links (if needed)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Add animation to office cards on scroll (if Intersection Observer is supported)
+    if ('IntersectionObserver' in window) {
+        const cards = document.querySelectorAll('.office-card');
+        const cardObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        cards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            cardObserver.observe(card);
+        });
+    }
+});

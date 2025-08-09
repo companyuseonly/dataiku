@@ -26,7 +26,7 @@
     <div class="container">
         <div class="holder">
             <h1 class="bot20">About <?php echo $coName ?></h1>
-            <span style="font-size: 25px !important; line-height: 35px;">
+            <span>
                 <p class="bot10">
                 <p>Unlock the Power of Technology</p>
                 </p>

@@ -43,14 +43,14 @@
     $youtubeLink = "#";
     $instaLink = "#";
 
-    $contactEmail1 = "";
+    $contactEmail1 = "sales@resurgent-es.com";
     $contactEmail2 = "";
     $contactEmail3 = "";
     $contactEmail4 = "";
     $contactEmail5 = "";
 
-    $contactPh1 = "";
-    $contactPh2 = "";
+    $contactPh1 = "+91 78068 79796";
+    $contactPh2 = "+91 70455 93925";
     $contactPh3 = "";
     $contactPh4 = "";
     $contactPh5 = "";
