@@ -10,116 +10,16 @@
   // Store all testimonials in array
   $testimonials = [];
   while ($testimonial = mysqli_fetch_assoc($testimonialResult)) {
-    $testimonials[] = $testimonial;
+      $testimonials[] = $testimonial;
   }
-
+  
   if ($testimonialMode == "1") {
-?>
-
-  <div class="case-study-section has-animation indent-top-medium indent-bottom-medium">
-    <div class="container updated">
-      <div class="case-study-head-2025">
-        <h2 class="updated pl-64 mobie-pl40 mobie-pb64 pb-24">Trusted by Global Enterprises</h2>
-        <a class="learn-more-text-only uppercase pr-64 pb-40 mobie-pl40 hp-stories nav_dropdown_feature_content"
-          href="<?php echo $folderPath ?>stories/" target="_self">
-          READ MORE STORIES </a>
-
-      </div>
-
-      <div class="case-study-body">
-
-        <div class="case-study-sliders">
-
-          <div class="media-slider-hld">
-            <div class="case-study-media-slider">
-              <?php foreach ($testimonials as $testimonial) { ?>
-                <div class="media-slider-item">
-                  <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                    alt="<?php echo htmlspecialchars($testimonial['Brand_Title']); ?>"
-                    data-lazy-src="<?php echo $folderPath . $testimonial['Brand_Thumb_Image_URL']; ?>">
-                  <noscript>
-                    <img src="<?php echo $folderPath . $testimonial['Brand_Thumb_Image_URL']; ?>"
-                      alt="<?php echo htmlspecialchars($testimonial['Brand_Title']); ?>">
-                  </noscript>
-                </div>
-              <?php } ?>
-            </div>
-          </div>
-
-
-          <div class="info-slider-hld">
-            <div class="info-slider">
-              <?php foreach ($testimonials as $testimonial) { ?>
-                <div class="info-slider-item">
-                  <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                    alt="<?php echo htmlspecialchars($testimonial['Brand_Title']); ?>"
-                    data-lazy-src="<?php echo $folderPath . $testimonial['Brand_Logo_URL']; ?>">
-                  <noscript>
-                    <img src="<?php echo $folderPath . $testimonial['Brand_Logo_URL']; ?>"
-                      alt="<?php echo htmlspecialchars($testimonial['Brand_Title']); ?>">
-                  </noscript>
-                  <div class="info-slider-text pr-32" style="margin-top: auto; margin-bottom: auto;">
-                    <h4 class="updated"><?php echo htmlspecialchars($testimonial['Brand_Title']); ?></h4>
-                    <p class="pr-32"><?php echo htmlspecialchars($testimonial['Brand_Description']); ?></p>
-                    <div class="buttons-holder pr-32">
-                      <a href="<?php echo $folderPath . $testimonial['Brand_Link']; ?>"
-                        class="learn-more uppercase updated hp-stories nav_dropdown_feature_content">
-                        <span></span><?php echo htmlspecialchars($testimonial['Brand_Link_Text']); ?>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              <?php } ?>
-            </div>
-
-            Navigation Indicators
-            <div class="info-slider-nav-hld">
-              <div class="info-slider-nav has-indicators">
-                <?php foreach ($testimonials as $testimonial) { ?>
-                  <div class="indicator-item">
-                    <div class="indicator-item-img-hld">
-                      <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                        alt="indicator images"
-                        data-lazy-src="<?php echo $folderPath . $testimonial['Indicator_Image_URL']; ?>">
-                      <noscript>
-                        <img src="<?php echo $folderPath . $testimonial['Indicator_Image_URL']; ?>"
-                          alt="indicator images">
-                      </noscript>
-                    </div>
-                    <svg class="svg-indicator" width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="24" cy="24" r="23" stroke="#39444B" stroke-width="2"></circle>
-                    </svg>
-                  </div>
-                <?php } ?>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-<?php
-  }
-  
-  // Single query to fetch all active testimonials
-  $testimonial2Query = "SELECT * FROM TESTIMONIALS2_RMM WHERE Is_Active = 1 ORDER BY Display_Order ASC";
-  $testimonial2Result = mysqli_query($con, $testimonial2Query);
-  
-  // Store all testimonials in array
-  $testimonials2 = [];
-  while ($testimonial = mysqli_fetch_assoc($testimonial2Result)) {
-      $testimonials2[] = $testimonial;
-  }
-  
-  if ($testimonialMode == "2") {
 ?>
 
 <section class="customer-testimonal margin-top-80">
     <div class="container updated slider">
         <div class="slider">
-            <?php foreach($testimonials2 as $testimonial) { ?>
+            <?php foreach($testimonials as $testimonial) { ?>
                 <div class="slide">
                     <div class="container slider-background-padding">
                         <div class="two columns" style="text-align:center;">

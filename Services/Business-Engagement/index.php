@@ -1,9 +1,9 @@
 <?php
     $folderPath = "../../";
-    $pageTitle = "Program & Project Management Services";
+    $pageTitle = "Business Engagement Services";
     $pageMeta = "";
     $pageDescription = "";
-    $thisPage = "Program & Project Management Services";
+    $thisPage = "Business Engagement Services";
 
     include($folderPath . "Components/header.php");
 ?>
@@ -31,12 +31,12 @@
     <div class="container updated mob8">
         <div class="six columns right40 hero-intro">
             <h1 class="top40 font30">
-                Program & Project Management
+                Business Engagement
             </h1>
             <p class="top40 font20">
-                Our Program & Project Management services ensure structured execution and high-quality delivery across
-                your initiatives. From project planning and risk management to benefits tracking and quality assurance,
-                we provide end-to-end governance that keeps your projects aligned with business goals, budgets, and timelines.
+                Our Business Engagement services bridge the gap between business objectives and technology execution. 
+                Through stakeholder management, global requirements alignment, and structured communications, 
+                we ensure collaboration is streamlined and future-state goals are clearly defined and achieved.
             </p>
             <div class="cta-buttons top40 bot10">
                 <a class="button border secondary-btn" href="<?php echo $folderPath; ?>Contact-Us" target="_self">
@@ -47,7 +47,7 @@
 
         <div class="six columns top10 pad-mob80-top">
             <div class="main-button-products-heading rocket-lazyload">
-                <img src="<?php echo $folderPath ?>assets/images/background/PPM.jpg" alt="<?php echo $coName ?>">
+                <img src="<?php echo $folderPath ?>assets/images/background/Business-Engagement.jpg" alt="<?php echo $coName ?>">
             </div>
         </div>
     </div>
@@ -59,7 +59,7 @@
         <div class="row">
             <div class="eight columns right40">
                 <h3 class="h2">
-                    Program & Project Management — Driving Structured Execution
+                    Business Engagement — Aligning Strategy and Execution
                 </h3>
             </div>
             <div class="four columns"></div>
@@ -70,32 +70,32 @@
     <div class="container product-key-capability-flex padtb padlr">
         <div class="item box-shadow">
             <div class="info">
-                <h3>Project Planning and Tracking</h3>
-                <p>Structured plans and real-time tracking to ensure projects stay on schedule and within scope.</p>
+                <h3>Stakeholder Management</h3>
+                <p>Engaging key stakeholders to ensure alignment, transparency, and ownership across initiatives.</p>
             </div>
         </div>
         <div class="item box-shadow">
             <div class="info">
-                <h3>Issue and Risk Management</h3>
-                <p>Proactive identification, analysis, and mitigation of project risks and issues.</p>
+                <h3>Global Business Requirements</h3>
+                <p>Capturing and consolidating business needs across regions to drive scalable and compliant solutions.</p>
             </div>
         </div>
         <div class="item box-shadow">
             <div class="info">
-                <h3>Commercials Management</h3>
-                <p>Robust governance of project costs, contracts, and financial KPIs to drive accountability.</p>
+                <h3>Collaboration Hub Program</h3>
+                <p>Creating centralized frameworks and tools to foster cross-functional collaboration and visibility.</p>
             </div>
         </div>
         <div class="item box-shadow">
             <div class="info">
-                <h3>Business Case & Benefits Tracking</h3>
-                <p>Ensuring measurable outcomes and return on investment through continuous benefit monitoring.</p>
+                <h3>Program Communications</h3>
+                <p>Delivering clear and consistent communication strategies to keep stakeholders informed and engaged.</p>
             </div>
         </div>
         <div class="item box-shadow">
             <div class="info">
-                <h3>Quality Management</h3>
-                <p>Maintaining high standards and consistent delivery through rigorous quality assurance practices.</p>
+                <h3>Future State View</h3>
+                <p>Defining a strategic vision and operating model to guide long-term transformation and planning.</p>
             </div>
         </div>
     </div>

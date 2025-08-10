@@ -1,9 +1,9 @@
 <?php
     $folderPath = "../../";
-    $pageTitle = "Program & Project Management Services";
+    $pageTitle = "Technology Delivery Services";
     $pageMeta = "";
     $pageDescription = "";
-    $thisPage = "Program & Project Management Services";
+    $thisPage = "Technology Delivery Services";
 
     include($folderPath . "Components/header.php");
 ?>
@@ -31,12 +31,12 @@
     <div class="container updated mob8">
         <div class="six columns right40 hero-intro">
             <h1 class="top40 font30">
-                Program & Project Management
+                Technology Delivery
             </h1>
             <p class="top40 font20">
-                Our Program & Project Management services ensure structured execution and high-quality delivery across
-                your initiatives. From project planning and risk management to benefits tracking and quality assurance,
-                we provide end-to-end governance that keeps your projects aligned with business goals, budgets, and timelines.
+                Our Technology Delivery services focus on streamlining systems, applying industry best practices, and 
+                executing solutions with precision. We ensure governance, performance optimization, and agile-driven 
+                execution — helping your business achieve faster, scalable outcomes with minimal disruption.
             </p>
             <div class="cta-buttons top40 bot10">
                 <a class="button border secondary-btn" href="<?php echo $folderPath; ?>Contact-Us" target="_self">
@@ -47,7 +47,7 @@
 
         <div class="six columns top10 pad-mob80-top">
             <div class="main-button-products-heading rocket-lazyload">
-                <img src="<?php echo $folderPath ?>assets/images/background/PPM.jpg" alt="<?php echo $coName ?>">
+                <img src="<?php echo $folderPath ?>assets/images/background/Technology-Delivery.jpg" alt="<?php echo $coName ?>">
             </div>
         </div>
     </div>
@@ -59,7 +59,7 @@
         <div class="row">
             <div class="eight columns right40">
                 <h3 class="h2">
-                    Program & Project Management — Driving Structured Execution
+                    Technology Delivery — Scalable Execution, Measurable Outcomes
                 </h3>
             </div>
             <div class="four columns"></div>
@@ -70,32 +70,38 @@
     <div class="container product-key-capability-flex padtb padlr">
         <div class="item box-shadow">
             <div class="info">
-                <h3>Project Planning and Tracking</h3>
-                <p>Structured plans and real-time tracking to ensure projects stay on schedule and within scope.</p>
+                <h3>Industry Best Practices Delivery</h3>
+                <p>Leveraging proven frameworks and methodologies to ensure consistent, high-quality implementations.</p>
             </div>
         </div>
         <div class="item box-shadow">
             <div class="info">
-                <h3>Issue and Risk Management</h3>
-                <p>Proactive identification, analysis, and mitigation of project risks and issues.</p>
+                <h3>Existing Process and System Rationalization</h3>
+                <p>Analyzing and optimizing current processes and technologies to eliminate redundancy and enhance efficiency.</p>
             </div>
         </div>
         <div class="item box-shadow">
             <div class="info">
-                <h3>Commercials Management</h3>
-                <p>Robust governance of project costs, contracts, and financial KPIs to drive accountability.</p>
+                <h3>Solution Governance</h3>
+                <p>Ensuring adherence to standards, security, and oversight through comprehensive solution governance models.</p>
             </div>
         </div>
         <div class="item box-shadow">
             <div class="info">
-                <h3>Business Case & Benefits Tracking</h3>
-                <p>Ensuring measurable outcomes and return on investment through continuous benefit monitoring.</p>
+                <h3>Adherence to Approach</h3>
+                <p>Delivering solutions in line with predefined architectures, frameworks, and strategic guidelines.</p>
             </div>
         </div>
         <div class="item box-shadow">
             <div class="info">
-                <h3>Quality Management</h3>
-                <p>Maintaining high standards and consistent delivery through rigorous quality assurance practices.</p>
+                <h3>Optimized Performance</h3>
+                <p>Designing and implementing solutions to maximize system uptime, scalability, and responsiveness.</p>
+            </div>
+        </div>
+        <div class="item box-shadow">
+            <div class="info">
+                <h3>Agile Methodologies</h3>
+                <p>Driving iterative, collaborative, and adaptive development cycles for faster and more flexible delivery.</p>
             </div>
         </div>
     </div>

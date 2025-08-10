@@ -1,9 +1,9 @@
 <?php
     $folderPath = "../../";
-    $pageTitle = "Program & Project Management Services";
+    $pageTitle = "Digital Transformation Innovation";
     $pageMeta = "";
     $pageDescription = "";
-    $thisPage = "Program & Project Management Services";
+    $thisPage = "Digital Transformation Innovation";
 
     include($folderPath . "Components/header.php");
 ?>
@@ -18,8 +18,8 @@
                     <meta property="position" content="1">
                 </span></li>
             <li class="post post-page"><span property="itemListElement" typeof="ListItem"><a property="item"
-                        typeof="WebPage" title="Go to Services" href="../index.php" class="post post-page"><span
-                            property="name">Services</span></a>
+                        typeof="WebPage" title="Go to Solutions" href="../index.php" class="post post-page"><span
+                            property="name">Solutions</span></a>
                     <meta property="position" content="2">
                 </span></li>
             <li class="post post-page current-item"><span class="post post-page current-item"><?php echo $thisPage ?></span></li>
@@ -31,12 +31,10 @@
     <div class="container updated mob8">
         <div class="six columns right40 hero-intro">
             <h1 class="top40 font30">
-                Program & Project Management
+                Digital Transformation
             </h1>
             <p class="top40 font20">
-                Our Program & Project Management services ensure structured execution and high-quality delivery across
-                your initiatives. From project planning and risk management to benefits tracking and quality assurance,
-                we provide end-to-end governance that keeps your projects aligned with business goals, budgets, and timelines.
+                Empower your business to thrive in the digital age. We help you adopt cutting-edge technologies like AI, IoT, Blockchain, and VR/AR to innovate, optimize operations, and enhance customer experiences.
             </p>
             <div class="cta-buttons top40 bot10">
                 <a class="button border secondary-btn" href="<?php echo $folderPath; ?>Contact-Us" target="_self">
@@ -47,7 +45,7 @@
 
         <div class="six columns top10 pad-mob80-top">
             <div class="main-button-products-heading rocket-lazyload">
-                <img src="<?php echo $folderPath ?>assets/images/background/PPM.jpg" alt="<?php echo $coName ?>">
+                <img src="<?php echo $folderPath ?>assets/images/background/digital-transformation.jpg" alt="<?php echo $coName ?>">
             </div>
         </div>
     </div>
@@ -59,7 +57,7 @@
         <div class="row">
             <div class="eight columns right40">
                 <h3 class="h2">
-                    Program & Project Management — Driving Structured Execution
+                    Digital Transformation — Navigating the Future of Business
                 </h3>
             </div>
             <div class="four columns"></div>
@@ -70,39 +68,43 @@
     <div class="container product-key-capability-flex padtb padlr">
         <div class="item box-shadow">
             <div class="info">
-                <h3>Project Planning and Tracking</h3>
-                <p>Structured plans and real-time tracking to ensure projects stay on schedule and within scope.</p>
+                <h3>Blockchain</h3>
+                <p>Implementing decentralized, secure digital ledgers to enhance transparency, trust, and efficiency in transactions.</p>
             </div>
         </div>
         <div class="item box-shadow">
             <div class="info">
-                <h3>Issue and Risk Management</h3>
-                <p>Proactive identification, analysis, and mitigation of project risks and issues.</p>
+                <h3>Artificial Intelligence and Machine Learning</h3>
+                <p>Leveraging AI and ML to automate processes, gain predictive insights, and improve decision-making.</p>
             </div>
         </div>
         <div class="item box-shadow">
             <div class="info">
-                <h3>Commercials Management</h3>
-                <p>Robust governance of project costs, contracts, and financial KPIs to drive accountability.</p>
+                <h3>Internet of Things (IoT)</h3>
+                <p>Connecting devices and systems for real-time data collection, monitoring, and smarter business operations.</p>
             </div>
         </div>
         <div class="item box-shadow">
             <div class="info">
-                <h3>Business Case & Benefits Tracking</h3>
-                <p>Ensuring measurable outcomes and return on investment through continuous benefit monitoring.</p>
+                <h3>Virtual and Augmented Reality (VR/AR)</h3>
+                <p>Creating immersive digital experiences to enhance training, marketing, and product visualization.</p>
             </div>
         </div>
         <div class="item box-shadow">
             <div class="info">
-                <h3>Quality Management</h3>
-                <p>Maintaining high standards and consistent delivery through rigorous quality assurance practices.</p>
+                <h3>Cloud Computing</h3>
+                <p>Enabling scalable, flexible infrastructure and services to accelerate innovation and reduce IT costs.</p>
+            </div>
+        </div>
+        <div class="item box-shadow">
+            <div class="info">
+                <h3>Digital Strategy and Consulting</h3>
+                <p>Guiding organizations through digital transformation journeys with strategic planning and roadmap development.</p>
             </div>
         </div>
     </div>
 
 </div>
-
-<?php $serviceMode = "5"; include($folderPath . "Components/services.php"); ?>
 
 <?php $serviceMode = "3"; include($folderPath . "Components/services.php"); ?>
 

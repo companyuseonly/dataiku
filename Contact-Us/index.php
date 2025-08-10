@@ -90,7 +90,7 @@
             <div class="form-row">
                 <div class="form-group">
                     <label for="name">Name *</label>
-                    <input type="text" id="name" name="name" required autofocus placeholder="Your name">
+                    <input type="text" id="name" name="name" required placeholder="Your name">
                 </div>
                 <div class="form-group">
                     <label for="email">Email *</label>

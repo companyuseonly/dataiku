@@ -411,7 +411,7 @@ table {
 
 @font-face {
     font-family: 'fabrikat';
-    src: url(../fonts/fabrikat_light_2-webfont.woff2) format("woff2"), url(../fonts/fabrikat_light_2-webfont.woff) format("woff");
+    src: url(../fonts/Fabrikat-Bold.otf) format("opentype"), url(../fonts/Fabrikat-Bold.otf) format("opentype");
     font-weight: 300;
     font-style: normal;
     font-display: swap
@@ -419,7 +419,7 @@ table {
 
 @font-face {
     font-family: 'fabrikat';
-    src: url(../fonts/fabrikat_regular-webfont.woff2) format("woff2"), url(../fonts/fabrikat_regular-webfont.woff) format("woff");
+    src: url(../fonts/Fabrikat-Bold.otf) format("opentype"), url(../fonts/Fabrikat-Bold.otf) format("opentype");
     font-weight: 400;
     font-style: normal;
     font-display: swap
@@ -427,7 +427,7 @@ table {
 
 @font-face {
     font-family: 'fabrikat bold';
-    src: url(../fonts/fabrikat-bold.woff) format("woff");
+    src: url(../fonts/Fabrikat-Bold.otf) format("opentype");
     font-weight: 400;
     font-style: normal;
     font-display: swap
@@ -435,7 +435,7 @@ table {
 
 @font-face {
     font-family: 'fabrikat bold itiliac';
-    src: url(../fonts/fabrikat-bold.woff) format("woff");
+    src: url(../fonts/Fabrikat-Bold.otf) format("opentype");
     font-style: normal;
     font-display: swap
 }

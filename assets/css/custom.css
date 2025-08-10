@@ -4557,13 +4557,12 @@ element.style {
 	-webkit-transform: none !important;
 	-ms-transform: none !important;
 	transform: none;
-	*/ font-size: 7px;
+	font-size: 7px;
 	letter-spacing: 0px !important;
 	float: right !important;
 	font-family: Source Sans Pro !important;
 	font-size: 11px !important;
 	font-weight: 400 !important;
-	;
 	line-height: 13.83px !important;
 	padding-top: 16px !important;
 }
@@ -4906,7 +4905,7 @@ element.style {
 	}
 
 	[id^=gartner-pi-widget][data-size=line] .gartner-pi-star-rating {
-		-webkit-transform: scale(1.1) translateY2px);
+		-webkit-transform: scale(1.1) translate(-2px);
 		-ms-transform: scale(1.1) translateY(-2px);
 		transform: scale(1.1) translateY(-2px);
 		vertical-align: bottom;

@@ -263,7 +263,7 @@
                             <ul class="mega-sub-menu"> 
                                 <li class='mega-menu-column mega-left-32 mega-top-32 mega-menu-columns-3-of-12 left-32 top-32'
                                             id='mega-menu-item-custom_html-2'>
-                                            <div class="textwidget custom-html-widget"><a href="<?php echo $folderPath ?>Services/">
+                                            <div class="textwidget custom-html-widget"><a href="<?php echo $folderPath ?>Solutions/">
                                                     <div class='big-heading-hover-effect big-heading-menu-link'>
                                                         <div class='sub2'>
                                                             <p>Solutions of <?php echo $coName ?></p>

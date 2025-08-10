@@ -872,10 +872,14 @@ iframe {
 }
 
 .product-key-capability-flex .item {
-    flex: 1 1 calc(33.333% - 20px); /* 3 per row on desktop */
+    flex: 0 0 calc(33.333% - 20px);
     background: #fff;
     border-radius: 8px;
     padding: 20px;
+}
+
+.product-key-capability-flex .item.box-shadow {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .product-key-capability-flex .info h3 {
@@ -899,4 +903,8 @@ iframe {
     .product-key-capability-flex .item {
         flex: 1 1 100%; /* 1 per row on mobile */
     }
+}
+
+.products-holder .product-key-capability-flex {
+    padding: 5%;
 }

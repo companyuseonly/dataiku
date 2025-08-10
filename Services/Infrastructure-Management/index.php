@@ -1,9 +1,9 @@
 <?php
     $folderPath = "../../";
-    $pageTitle = "Program & Project Management Services";
+    $pageTitle = "Infrastructure Management Services";
     $pageMeta = "";
     $pageDescription = "";
-    $thisPage = "Program & Project Management Services";
+    $thisPage = "Infrastructure Management Services";
 
     include($folderPath . "Components/header.php");
 ?>
@@ -31,12 +31,12 @@
     <div class="container updated mob8">
         <div class="six columns right40 hero-intro">
             <h1 class="top40 font30">
-                Program & Project Management
+                Infrastructure Management
             </h1>
             <p class="top40 font20">
-                Our Program & Project Management services ensure structured execution and high-quality delivery across
-                your initiatives. From project planning and risk management to benefits tracking and quality assurance,
-                we provide end-to-end governance that keeps your projects aligned with business goals, budgets, and timelines.
+                Our Infrastructure Management services ensure a robust, scalable, and secure foundation for your 
+                enterprise systems. From readiness assessments to disaster recovery, we manage end-to-end infrastructure 
+                needs — enabling operational continuity, faster deployment, and long-term performance.
             </p>
             <div class="cta-buttons top40 bot10">
                 <a class="button border secondary-btn" href="<?php echo $folderPath; ?>Contact-Us" target="_self">
@@ -47,7 +47,7 @@
 
         <div class="six columns top10 pad-mob80-top">
             <div class="main-button-products-heading rocket-lazyload">
-                <img src="<?php echo $folderPath ?>assets/images/background/PPM.jpg" alt="<?php echo $coName ?>">
+                <img src="<?php echo $folderPath ?>assets/images/background/Infrastructure-Management.jpg" alt="<?php echo $coName ?>">
             </div>
         </div>
     </div>
@@ -59,7 +59,7 @@
         <div class="row">
             <div class="eight columns right40">
                 <h3 class="h2">
-                    Program & Project Management — Driving Structured Execution
+                    Infrastructure Management — Enabling Scalable and Secure Operations
                 </h3>
             </div>
             <div class="four columns"></div>
@@ -70,32 +70,38 @@
     <div class="container product-key-capability-flex padtb padlr">
         <div class="item box-shadow">
             <div class="info">
-                <h3>Project Planning and Tracking</h3>
-                <p>Structured plans and real-time tracking to ensure projects stay on schedule and within scope.</p>
+                <h3>Environment Management</h3>
+                <p>Provisioning and maintaining stable, isolated environments for development, testing, and production.</p>
             </div>
         </div>
         <div class="item box-shadow">
             <div class="info">
-                <h3>Issue and Risk Management</h3>
-                <p>Proactive identification, analysis, and mitigation of project risks and issues.</p>
+                <h3>Readiness Assessment</h3>
+                <p>Evaluating infrastructure preparedness to ensure seamless project execution and go-live success.</p>
             </div>
         </div>
         <div class="item box-shadow">
             <div class="info">
-                <h3>Commercials Management</h3>
-                <p>Robust governance of project costs, contracts, and financial KPIs to drive accountability.</p>
+                <h3>Infrastructure Build</h3>
+                <p>Designing, provisioning, and configuring the hardware and software components required for scalable systems.</p>
             </div>
         </div>
         <div class="item box-shadow">
             <div class="info">
-                <h3>Business Case & Benefits Tracking</h3>
-                <p>Ensuring measurable outcomes and return on investment through continuous benefit monitoring.</p>
+                <h3>Disaster Recovery</h3>
+                <p>Implementing failover strategies and recovery processes to ensure business continuity under any circumstances.</p>
             </div>
         </div>
         <div class="item box-shadow">
             <div class="info">
-                <h3>Quality Management</h3>
-                <p>Maintaining high standards and consistent delivery through rigorous quality assurance practices.</p>
+                <h3>Instance Management</h3>
+                <p>Controlling and maintaining multiple instances across environments to support performance and security needs.</p>
+            </div>
+        </div>
+        <div class="item box-shadow">
+            <div class="info">
+                <h3>Service Introduction</h3>
+                <p>Seamless transition of new or updated services into production with minimal disruption to users.</p>
             </div>
         </div>
     </div>

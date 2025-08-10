@@ -586,11 +586,11 @@ if ($serviceMode == "5") {
         <div class="col-xs">
             <div class="row-2025-special">
                 <a data-bg="<?php echo $folderPath ?>assets/uploads/2025/04/Teal-1.png"
-                    href="<?php echo $folderPath ?>services/managed-services" target="_blank"
+                    href="<?php echo $folderPath ?>Services/Managed-Services" target="_blank"
                     class="col-xs p-24 custom-bg three-cta-hover hp-ctas nav_dropdown_feature_content light-text-cta rocket-lazyload"
                     style="text-align: left; background-repeat: no-repeat; background-position: center; background-size: cover; display: flex; flex-direction: column;">
                     <p class="pb-16"> Managed Services for Global Enterprises</p>
-                    <span class="learn-more-home uppercase" href="<?php echo $folderPath ?>services/managed-services"
+                    <span class="learn-more-home uppercase" href="<?php echo $folderPath ?>Services/Managed-Services"
                         target="_blank">
                         <span class="icon2"></span>Explore Our Managed Services</span>
                 </a>
@@ -600,11 +600,11 @@ if ($serviceMode == "5") {
         <div class="col-xs">
             <div class="row-2025-special">
                 <a data-bg="<?php echo $folderPath ?>assets/uploads/2025/04/Yellow.png"
-                    href="<?php echo $folderPath ?>solutions/data-and-analytics" target="_self"
+                    href="<?php echo $folderPath ?>Solutions/Data-Analytics" target="_self"
                     class="col-xs p-24 custom-bg three-cta-hover hp-ctas nav_dropdown_feature_content dark-text-cta rocket-lazyload"
                     style="text-align: left; background-repeat: no-repeat; background-position: center; background-size: cover; display: flex; flex-direction: column;">
                     <p class="pb-16"> Driving Insights with Data & Analytics</p>
-                    <span class="learn-more-home-dark uppercase" href="<?php echo $folderPath ?>solutions/data-and-analytics"
+                    <span class="learn-more-home-dark uppercase" href="<?php echo $folderPath ?>Solutions/Data-Analytics"
                         target="_self">
                         <span class="icon2"></span>Discover Our DNA Solutions</span>
                 </a>
@@ -614,11 +614,11 @@ if ($serviceMode == "5") {
         <div class="col-xs">
             <div class="row-2025-special">
                 <a data-bg="<?php echo $folderPath ?>assets/uploads/2025/04/Teal-2.png"
-                    href="<?php echo $folderPath ?>about-resurgent" target="_blank"
+                    href="<?php echo $folderPath ?>About-Us" target="_blank"
                     class="col-xs p-24 custom-bg three-cta-hover hp-ctas nav_dropdown_feature_content light-text-cta rocket-lazyload"
                     style="text-align: left; background-repeat: no-repeat; background-position: center; background-size: cover; display: flex; flex-direction: column;">
                     <p class="pb-16">Big4 Expertise, Start-up Agility</p>
-                    <span class="learn-more-home uppercase" href="<?php echo $folderPath ?>about-resurgent"
+                    <span class="learn-more-home uppercase" href="<?php echo $folderPath ?>About-Us"
                         target="_blank">
                         <span class="icon2"></span>Read Our Company Story</span>
                 </a>
