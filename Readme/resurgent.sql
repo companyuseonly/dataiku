@@ -158,7 +158,7 @@ INSERT INTO `testimonials_rmm` (`ID`, `Company_Logo_URL`, `Testimonial_Quote`, `
 --
 -- Indexes for dumped tables
 --
-
+ 
 --
 -- Indexes for table `banners_rmm`
 --
