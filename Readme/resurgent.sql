@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 10, 2025 at 04:47 PM
+-- Generation Time: Aug 11, 2025 at 01:00 PM
 -- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- PHP Version: 8.1.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `banners_rmm`
+-- TABLE STRUCTURE FOR TABLE `BANNERS_RMM`
 --
 
-CREATE TABLE `banners_rmm` (
+CREATE TABLE `BANNERS_RMM` (
   `ID` int(11) NOT NULL,
   `Name` varchar(300) NOT NULL,
   `SubTitle` varchar(500) NOT NULL,
@@ -44,10 +44,10 @@ CREATE TABLE `banners_rmm` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `banners_rmm`
+-- Dumping data for table `BANNERS_RMM`
 --
 
-INSERT INTO `banners_rmm` (`ID`, `Name`, `SubTitle`, `Link`, `Link_Text`, `Detail_Image_URL`, `Display_Order`, `Status`, `IsDelete`, `Created_By`, `Created_On`, `Modified_By`, `Modified_On`) VALUES
+INSERT INTO `BANNERS_RMM` (`ID`, `Name`, `SubTitle`, `Link`, `Link_Text`, `Detail_Image_URL`, `Display_Order`, `Status`, `IsDelete`, `Created_By`, `Created_On`, `Modified_By`, `Modified_On`) VALUES
 (1, 'Enterprise Application - ERP', 'Oracle complete cloud suite of SaaS applications brings consistent processes and a single source of truth across important business functions-from', 'Solutions/ERP/', 'Explore Now', 'assets/images/background/25644130_7076235.jpg', 1, 'Active', NULL, 1, '2025-08-08 17:06:42', 1, '2025-08-08 17:06:42'),
 (2, 'Digital Transformation', 'Helping enterprises navigate the world of digital disruption in business models, products, services and experiences with ease.', 'Solutions/Digital-Transformation/', 'Learn More', 'assets/images/background/2150010125.jpg', 2, 'Active', NULL, 1, '2025-08-08 17:06:42', 1, '2025-08-08 17:06:42'),
 (3, 'Technology Delivery', 'Industry Best Practices Delivery, Existing Process and System Rationalization, Solution Governance, Adherence to Approach.', 'Solutions/Technology-Delivery/', 'Get Started', 'assets/images/background/6864937_23324.jpg', 3, 'Active', NULL, 1, '2025-08-08 17:06:42', 1, '2025-08-08 17:06:42');
@@ -55,10 +55,10 @@ INSERT INTO `banners_rmm` (`ID`, `Name`, `SubTitle`, `Link`, `Link_Text`, `Detai
 -- --------------------------------------------------------
 
 --
--- Table structure for table `clients_rmm`
+-- TABLE STRUCTURE FOR TABLE `CLIENTS_RMM`
 --
 
-CREATE TABLE `clients_rmm` (
+CREATE TABLE `CLIENTS_RMM` (
   `ID` int(11) NOT NULL,
   `Client_Image_URL` varchar(255) NOT NULL,
   `Group_ID` int(11) NOT NULL DEFAULT 1,
@@ -71,10 +71,10 @@ CREATE TABLE `clients_rmm` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `clients_rmm`
+-- Dumping data for table `CLIENTS_RMM`
 --
 
-INSERT INTO `clients_rmm` (`ID`, `Client_Image_URL`, `Group_ID`, `Display_Order`, `Is_Active`, `Created_By`, `Created_On`, `Modified_By`, `Modified_On`) VALUES
+INSERT INTO `CLIENTS_RMM` (`ID`, `Client_Image_URL`, `Group_ID`, `Display_Order`, `Is_Active`, `Created_By`, `Created_On`, `Modified_By`, `Modified_On`) VALUES
 (0, 'assets/images/Clients/1.png', 1, 1, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
 (0, 'assets/images/Clients/2.png', 1, 2, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
 (0, 'assets/images/Clients/3.png', 1, 3, 1, 'system', '2025-08-09 14:08:36', NULL, '2025-08-09 14:08:36'),
@@ -128,15 +128,34 @@ INSERT INTO `clients_rmm` (`ID`, `Client_Image_URL`, `Group_ID`, `Display_Order`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `testimonials_rmm`
+-- TABLE STRUCTURE FOR TABLE `CONTACT_DETAILS_RMM`
 --
 
-CREATE TABLE `testimonials_rmm` (
+CREATE TABLE `CONTACT_DETAILS_RMM` (
+  `ID` int(11) NOT NULL,
+  `Name` varchar(100) NOT NULL,
+  `Email` varchar(150) NOT NULL,
+  `Mobile_Number` varchar(20) DEFAULT NULL,
+  `Subject` varchar(200) NOT NULL,
+  `Description` text NOT NULL,
+  `IsDelete` tinyint(1) NOT NULL DEFAULT 0 COMMENT '0 = Active, 1 = Deleted',
+  `Created_By` varchar(100) DEFAULT 'Website Form',
+  `Created_On` datetime NOT NULL DEFAULT current_timestamp(),
+  `Modified_By` varchar(100) DEFAULT NULL,
+  `Modified_On` datetime DEFAULT NULL ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- TABLE STRUCTURE FOR TABLE `TESTIMONIALS_RMM`
+--
+
+CREATE TABLE `TESTIMONIALS_RMM` (
   `ID` int(11) NOT NULL,
   `Company_Logo_URL` varchar(255) NOT NULL,
   `Testimonial_Quote` text NOT NULL,
-  `Author_Name` varchar(255) NOT NULL,
-  `Author_Position` varchar(255) DEFAULT NULL,
+  `Company_Name` varchar(255) DEFAULT NULL,
   `Display_Order` int(11) DEFAULT 0,
   `Is_Active` tinyint(1) DEFAULT 1,
   `Created_By` varchar(100) DEFAULT NULL,
@@ -146,23 +165,35 @@ CREATE TABLE `testimonials_rmm` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `testimonials_rmm`
+-- Dumping data for table `TESTIMONIALS_RMM`
 --
 
-INSERT INTO `testimonials_rmm` (`ID`, `Company_Logo_URL`, `Testimonial_Quote`, `Author_Name`, `Author_Position`, `Display_Order`, `Is_Active`, `Created_By`, `Created_On`, `Modified_By`, `Modified_On`) VALUES
-(1, 'assets/uploads/2024/02/1200px-Oshkosh_Corporation_logo.svg.png', 'Dataiku is a full solution, helping us build a purpose-driven data practice in the modern era.', 'Dr. Michael Schuh, Chief Data Scientist', 'Chief Data Scientist, Oshkosh Engineering', 1, 1, 'admin', '2025-08-08 17:38:12', NULL, '2025-08-08 17:38:12'),
-(2, 'assets/uploads/2023/11/novartis-logo-transparent.png.webp', 'Dataiku\'s user-friendly interface democratized data access, enabling a data-driven culture that permeated throughout the organization. Moreover, the platform\'s transparency elevated risk management and governance, ensuring that decisions were grounded in accurate and trustworthy information.', 'Novartis, on using Dataiku for their automated commercial analytics use case', '', 2, 1, 'admin', '2025-08-08 17:38:12', NULL, '2025-08-08 17:38:12'),
-(3, 'assets/uploads/2022/05/450x-NEW-gartner-peer-insights-logo-may-2022.png', 'Dataiku is a platform that accelerates the democratization of data.', 'Digital Culture Manager in the energy and utilities industry', '(Jan. 25, 2024)', 3, 1, 'admin', '2025-08-08 17:38:12', NULL, '2025-08-08 17:38:12'),
-(4, 'assets/uploads/2022/05/450x-NEW-gartner-peer-insights-logo-may-2022.png', 'Overall, as a machine learning platform, Dataiku is easy enough to use that it can be utilized by citizen developers, but robust and customizable enough that you can accomplish whatever you need to on the platform.', 'Data scientist in the transportation industry', '(Jan. 24, 2024)', 4, 1, 'admin', '2025-08-08 17:38:12', NULL, '2025-08-08 17:38:12');
+INSERT INTO `TESTIMONIALS_RMM` (`ID`, `Company_Logo_URL`, `Testimonial_Quote`, `Company_Name`, `Display_Order`, `Is_Active`, `Created_By`, `Created_On`, `Modified_By`, `Modified_On`) VALUES
+(1, 'assets/images/Clients/43.png', 'Resurgent’s Managed Services team has transformed the way we operate. From program and project management to business engagement, their proactive approach has brought measurable results and operational efficiency.', 'Head of IT, OBCB Bank', 1, 1, 'admin', '2025-08-11 11:58:41', NULL, '2025-08-11 11:58:41'),
+(2, 'assets/images/Clients/5.png', 'With Resurgent’s Technology Delivery and Infrastructure Management expertise, we achieved a seamless digital transformation. Their structured methodology ensured zero downtime and maximum impact.', 'Director of Operations, Singtel', 2, 1, 'admin', '2025-08-11 11:58:41', NULL, '2025-08-11 11:58:41'),
+(3, 'assets/images/Clients/1.png', 'Resurgent’s Data and Analytics (DNA) solutions empowered our teams with real-time insights, driving smarter decisions across the enterprise. Their ERP and EPM implementations are truly world-class.', 'VP of Technology, Citibank', 3, 1, 'admin', '2025-08-11 11:58:41', NULL, '2025-08-11 11:58:41'),
+(4, 'assets/images/Clients/40.png', 'From business engagement to digital transformation, Resurgent delivers with precision and professionalism. Their commitment to innovation and client success is unmatched.', 'CIO, Mammut', 4, 1, 'admin', '2025-08-11 11:58:41', NULL, '2025-08-11 11:58:41');
 
 --
 -- Indexes for dumped tables
 --
- 
+
 --
--- Indexes for table `banners_rmm`
+-- Indexes for table `BANNERS_RMM`
 --
-ALTER TABLE `banners_rmm`
+ALTER TABLE `BANNERS_RMM`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indexes for table `CONTACT_DETAILS_RMM`
+--
+ALTER TABLE `CONTACT_DETAILS_RMM`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indexes for table `TESTIMONIALS_RMM`
+--
+ALTER TABLE `TESTIMONIALS_RMM`
   ADD PRIMARY KEY (`ID`);
 
 --
@@ -170,10 +201,22 @@ ALTER TABLE `banners_rmm`
 --
 
 --
--- AUTO_INCREMENT for table `banners_rmm`
+-- AUTO_INCREMENT for table `BANNERS_RMM`
 --
-ALTER TABLE `banners_rmm`
+ALTER TABLE `BANNERS_RMM`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `CONTACT_DETAILS_RMM`
+--
+ALTER TABLE `CONTACT_DETAILS_RMM`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `TESTIMONIALS_RMM`
+--
+ALTER TABLE `TESTIMONIALS_RMM`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

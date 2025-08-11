@@ -5109,3 +5109,21 @@ element.style {
 .career-page .video-block>div {
 	padding-top: 30% !important;
 }
+
+.form-status {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    display: none;
+    font-weight: 500;
+}
+.form-status.success {
+    background-color: #e6ffed;
+    color: #1a7f37;
+    border: 1px solid #1a7f37;
+}
+.form-status.error {
+    background-color: #ffe6e6;
+    color: #b30000;
+    border: 1px solid #b30000;
+}

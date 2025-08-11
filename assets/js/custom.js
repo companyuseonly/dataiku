@@ -361,3 +361,30 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("contactForm");
+
+    form.onsubmit = function(e) {
+        e.preventDefault(); // stop normal submit
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+            method: "POST",
+            body: formData
+        })
+        .then(res => res.text())
+        .then(message => {
+            alert(message); // show message
+
+            if (message.toLowerCase().includes("thank you")) {
+                form.reset();
+                window.location.href = "../../Contact-Us/"; // redirect after success
+            }
+        })
+        .catch(() => {
+            alert("Something went wrong. Please try again later.");
+        });
+
+        return false;
+    };
+});

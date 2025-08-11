@@ -5,6 +5,11 @@
     $pageDescription = "";
     $thisPage = "Contact Us";
     
+    if (!empty($_SESSION['form_status'])) {
+        echo "<div style='padding:10px; background:#f0f0f0; margin-bottom:15px;'>" . htmlspecialchars($_SESSION['form_status']) . "</div>";
+        unset($_SESSION['form_status']);
+    }
+    
     include($folderPath . "Components/header.php");
 ?>
 
@@ -83,7 +88,7 @@
     <!-- Contact Form -->
     <div class="contact-form-section">
         <h3>Get In Touch</h3>
-        <form id="contactForm" class="contact-form" action="#" method="POST">
+        <form id="contactForm" class="contact-form" action="<?php echo $folderPath ?>assets/php/contact.php" method="POST">
             <div class="form-row">
                 <div class="form-group">
                     <label for="name">Name *</label>
@@ -108,18 +113,15 @@
 
             <div class="form-group full-width">
                 <label for="message">Message *</label>
-                <textarea id="message" name="message" rows="6" required placeholder="What Services you want?"></textarea>
+                <textarea id="message" name="message" rows="6" required placeholder="What services do you want?"></textarea>
             </div>
 
             <button type="submit" class="submit-button">
                 <span class="button-text">Send Message</span>
-                <span class="button-loader" style="display: none;">Sending...</span>
             </button>
         </form>
-
-        <div id="form-status" class="form-status"></div>
     </div>
-
+    
     <!-- Contact Information -->
     <div class="contact-info-section">
         <div class="contact-details">
