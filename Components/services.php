@@ -1,9 +1,9 @@
 <?php
-if (!isset($serviceMode)) {
-    $serviceMode = "1";
-}
-
-if ($serviceMode == "1") {
+    if (!isset($serviceMode)) {
+        $serviceMode = "1";
+    }
+    
+    if ($serviceMode == "1") {
 ?>
 
     <div class="center-xs container-2025 mr-auto ml-auto mt-56" style="clear:both;">
@@ -36,8 +36,8 @@ if ($serviceMode == "1") {
                                     <div class="hide-moving-image">
                                         <img
                                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                                            alt="" data-lazy-src="<?php echo $folderPath ?>assets/uploads/2025/04/Data-Prep.png" /><noscript><img
-                                                src="<?php echo $folderPath ?>assets/uploads/2025/04/Data-Prep.png" alt="" /></noscript>
+                                            alt="<?php echo $coName ?>" data-lazy-src="<?php echo $folderPath ?>assets/images/background/Data.jpg" /><noscript><img
+                                                src="<?php echo $folderPath ?>assets/images/background/Data.jpg" alt="<?php echo $coName ?>" /></noscript>
                                     </div>
                                 </div>
                             </div>
@@ -64,8 +64,8 @@ if ($serviceMode == "1") {
                                     <div class="hide-moving-image">
                                         <img
                                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                                            alt="" data-lazy-src="<?php echo $folderPath ?>assets/uploads/2025/04/Data-Prep.png" /><noscript><img
-                                                src="<?php echo $folderPath ?>assets/uploads/2025/04/Data-Prep.png" alt="" /></noscript>
+                                            alt="<?php echo $coName ?>" data-lazy-src="<?php echo $folderPath ?>assets/images/background/erp.jpg" /><noscript><img
+                                                src="<?php echo $folderPath ?>assets/images/background/erp.jpg" alt="<?php echo $coName ?>" /></noscript>
                                     </div>
                                 </div>
                             </div>
@@ -92,8 +92,8 @@ if ($serviceMode == "1") {
                                     <div class="hide-moving-image">
                                         <img
                                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                                            alt="" data-lazy-src="<?php echo $folderPath ?>assets/uploads/2025/04/Data-Prep.png" /><noscript><img
-                                                src="<?php echo $folderPath ?>assets/uploads/2025/04/Data-Prep.png" alt="" /></noscript>
+                                            alt="<?php echo $coName ?>" data-lazy-src="<?php echo $folderPath ?>assets/images/background/epm.jpg" /><noscript><img
+                                                src="<?php echo $folderPath ?>assets/images/background/epm.jpg" alt="<?php echo $coName ?>" /></noscript>
                                     </div>
                                 </div>
                             </div>
@@ -120,8 +120,8 @@ if ($serviceMode == "1") {
                                     <div class="hide-moving-image">
                                         <img
                                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                                            alt="" data-lazy-src="<?php echo $folderPath ?>assets/uploads/2025/04/Data-Prep.png" /><noscript><img
-                                                src="<?php echo $folderPath ?>assets/uploads/2025/04/Data-Prep.png" alt="" /></noscript>
+                                            alt="<?php echo $coName ?>" data-lazy-src="<?php echo $folderPath ?>assets/images/background/digitaltrasform.jpg" /><noscript><img
+                                                src="<?php echo $folderPath ?>assets/images/background/digitaltrasform.jpg" alt="<?php echo $coName ?>" /></noscript>
                                     </div>
                                 </div>
                             </div>
@@ -147,8 +147,8 @@ if ($serviceMode == "1") {
                 <div class="col-xs-6 p-40 ml-auto mr-auto middle-xs pr-64">
                     <img
                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                        alt="" data-lazy-src="<?php echo $folderPath ?>assets/uploads/2025/04/GEN-AI-9.png" /><noscript><img
-                            src="<?php echo $folderPath ?>assets/uploads/2025/04/GEN-AI-9.png" alt="" /></noscript>
+                        alt="" data-lazy-src="<?php echo $folderPath ?>assets/images/background/Data.jpg" /><noscript><img
+                            src="<?php echo $folderPath ?>assets/images/background/Data.jpg" alt="<?php echo $coName ?>" /></noscript>
                 </div>
             </div>
 
@@ -164,8 +164,8 @@ if ($serviceMode == "1") {
                 <div class="col-xs-6 p-40 ml-auto mr-auto middle-xs">
                     <img
                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                        alt="" data-lazy-src="<?php echo $folderPath ?>assets/uploads/2025/04/ML.png" /><noscript><img
-                            src="<?php echo $folderPath ?>assets/uploads/2025/04/ML.png" alt="" /></noscript>
+                        alt="" data-lazy-src="<?php echo $folderPath ?>assets/images/background/erp.jpg" /><noscript><img
+                            src="<?php echo $folderPath ?>assets/images/background/erp.jpg" alt="<?php echo $coName ?>" /></noscript>
                 </div>
             </div>
             <div class="row-2025 start-xs middle-xs">
@@ -180,8 +180,8 @@ if ($serviceMode == "1") {
                 <div class="col-xs-6 p-40 ml-auto mr-auto middle-xs">
                     <img
                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                        alt="" data-lazy-src="<?php echo $folderPath ?>assets/uploads/2025/04/Analytics-Insights.png" /><noscript><img
-                            src="<?php echo $folderPath ?>assets/uploads/2025/04/Analytics-Insights.png" alt="" /></noscript>
+                        alt="" data-lazy-src="<?php echo $folderPath ?>assets/images/background/epm.jpg" /><noscript><img
+                            src="<?php echo $folderPath ?>assets/images/background/epm.jpg" alt="<?php echo $coName ?>" /></noscript>
                 </div>
             </div>
             <div class="row-2025 start-xs middle-xs">
@@ -197,8 +197,8 @@ if ($serviceMode == "1") {
                 <div class="col-xs-6 p-40 ml-auto mr-auto middle-xs">
                     <img
                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                        alt="" data-lazy-src="<?php echo $folderPath ?>assets/uploads/2025/04/Data-Prep.png" /><noscript><img
-                            src="<?php echo $folderPath ?>assets/uploads/2025/04/Data-Prep.png" alt="" /></noscript>
+                        alt="" data-lazy-src="<?php echo $folderPath ?>assets/images/background/digitaltrasform.jpg" /><noscript><img
+                            src="<?php echo $folderPath ?>assets/images/background/digitaltrasform.jpg" alt="<?php echo $coName ?>" /></noscript>
                 </div>
             </div>
 
@@ -206,8 +206,8 @@ if ($serviceMode == "1") {
     </div>
 
 <?php
-}
-if ($serviceMode == "2") {
+    }
+    if ($serviceMode == "2") {
 ?>
 
     <div class="center-xs container-2025-short mr-auto ml-auto pr-0 pl-0 mobie-mt48">
@@ -306,8 +306,8 @@ if ($serviceMode == "2") {
     </div>
 
 <?php
-}
-if ($serviceMode == "3") {
+    }
+    if ($serviceMode == "3") {
 ?>
 
     <div class="center-xs container-2025 mr-auto ml-auto mt-104" style="clear:both;">
@@ -331,8 +331,8 @@ if ($serviceMode == "3") {
                                     <div class="hide">
                                         <img
                                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                                            alt="" data-lazy-src="<?php echo $folderPath ?>assets/uploads/2025/04/AI-Governance-5.png" /><noscript><img
-                                                src="<?php echo $folderPath ?>assets/uploads/2025/04/AI-Governance-5.png" alt="" /></noscript>
+                                            alt="<?php echo $coName ?>" data-lazy-src="<?php echo $folderPath ?>assets/images/background/2148773975.jpg" /><noscript><img
+                                                src="<?php echo $folderPath ?>assets/images/background/2148773975.jpg" alt="<?php echo $coName ?>" /></noscript>
                                     </div>
                                 </div>
                             </div>
@@ -355,8 +355,8 @@ if ($serviceMode == "3") {
                                 <div class="col-xs-6 pt-80 pb-80 pr-64">
                                     <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                                        alt="" data-lazy-src="<?php echo $folderPath ?>assets/uploads/2025/04/AI-Governance-5.png" /><noscript><img
-                                            src="<?php echo $folderPath ?>assets/uploads/2025/04/AI-Governance-5.png" alt="" /></noscript>
+                                        alt="<?php echo $coName ?>" data-lazy-src="<?php echo $folderPath ?>assets/images/background/2148513832.jpg" /><noscript><img
+                                            src="<?php echo $folderPath ?>assets/images/background/2148513832.jpg" alt="<?php echo $coName ?>" /></noscript>
                                 </div>
                             </div>
                         </div>
@@ -377,8 +377,8 @@ if ($serviceMode == "3") {
                                 <div class="col-xs-6 pt-80 pb-80 pr-64">
                                     <img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                                        alt="" data-lazy-src="<?php echo $folderPath ?>assets/uploads/2025/04/AI-Governance-5.png" /><noscript><img
-                                            src="<?php echo $folderPath ?>assets/uploads/2025/04/AI-Governance-5.png" alt="" /></noscript>
+                                        alt="<?php echo $coName ?>" data-lazy-src="<?php echo $folderPath ?>assets/images/background/2149595847.jpg" /><noscript><img
+                                            src="<?php echo $folderPath ?>assets/images/background/2149595847.jpg" alt="<?php echo $coName ?>" /></noscript>
                                 </div>
                             </div>
                         </div>
@@ -402,8 +402,8 @@ if ($serviceMode == "3") {
                 <div class="col-xs-6 p-40 ml-auto mr-auto middle-xs">
                     <img
                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                        alt="" data-lazy-src="<?php echo $folderPath ?>assets/uploads/2025/04/AI-Governance-5.png" /><noscript><img
-                            src="<?php echo $folderPath ?>assets/uploads/2025/04/AI-Governance-5.png" alt="" /></noscript>
+                        alt="<?php echo $coName ?>" data-lazy-src="<?php echo $folderPath ?>assets/images/background/2148773975.jpg" /><noscript><img
+                            src="<?php echo $folderPath ?>assets/images/background/2148773975.jpg" alt="<?php echo $coName ?>" /></noscript>
                 </div>
             </div>
             <div class="row-2025 start-xs middle-xs">
@@ -417,8 +417,8 @@ if ($serviceMode == "3") {
                 <div class="col-xs-6 p-40 ml-auto mr-auto middle-xs">
                     <img
                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                        alt="" data-lazy-src="<?php echo $folderPath ?>assets/uploads/2025/04/XOps.png" /><noscript><img
-                            src="<?php echo $folderPath ?>assets/uploads/2025/04/XOps.png" alt="" /></noscript>
+                        alt="<?php echo $coName ?>" data-lazy-src="<?php echo $folderPath ?>assets/images/background/2148513832.jpg" /><noscript><img
+                            src="<?php echo $folderPath ?>assets/images/background/2148513832.jpg" alt="<?php echo $coName ?>" /></noscript>
                 </div>
             </div>
 
@@ -434,19 +434,16 @@ if ($serviceMode == "3") {
                 <div class="col-xs-6 p-40 ml-auto mr-auto middle-xs">
                     <img
                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                        alt="" data-lazy-src="<?php echo $folderPath ?>assets/uploads/2025/04/Ecosystem.png" /><noscript><img
-                            src="<?php echo $folderPath ?>assets/uploads/2025/04/Ecosystem.png" alt="" /></noscript>
+                        alt="<?php echo $coName ?>" data-lazy-src="<?php echo $folderPath ?>assets/images/background/2149595847.jpg" /><noscript><img
+                            src="<?php echo $folderPath ?>assets/images/background/2149595847.jpg" alt="<?php echo $coName ?>" /></noscript>
                 </div>
             </div>
-
-
-
         </div>
     </div>
 
 <?php
-}
-if ($serviceMode == "4") {
+    }
+    if ($serviceMode == "4") {
 ?>
 
     <div class="container-fullwidth background-gray padlr">
@@ -578,14 +575,15 @@ if ($serviceMode == "4") {
     </div>
 
 <?php
-}
-if ($serviceMode == "5") {
+    }
+    if ($serviceMode == "5") {
 ?>
+
 <div class="center-xs container-2025 mr-auto ml-auto mt-48 mb-24 pb-24">
     <div class="row-2025-special">
         <div class="col-xs">
             <div class="row-2025-special">
-                <a data-bg="<?php echo $folderPath ?>assets/uploads/2025/04/Teal-1.png"
+                <a data-bg="<?php echo $folderPath ?>assets/images/background/Teal-1.png"
                     href="<?php echo $folderPath ?>Services/Managed-Services" target="_blank"
                     class="col-xs p-24 custom-bg three-cta-hover hp-ctas nav_dropdown_feature_content light-text-cta rocket-lazyload"
                     style="text-align: left; background-repeat: no-repeat; background-position: center; background-size: cover; display: flex; flex-direction: column;">
@@ -599,7 +597,7 @@ if ($serviceMode == "5") {
 
         <div class="col-xs">
             <div class="row-2025-special">
-                <a data-bg="<?php echo $folderPath ?>assets/uploads/2025/04/Yellow.png"
+                <a data-bg="<?php echo $folderPath ?>assets/images/background/Yellow.png"
                     href="<?php echo $folderPath ?>Solutions/Data-Analytics" target="_self"
                     class="col-xs p-24 custom-bg three-cta-hover hp-ctas nav_dropdown_feature_content dark-text-cta rocket-lazyload"
                     style="text-align: left; background-repeat: no-repeat; background-position: center; background-size: cover; display: flex; flex-direction: column;">
@@ -613,7 +611,7 @@ if ($serviceMode == "5") {
 
         <div class="col-xs">
             <div class="row-2025-special">
-                <a data-bg="<?php echo $folderPath ?>assets/uploads/2025/04/Teal-2.png"
+                <a data-bg="<?php echo $folderPath ?>assets/images/background/Teal-2.png"
                     href="<?php echo $folderPath ?>About-Us" target="_blank"
                     class="col-xs p-24 custom-bg three-cta-hover hp-ctas nav_dropdown_feature_content light-text-cta rocket-lazyload"
                     style="text-align: left; background-repeat: no-repeat; background-position: center; background-size: cover; display: flex; flex-direction: column;">

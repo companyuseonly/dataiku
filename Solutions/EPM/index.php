@@ -48,7 +48,7 @@
         <!-- Right Content: Image -->
         <div class="six columns top10 pad-mob80-top">
             <div class="main-button-products-heading rocket-lazyload">
-                <img src="<?php echo $folderPath ?>assets/images/background/epm-suite.jpg" alt="EPM Solutions">
+                <img src="<?php echo $folderPath ?>assets/images/background/epm.jpg" alt="EPM Solutions">
             </div>
         </div>
     </div>
@@ -114,7 +114,7 @@
     <!-- EPM On-Premise -->
     <div class="solution-row row-2025 start-xs middle-xs mb-64">
         <div class="col-xs-12 col-md-6">
-            <img src="<?php echo $folderPath ?>assets/uploads/2025/04/EPM-OnPremise.png" alt="EPM On-Premise" class="solution-img" />
+            <img src="<?php echo $folderPath ?>assets/images/background/epm1.png" alt="EPM On-Premise" class="solution-img" />
         </div>
         <div class="col-xs-12 col-md-6 pl-64">
             <h4 class="pb-8">Oracle EPM/BI On-Premise</h4>
@@ -128,9 +128,6 @@
 
     <!-- EPM Cloud -->
     <div class="solution-row row-2025 start-xs middle-xs reverse-columns mb-64">
-        <div class="col-xs-12 col-md-6">
-            <img src="<?php echo $folderPath ?>assets/uploads/2025/04/EPM-Cloud.png" alt="EPM Cloud" class="solution-img" />
-        </div>
         <div class="col-xs-12 col-md-6 pl-64">
             <h4 class="pb-8">Oracle EPM/BI Cloud</h4>
             <p class="pb-16">
@@ -139,6 +136,9 @@
                 Tax Reporting Cloud (HTRCS), Enterprise Data Management Cloud (EDMC), Performance Reporting Cloud (EPRCS),
                 Cloud Data Management (DM), BI Cloud (BICS), and Identity Cloud (IDCS).
             </p>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <img src="<?php echo $folderPath ?>assets/images/background/epm2.png" alt="EPM Cloud" class="solution-img" />
         </div>
     </div>
 </div>

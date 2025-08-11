@@ -904,7 +904,43 @@ iframe {
         flex: 1 1 100%; /* 1 per row on mobile */
     }
 }
-
+        img:is([sizes="auto" i], [sizes^="auto," i]) {
+            contain-intrinsic-size: 3000px 1500px
+        }
 .products-holder .product-key-capability-flex {
     padding: 5%;
+}
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+.forrester-svg {
+    background-color: white !important;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.forrester-text {
+    padding: 4%;
+    margin: 0%;
+}
+
+.forrester-text h3,p {
+    color: black !important;
+    padding: 0%;
+}
+
+.statistic-item p {
+    color: white !important;
+}
+
+.breadcrumb-para , .hero-subtitle {
+    color: white !important;
 }

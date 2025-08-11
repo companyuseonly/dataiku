@@ -1,17 +1,17 @@
 <?php
-if (!isset($clientMode)) {
-    $clientMode = "1";
-}
-// Single query to fetch all active clients
-$clientQuery = "SELECT * FROM CLIENTS_RMM WHERE Is_Active = 1 ORDER BY Display_Order ASC";
-$clientResult = mysqli_query($con, $clientQuery);
+    if (!isset($clientMode)) {
+        $clientMode = "1";
+    }
+    // Single query to fetch all active clients
+    $clientQuery = "SELECT * FROM CLIENTS_RMM WHERE Is_Active = 1 ORDER BY Display_Order ASC";
+    $clientResult = mysqli_query($con, $clientQuery);
 
-$allClients = [];
-while ($client = mysqli_fetch_assoc($clientResult)) {
-    $allClients[] = $client; // For mobile slider
-}
+    $allClients = [];
+    while ($client = mysqli_fetch_assoc($clientResult)) {
+        $allClients[] = $client; // For mobile slider
+    }
 
-if ($clientMode == "1") {
+    if ($clientMode == "1") {
 ?>
 
     <div class="center-xs container-2025 mr-auto ml-auto hide-tab-mobile">
@@ -89,8 +89,9 @@ if ($clientMode == "1") {
         </div>
     </section>
 
-<?php }
-if ($clientMode == "2") {
+<?php
+    }
+    if ($clientMode == "2") {
 ?>
 
     <div class="center-xs container-2025 mr-auto ml-auto">

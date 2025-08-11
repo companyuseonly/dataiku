@@ -31,8 +31,8 @@
   </section>
 
 <?php
-}
-if ($hookMode == "2") {
+  }
+  if ($hookMode == "2") {
 ?>
 
   <section class="in-line-survey-section pad-mob48-top margin-top-80">
@@ -81,8 +81,8 @@ if ($hookMode == "2") {
   </section>
 
 <?php
-}
-if ($hookMode == "3") {
+  }
+  if ($hookMode == "3") {
 ?>
 
   <section class="footer-cta-section margin-top-80 has-animation">
@@ -106,8 +106,8 @@ if ($hookMode == "3") {
   </section>
 
 <?php
-}
-if ($hookMode == "4") {
+  }
+  if ($hookMode == "4") {
 ?>
 
   <section class="in-line-survey-section pad-mob48-top margin-top-80">

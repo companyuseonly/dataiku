@@ -106,11 +106,7 @@
 </div>
 <!-- wapper end -->
 
-<script type="text/javascript" id="rtrar.appLocal-js-extra">
-  /* <![CDATA[ */
-  var rtafr = { "rules": "" };
-  /* ]]> */
-</script>
+
 <script type="text/javascript" src="<?php echo $folderPath ?>assets/plugins/real-time-auto-find-and-replace/assets/js/rtafar.local2924.js?ver=1742220280" id="rtrar.appLocal-js"></script>
 <script type="text/javascript" src="<?php echo $folderPath ?>assets/cdn.jsdelivr.net/npm/%40fancyapps/ui%404.0/dist/fancybox.umd.js" id="fancybox4-js"></script>
 <!-- <script type="text/javascript" src="<?php echo $folderPath ?>assets/play.vidyard.com/embed/v4.js" id="play-vidyard-js"></script> -->

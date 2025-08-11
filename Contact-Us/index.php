@@ -47,7 +47,7 @@
     <div class="offices-container">
         <div class="office-card">
             <div class="map-wrapper">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1943.7661091657392!2d80.25305693229369!3d13.001743752907434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267f2aca8b179%3A0xb22a2199d9f12141!2sResurgent%20Enterprise%20Solutions%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1754732372010!5m2!1sen!2sin"
+                <iframe src="<?php echo $mapLocation1 ?>"
                     style="border:0;"
                     allowfullscreen=""
                     loading="lazy"
@@ -57,15 +57,14 @@
             <div class="office-info">
                 <h5>India</h5>
                 <address>
-                    <p>Resurgent Enterprise Solutions<br />
-                        Adyar, Chennai</p>
+                    <p><?php echo $mapAddress1 ?></p>
                 </address>
             </div>
         </div>
 
         <div class="office-card">
             <div class="map-wrapper">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115518.45629437211!2d55.11834749726562!3d25.204849299999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4287f20e86fb%3A0x9c806d4d2d07aed8!2sResurgent%20Enterprise%20Solutions%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1754732458401!5m2!1sen!2sin"
+                <iframe src="<?php echo $mapLocation2 ?>"
                     style="border:0;"
                     allowfullscreen=""
                     loading="lazy"
@@ -75,9 +74,7 @@
             <div class="office-info">
                 <h5>UAE</h5>
                 <address>
-                    <p>Resurgent Consulting Inc<br />
-                        Dubai Silicon Oasis<br />
-                        Dubai</p>
+                    <p><?php echo $mapAddress2 ?></p>
                 </address>
             </div>
         </div>

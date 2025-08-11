@@ -45,7 +45,7 @@
 
         <div class="six columns top10 pad-mob80-top">
             <div class="main-button-products-heading rocket-lazyload">
-                <img src="<?php echo $folderPath ?>assets/images/background/erp-suite.jpg" alt="<?php echo $coName ?>">
+                <img src="<?php echo $folderPath ?>assets/images/background/erp.jpg" alt="<?php echo $coName ?>">
             </div>
         </div>
     </div>
@@ -112,7 +112,7 @@
     <!-- START SOLUTION BLOCK -->
     <div class="solution-row row-2025 start-xs middle-xs mb-64">
         <div class="col-xs-12 col-md-6">
-            <img src="<?php echo $folderPath ?>assets/uploads/2025/04/Supply-Chain.png" alt="Supply Chain Management" class="solution-img" />
+            <img src="<?php echo $folderPath ?>assets/images/background/erp1.png" alt="Supply Chain Management" class="solution-img" />
         </div>
         <div class="col-xs-12 col-md-6 pl-64">
             <h4 class="pb-8">Supply Chain Management</h4>
@@ -125,9 +125,6 @@
 
     <!-- Alternate layout -->
     <div class="solution-row row-2025 start-xs middle-xs reverse-columns mb-64">
-        <div class="col-xs-12 col-md-6">
-            <img src="<?php echo $folderPath ?>assets/uploads/2025/04/Project-Portfolio.png" alt="Project Portfolio Management" class="solution-img" />
-        </div>
         <div class="col-xs-12 col-md-6 pl-64">
             <h4 class="pb-8">Project Portfolio Management</h4>
             <p class="pb-16">
@@ -135,11 +132,14 @@
                 Resource Management, Grants Management, Task Management, Mobile Task, Time and Progress.
             </p>
         </div>
+        <div class="col-xs-12 col-md-6">
+            <img src="<?php echo $folderPath ?>assets/images/background/erp2.png" alt="Project Portfolio Management" class="solution-img" />
+        </div>
     </div>
 
     <div class="solution-row row-2025 start-xs middle-xs mb-64">
         <div class="col-xs-12 col-md-6">
-            <img src="<?php echo $folderPath ?>assets/uploads/2025/04/HCM.png" alt="Human Capital Management" class="solution-img" />
+            <img src="<?php echo $folderPath ?>assets/images/background/erp3.png" alt="Human Capital Management" class="solution-img" />
         </div>
         <div class="col-xs-12 col-md-6 pl-64">
             <h4 class="pb-8">Human Capital Management</h4>
@@ -151,9 +151,6 @@
     </div>
 
     <div class="solution-row row-2025 start-xs middle-xs reverse-columns mb-64">
-        <div class="col-xs-12 col-md-6">
-            <img src="<?php echo $folderPath ?>assets/uploads/2025/04/Financials.png" alt="Financials" class="solution-img" />
-        </div>
         <div class="col-xs-12 col-md-6 pl-64">
             <h4 class="pb-8">Financials</h4>
             <p class="pb-16">
@@ -162,11 +159,14 @@
                 Joint Venture Management.
             </p>
          </div>
+        <div class="col-xs-12 col-md-6">
+            <img src="<?php echo $folderPath ?>assets/images/background/erp4.png" alt="Financials" class="solution-img" />
+        </div>
     </div>
 
     <div class="solution-row row-2025 start-xs middle-xs mb-64">
         <div class="col-xs-12 col-md-6">
-            <img src="<?php echo $folderPath ?>assets/uploads/2025/04/Procurement.png" alt="Procurement" class="solution-img" />
+            <img src="<?php echo $folderPath ?>assets/images/background/erp5.png" alt="Procurement" class="solution-img" />
         </div>
         <div class="col-xs-12 col-md-6 pl-64">
             <h4 class="pb-8">Procurement</h4>
@@ -178,9 +178,6 @@
     </div>
 
     <div class="solution-row row-2025 start-xs middle-xs reverse-columns mb-64">
-        <div class="col-xs-12 col-md-6">
-            <img src="<?php echo $folderPath ?>assets/uploads/2025/04/Risk-Management.png" alt="Risk Management" class="solution-img" />
-        </div>
         <div class="col-xs-12 col-md-6 pl-64">
             <h4 class="pb-8">Risk Management</h4>
             <p class="pb-16">
@@ -188,6 +185,9 @@
                 Payment/Fraud Controls, Config/Audit Controls, SOX Certifications, ERM Workflows.
             </p>
          </div>
+        <div class="col-xs-12 col-md-6">
+            <img src="<?php echo $folderPath ?>assets/images/background/erp6.png" alt="Risk Management" class="solution-img" />
+        </div>
     </div>
 </div>
 

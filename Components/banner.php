@@ -15,6 +15,7 @@
         <div class="hero-slider-wrapper" id="heroSliderWrapper">
             <?php
             $slideIndex = 0;
+           
             foreach ($slides as $row):
             ?>
                 <div class="hero-slide <?php echo $slideIndex === 0 ? 'active' : ''; ?>"

@@ -77,7 +77,7 @@
     <!-- Data and Analytics (DNA) -->
     <div class="product-key-capability">
         <div class="holder content pad-mob16-top">
-            <div data-bg="<?php echo $folderPath ?>assets/images/background/data-analytics.jpg" class="image bg-radius rocket-lazyload"></div>
+            <div data-bg="<?php echo $folderPath ?>assets/images/background/data.jpg" class="image bg-radius rocket-lazyload"></div>
             <div class="text box-shadow mob8 pad-mob16-bot">
                 <div class="info mob16 pad-mob16">
                     <h3>
@@ -134,7 +134,7 @@
     <!-- Digital Transformation -->
     <div class="product-key-capability">
         <div class="holder content pad-mob16-top">
-            <div data-bg="<?php echo $folderPath ?>assets/images/background/digital-transformation.jpg" class="image bg-radius rocket-lazyload"></div>
+            <div data-bg="<?php echo $folderPath ?>assets/images/background/digitaltrasform.jpg" class="image bg-radius rocket-lazyload"></div>
             <div class="text box-shadow mob8 pad-mob16-bot">
                 <div class="info mob16 pad-mob16">
                     <h3>

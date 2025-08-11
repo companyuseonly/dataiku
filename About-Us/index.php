@@ -28,7 +28,7 @@
             <h1 class="bot20">About <?php echo $coName ?></h1>
             <span>
                 <p class="bot10">
-                <p>Unlock the Power of Technology</p>
+                <p class="breadcrumb-para">Unlock the Power of Technology</p>
                 </p>
             </span>
 

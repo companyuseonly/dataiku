@@ -45,7 +45,7 @@
 
         <div class="six columns top10 pad-mob80-top">
             <div class="main-button-products-heading rocket-lazyload">
-                <img src="<?php echo $folderPath ?>assets/images/background/digital-transformation.jpg" alt="<?php echo $coName ?>">
+                <img src="<?php echo $folderPath ?>assets/images/background/digitaltrasform.jpg" alt="<?php echo $coName ?>">
             </div>
         </div>
     </div>

@@ -16,10 +16,10 @@
             <div class="row-2025 center-xs">
                 <div class="col-xs-10">
                     <h1 class="pb-16 pt-16 font-64 pt-24">
-                        Global Consulting Partner <br> Driving Business Growth
+                        <?php echo $introText ?>
                 </div>
             </div>
-            <p>RESURGENT combines Big Four expertise with start-up agility to deliver faster innovation, smarter operations, and scalable success. Our Global Delivery Model and Head Start Kits empower enterprises worldwide.</p>
+            <p> <?php echo $intropara ?></p>
 
             <div class="row-2025 center-xs mb-24 mt-40">
                 <div class="col-xs-6">
@@ -49,10 +49,7 @@
 <?php $serviceMode = "3"; include($folderPath . "Components/services.php"); ?>
 <?php $counterMode = "1"; include($folderPath . "Components/counter.php"); ?>
 <?php $testimonialMode = "1"; include($folderPath . "Components/testimonial.php"); ?>
-<?php
-// $blogMode = "1";
-// include($folderPath . "Components/blog.php");
- ?>
+<?php // $blogMode = "1"; include($folderPath . "Components/blog.php"); ?>
 <?php $hookMode = "1"; include($folderPath . "Components/hooks.php"); ?>
 
 <?php include($folderPath . "Components/footer.php"); ?>
