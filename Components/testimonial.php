@@ -32,11 +32,11 @@
                             </span>
                             <span style="width:110px; height:110px; display: inline-block; text-align:center;">
                                 <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                                     alt="<?php echo htmlspecialchars($testimonial['Author_Name']); ?>" 
+                                     alt="<?php echo htmlspecialchars($testimonial['Company_Name']); ?>" 
                                      data-lazy-src="<?php echo $folderPath . $testimonial['Company_Logo_URL']; ?>" />
                                 <noscript>
                                     <img src="<?php echo $folderPath . $testimonial['Company_Logo_URL']; ?>"
-                                         alt="<?php echo htmlspecialchars($testimonial['Author_Name']); ?>" />
+                                         alt="<?php echo htmlspecialchars($testimonial['Company_Name']); ?>" />
                                 </noscript>
                             </span>
                         </div>
@@ -44,10 +44,9 @@
                             <p class="slider-text-quote">
                                 <?php echo htmlspecialchars($testimonial['Testimonial_Quote']); ?>
                             </p>
-                            <p class="top15 quote-name-new"><?php echo htmlspecialchars($testimonial['Author_Name']); ?></p>
-                            <?php if (!empty($testimonial['Author_Position'])) { ?>
+                            <?php if (!empty($testimonial['Company_Name'])) { ?>
                                 <p class="top10 quote-name-position-new">
-                                    <?php echo htmlspecialchars($testimonial['Author_Position']); ?>
+                                    <?php echo htmlspecialchars($testimonial['Company_Name']); ?>
                                 </p>
                             <?php } ?>
                         </div>
