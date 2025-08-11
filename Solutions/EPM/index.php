@@ -138,7 +138,7 @@
             </p>
         </div>
         <div class="col-xs-12 col-md-6">
-            <img src="<?php echo $folderPath ?>assets/images/background/epm2.png" alt="EPM Cloud" class="solution-img" />
+            <img src="<?php echo $folderPath ?>assets/images/background/epm2.webp" alt="EPM Cloud" class="solution-img" />
         </div>
     </div>
 </div>

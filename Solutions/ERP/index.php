@@ -112,7 +112,7 @@
     <!-- START SOLUTION BLOCK -->
     <div class="solution-row row-2025 start-xs middle-xs mb-64">
         <div class="col-xs-12 col-md-6">
-            <img src="<?php echo $folderPath ?>assets/images/background/erp1.png" alt="Supply Chain Management" class="solution-img" />
+            <img src="<?php echo $folderPath ?>assets/images/background/erp1.webp" alt="Supply Chain Management" class="solution-img" />
         </div>
         <div class="col-xs-12 col-md-6 pl-64">
             <h4 class="pb-8">Supply Chain Management</h4>
@@ -139,7 +139,7 @@
 
     <div class="solution-row row-2025 start-xs middle-xs mb-64">
         <div class="col-xs-12 col-md-6">
-            <img src="<?php echo $folderPath ?>assets/images/background/erp3.png" alt="Human Capital Management" class="solution-img" />
+            <img src="<?php echo $folderPath ?>assets/images/background/erp3.webp" alt="Human Capital Management" class="solution-img" />
         </div>
         <div class="col-xs-12 col-md-6 pl-64">
             <h4 class="pb-8">Human Capital Management</h4>
@@ -160,13 +160,13 @@
             </p>
          </div>
         <div class="col-xs-12 col-md-6">
-            <img src="<?php echo $folderPath ?>assets/images/background/erp4.png" alt="Financials" class="solution-img" />
+            <img src="<?php echo $folderPath ?>assets/images/background/erp4.webp" alt="Financials" class="solution-img" />
         </div>
     </div>
 
     <div class="solution-row row-2025 start-xs middle-xs mb-64">
         <div class="col-xs-12 col-md-6">
-            <img src="<?php echo $folderPath ?>assets/images/background/erp5.png" alt="Procurement" class="solution-img" />
+            <img src="<?php echo $folderPath ?>assets/images/background/erp5.webp" alt="Procurement" class="solution-img" />
         </div>
         <div class="col-xs-12 col-md-6 pl-64">
             <h4 class="pb-8">Procurement</h4>
@@ -186,7 +186,7 @@
             </p>
          </div>
         <div class="col-xs-12 col-md-6">
-            <img src="<?php echo $folderPath ?>assets/images/background/erp6.png" alt="Risk Management" class="solution-img" />
+            <img src="<?php echo $folderPath ?>assets/images/background/erp6.webp" alt="Risk Management" class="solution-img" />
         </div>
     </div>
 </div>
