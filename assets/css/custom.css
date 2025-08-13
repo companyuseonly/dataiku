@@ -5134,7 +5134,7 @@ element.style {
 
 .blog-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 25px;
 }
 
@@ -5167,7 +5167,7 @@ element.style {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    background: #ff5722;
+    background: #008584;
     color: #fff;
     padding: 5px 12px;
     border-radius: 20px;
@@ -5184,15 +5184,13 @@ element.style {
 
 .blog-title {
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: 500;
     color: #333;
-    margin-bottom: 8px;
 }
 
 .blog-venue {
     font-size: 0.9rem;
     color: #666;
-    margin-bottom: 12px;
 }
 
 .blog-description {
@@ -5204,7 +5202,7 @@ element.style {
 .blog-btn {
     margin-top: 15px;
     display: inline-block;
-    background: #ff5722;
+    background: #008584;
     color: white;
     padding: 8px 18px;
     border-radius: 25px;
@@ -5215,5 +5213,192 @@ element.style {
 }
 
 .blog-btn:hover {
-    background: #e64a19;
+    background: #00b3b3;
+}
+
+@media screen and (max-width: 768px) {
+	.blog-section {
+    padding: 20px;
+}
+}
+
+ /* Layout */
+.blog-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+.blog-details-container {
+    flex: 1 1 65%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    padding: 20px;
+}
+
+.blog-sidebar {
+    flex: 1 1 30%;
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.blog-sidebar h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #eee;
+}
+
+/* Blog Main Image */
+.blog-details-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Blog Meta Info */
+.blog-details-meta {
+    font-size: 14px;
+    color: #777;
+    margin: 15px 0;
+}
+
+.blog-details-title {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.blog-details-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Sidebar Recent Blogs */
+.recent-blog {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.recent-blog img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.recent-blog-title {
+    font-size: 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.recent-blog-title:hover {
+    color: #0077cc;
+}
+
+.recent-blog-date {
+    font-size: 13px;
+    color: #777;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .blog-layout {
+        flex-direction: column;
+    }
+    .blog-details-container,
+    .blog-sidebar {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .blog-details-title {
+        font-size: 22px;
+    }
+    .recent-blog {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .recent-blog img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.alert-danger {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 120px 15px;
+	gap: 30px;
+	background-color: #f8d7da;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+
+.alert-danger a {
+	background: #2AB1ac;
+	outline: none;
+	border: none;
+	color: #fff;
+	font-weight: 500;
+	padding: 8px 18px;
+	border-radius: 25px;
+	font-size: 0.9rem;
+	font-weight: 600;
+	text-decoration: none;
+	transition: background 0.3s ease;
+}
+.blog-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn-muted {
+    background: #ccc !important;
+    color: #666 !important;
+    pointer-events: none;
+    cursor: default;
+}
+
+.blog-nav .btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background: #0077cc;
+    color: #fff;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #005fa3;
+}
+
+.prev-blog , .next-blog {
+	margin-top: 15px;
+	display: inline-block;
+	background: #008584;
+	color: white;
+	padding: 8px 18px;
+	border-radius: 25px;
+	font-size: 0.9rem;
+	font-weight: 600;
+	text-decoration: none;
+	transition: background 0.3s ease;
 }

@@ -4,9 +4,9 @@
 <head>
 
     <?php
-        require_once($folderPath . "Components/DBConfig.php");
-        require_once($folderPath . "Components/configuration.php");
-        $today = date("d-m-y");
+    require_once($folderPath . "Components/DBConfig.php");
+    require_once($folderPath . "Components/configuration.php");
+    $today = date("d-m-y");
     ?>
 
     <meta charset="UTF-8">
@@ -34,29 +34,35 @@
 
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <?php
-        if ($thisPage == "Home") {
-            $ogTitle =  $coName;
+    if ($thisPage == "Home") {
+        $ogTitle =  $coName;
     ?>
-    <title><?php echo $pageTitle . " :: " . $coName; ?></title>
+        <title><?php echo $pageTitle . " :: " . $coName; ?></title>
     <?php } else {
         $ogTitle =  $pageTitle . " :: " . $coName . " ::";
     ?>
-    <title><?php echo $pageTitle . " :: " . $coName;; ?> </title>
+        <title><?php echo $pageTitle . " :: " . $coName;; ?> </title>
     <?php } ?>
 
     <?php
-        date_default_timezone_set('Asia/Kolkata');
+    date_default_timezone_set('Asia/Kolkata');
 
-        $ogPageUrl = $ogImageBaseUrl . "";
+    $ogPageUrl = $ogImageBaseUrl . "";
 
-        if (!isset($ogDescription)) {
-            $ogDescription = "";
-        }
-        if (!isset($ogImage) || $ogImage == "") {
-            $ogImage = $ogImageDefaultUrl;
-        } else {
-            $ogImage = $ogImageBaseUrl . $ogImage;
-        }
+    if (!isset($ogDescription)) {
+        $ogDescription = "";
+    }
+    if (!isset($ogImage) || $ogImage == "") {
+        $ogImage = $ogImageDefaultUrl;
+    } else {
+        $ogImage = $ogImageBaseUrl . $ogImage;
+    }
+    ?>
+
+    <?php
+    $blogQuery = "SELECT * FROM BLOGS_DETAILS_RMM ORDER BY Event_Date ASC";
+    $blogresult = mysqli_query($con, $blogQuery);
+
     ?>
     <meta name="author" content="RMM TECHNOLOGIES">
     <meta name="keywords" content="<?php echo $pageMeta; ?>">
@@ -119,6 +125,7 @@
 <body class="">
     <div class="wrapper">
 
-        <?php $menuMode = "1"; include($folderPath . "Components/menus.php"); ?>
+        <?php $menuMode = "1";
+        include($folderPath . "Components/menus.php"); ?>
 
         <main class="main">

@@ -49,7 +49,7 @@
 <?php $serviceMode = "3"; include($folderPath . "Components/services.php"); ?>
 <?php $counterMode = "1"; include($folderPath . "Components/counter.php"); ?>
 <?php $testimonialMode = "1"; include($folderPath . "Components/testimonial.php"); ?>
-<?php // $blogMode = "1"; include($folderPath . "Components/blog.php"); ?>
+<?php $blogMode = "2"; include($folderPath . "Components/blog.php"); ?>
 <?php $hookMode = "1"; include($folderPath . "Components/hooks.php"); ?>
 
 <?php include($folderPath . "Components/footer.php"); ?>
