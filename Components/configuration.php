@@ -59,6 +59,8 @@
     $contactPh6 = "";
     $contactPh7 = "";
 
+    $adminEmail = "sales@resurgent-es.com";
+
     $contactFax1 = "";
     $contactFax2 = "";
 

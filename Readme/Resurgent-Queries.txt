@@ -1,0 +1,325 @@
+CREATE TABLE `USER_INFORMATION_DETAILS` (
+`ID` int NOT NULL AUTO_INCREMENT, 
+`Name` varchar(100) NOT NULL, 
+`Login_Name` varchar(100) NOT NULL,
+`Mobile_Number` varchar(50) NULL, 
+`Roles` int(11) NULL, 
+`Unique_ID` varchar(150) NOT NULL, 
+`Password` varchar(50) NOT NULL, 
+`Description` varchar(500) NULL, 
+`Image_Url` varchar(500) NULL, 
+`IsDelete` varchar(1) NULL, 
+`Status` varchar(50) NOT NULL, 
+`Created_By` int NOT NULL, 
+`Created_On` DATETIME NOT NULL, 
+`Modified_By` int NOT NULL, 
+`Modified_On` DATETIME NOT NULL,
+PRIMARY KEY (`ID`), 
+FOREIGN KEY (`Created_By`) REFERENCES `USER_INFORMATION_DETAILS`(`ID`),
+FOREIGN KEY (`Modified_By`) REFERENCES `USER_INFORMATION_DETAILS`(`ID`));
+
+INSERT INTO `USER_INFORMATION_DETAILS` (`ID`, `Name`, `Login_Name`, `Mobile_Number`, `Roles`, `Unique_ID`,  `Password`, `Status`, `Created_By`, `Created_On`, `Modified_By`, `Modified_On`) VALUES ('1', 'Administrator', 'test@rmmindia.com', '9880320879', '1', '1DB9D86BF32B4A529511180BBAE274DE', 'test@123', 'Active', '1', '2019-07-05 00:00:00', '1', '2019-07-05 00:00:00');
+
+
+
+CREATE TABLE `USER_ROLES_DETAILS` (
+`ID` int NOT NULL AUTO_INCREMENT, 
+`Name` varchar(100) NOT NULL, 
+`Description` varchar(500) NULL,
+`Mask_Code` varchar(10) NOT NULL,
+`Status` varchar(50) NOT NULL, 
+`IsDelete` varchar(1) NULL, 
+`IsDefault` varchar(1) NULL, 
+`Created_By` int NOT NULL, 
+`Created_On` DATETIME NOT NULL, 
+`Modified_By` int NOT NULL, 
+`Modified_On` DATETIME NOT NULL,
+PRIMARY KEY (`ID`), 
+FOREIGN KEY (`Created_By`) REFERENCES `USER_INFORMATION_DETAILS`(`ID`),
+FOREIGN KEY (`Modified_By`) REFERENCES `USER_INFORMATION_DETAILS`(`ID`));
+
+INSERT INTO `USER_ROLES_DETAILS` (`ID`, `Name`, `Description`, `Mask_Code`, `Status`, `IsDefault`, `Created_By`, `Created_On`, `Modified_By`, `Modified_On`) VALUES ('1', 'Administrator', 'Administrator', '444444', 'Active', 1, '1', now(), '1', now());
+
+
+
+CREATE TABLE `BANNERS_RMM` (
+`ID` int NOT NULL AUTO_INCREMENT, 
+`Name` varchar(300) NOT NULL, 
+`SubTitle` varchar(500) NOT NULL,
+`Name_Code` varchar(10) NOT NULL, 
+`Sub_Code` varchar(10) NOT NULL, 
+`Link` varchar(500) NOT NULL, 
+`Link_Text` varchar(500) NOT NULL, 
+`Detail_Image_URL` varchar(500) NULL, 
+`Product_Image_URL` varchar(500) NULL, 
+`Display_Order` int NOT NULL,
+`Status` varchar(50) NOT NULL, 
+`IsDelete` varchar(1) NULL, 
+`Created_By` int NOT NULL, 
+`Created_On` DATETIME NOT NULL, 
+`Modified_By` int NOT NULL, 
+`Modified_On` DATETIME NOT NULL,
+PRIMARY KEY (`ID`),
+FOREIGN KEY (`Created_By`) REFERENCES `USER_INFORMATION_DETAILS`(`ID`),
+FOREIGN KEY (`Modified_By`) REFERENCES `USER_INFORMATION_DETAILS`(`ID`));
+
+
+INSERT INTO `BANNERS_RMM` (`ID`, `Name`, `SubTitle`, `Name_Code`, `Sub_Code`, `Link`, `Link_Text`, `Detail_Image_URL`, `Product_Image_URL`, `Display_Order`, `Status`, `IsDelete`, `Created_By`, `Created_On`, `Modified_By`, `Modified_On`) VALUES
+(1, 'Digital Transformation', 'Helping enterprises navigate the world of digital disruption in business models, products, services and experiences with ease', '#fff', '#fff', 'Digital-Transform/?sl=4', 'Know More', 'assets/images/Banners/Banner1.jpg', 'assets/images/Banners/Banner1.jpg', 4, 'Active', NULL, 1, '2022-02-02 00:00:00', 1, '2023-06-03 11:52:50'),
+(2, 'Data and Analytics (DNA) ', 'DNA is the largest practice at Resurgent bringing decades of experience focused on providing high value and ROI to clients in various aspects', '#fff', '#fff', 'Solutions/DNA/?sl=1', 'Know More', 'assets/images/Banners/Banner2-Bg.jpg', 'assets/images/Banners/Banner2.jpg', 1, 'Active', NULL, 1, '2022-02-02 00:00:00', 1, '2023-06-03 11:53:13'),
+(3, 'Enterprise Application - ERP', 'Oracle complete cloud suite of SaaS applications brings consistent processes and a single source of truth across important business functions-from', '#fff', '#fff', 'Solutions/ERP/?sl=2', 'Know More', 'assets/images/Banners/Banner3-Bg.jpg', 'assets/images/Banners/Banner3.jpg', 2, 'Active', NULL, 1, '2022-02-02 00:00:00', 1, '2023-06-09 15:25:11'),
+(4, 'Enterprise Application - EPM', 'Enterprise Performance Management, Business Intelligence and Reporting', '#fff', '#fff', 'Solutions/EPM/?sl=3', 'Know More', 'assets/images/Banners/Banner4-Bg.jpg', 'assets/images/Banners/Banner4.jpg', 3, 'Active', NULL, 1, '2022-02-02 00:00:00', 1, '2023-06-03 11:49:45'),
+(5, 'Infrastructure Management', 'Environment Management, Readiness Assessment, Infrastructure Build, Disaster Recovery, Instance Management, Service Introduction', '#fff', '#fff', 'Services/index.php#services-?p=5', 'Know More', 'assets/images/Banners/Banner5-Bg.jpg', 'assets/images/Banners/Banner5.jpg', 6, 'Active', NULL, 1, '2022-02-02 00:00:00', 1, '2023-06-03 11:50:21'),
+(6, 'Technology Delivery', 'Industry Best Practices Delivery, Existing Process and System Rationalization, Solution Governance, Adherence to Approach', '#fff', '#fff', 'Services/index.php#services-?p=4', 'Know More', 'assets/images/Banners/Banner6-Bg.jpg', 'assets/images/Banners/Banner6.jpg', 5, 'Active', NULL, 1, '2022-02-02 00:00:00', 1, '2023-06-03 11:50:15');
+
+
+
+
+
+CREATE TABLE `BLOGS_DETAILS_RMM` (
+`ID` int NOT NULL AUTO_INCREMENT, 
+`Unique_ID` varchar(150) NOT NULL,
+`Name` varchar(200) NOT NULL, 
+`Description` varchar(5000) NOT NULL,
+`Category` varchar(200) NULL, 
+`Event_Date` datetime NOT NULL,
+`Publish_Start_Date` datetime NOT NULL,
+`Publish_End_Date` datetime DEFAULT NULL,
+`Venue` varchar(50) NOT NULL,
+`Event_Thumbnail_Image_URL` varchar(500) DEFAULT NULL,
+`Detail_Image_URL` varchar(500) DEFAULT NULL,
+`Short_Description` varchar(2000) DEFAULT NULL,
+`Gallery_Folder_URL` varchar(500) DEFAULT NULL, 
+`Display_Order` varchar(11) NOT NULL,
+`Status` varchar(50) NOT NULL, 
+`IsDelete` varchar(1) NULL, 
+`Created_By` int NULL, 
+`Created_On` DATETIME NOT NULL, 
+`Modified_By` int NULL, 
+`Modified_On` DATETIME NOT NULL,
+PRIMARY KEY (`ID`),
+FOREIGN KEY (`Created_By`) REFERENCES `USER_INFORMATION_DETAILS`(`ID`),
+FOREIGN KEY (`Modified_By`) REFERENCES `USER_INFORMATION_DETAILS`(`ID`));
+
+
+INSERT INTO `BLOGS_DETAILS_RMM` (`ID`, `Unique_ID`, `Name`, `Description`, `Category`, `Event_Date`, `Publish_Start_Date`, `Publish_End_Date`, `Venue`, `Event_Thumbnail_Image_URL`, `Detail_Image_URL`, `Short_Description`, `Gallery_Folder_URL`, `Display_Order`, `Status`, `IsDelete`, `Created_By`, `Created_On`, `Modified_By`, `Modified_On`) VALUES
+(1, '', 'IFRS16/AS842 Solution on Oracle FCCS', '<div class=\"events-details-description\">\n									<h3>Solution on Oracle FCCS</h3>\n									<p>\n										Is your organization still struggling with IFRS16 and AS842 compliance due January 01, 2019? Our latest end-to-end solution on Oracle FCCS helps manage the new lease standards including data collection, calculations, reporting and disclosures on a secure, collaborative, cloud-based platform. Contact Us to know more.\n									</p><p>\n								</p></div>', NULL, '2018-09-10 09:00:00', '2018-09-10 09:00:00', '2025-09-10 09:00:00', 'India', 'assets/images/Blogs/1.jpg', 'assets/images/Blogs/1.jpg', 'Is your organization still struggling with IFRS16 and AS842 compliance due January 01, 2019? Our latest end-to-end solution on Oracle FCCS helps manage the new lease standards including data collection, calculations, reporting and disclosures on a secure, collaborative, cloud-based platform.', 'assets/images/Blogs/', '1', 'Active', NULL, 1, '2022-12-14 09:00:00', 1, '2022-12-14 09:00:00'),
+(2, '', 'Oracle PBCS', '<div class=\"events-details-description\">\r\n									<h3>Solution on Oracle FCCS</h3>\r\n									<p>\r\n										Is your organization still struggling with IFRS16 and AS842 compliance due January 01, 2019? Our latest end-to-end solution on Oracle FCCS helps manage the new lease standards including data collection, calculations, reporting and disclosures on a secure, collaborative, cloud-based platform. Contact Us to know more.\r\n									</p><p>\r\n								</p></div>', NULL, '2018-07-15 09:00:00', '2018-09-10 09:00:00', '2025-09-10 09:00:00', 'India', 'assets/images/Blogs/2.jpg', 'assets/images/Blogs/2.jpg', 'Resurgent successfully delivered a four day comprehensive training on Oracle Planning and Budgeting Cloud Service (PBCS) to a Big4 consulting firm in Mumbai, India, from July 11 to July 14, 2018. A very excited audience and equally dynamic trainers made this event a huge success.', 'assets/images/Blogs/', '2', 'Active', NULL, 1, '2022-12-14 09:00:00', 1, '2022-12-14 09:00:00');
+
+
+
+
+CREATE TABLE `CONTACT_DETAILS` (
+`ID` int NOT NULL AUTO_INCREMENT, 
+`Name` varchar(100) NOT NULL, 
+`Email` varchar(50) NULL, 
+`Mobile_Number` varchar(50) NOT NULL,
+`Product` varchar(150) NOT NULL,
+`Subject` varchar(250) NOT NULL, 
+`Description` varchar(500) NULL, 
+`IsDelete` varchar(1) NULL, 
+`Created_By` int NULL, 
+`Created_On` DATETIME NOT NULL, 
+`Modified_By` int NULL, 
+`Modified_On` DATETIME NOT NULL,
+PRIMARY KEY (`ID`),
+FOREIGN KEY (`Created_By`) REFERENCES `USER_INFORMATION_DETAILS`(`ID`),
+FOREIGN KEY (`Modified_By`) REFERENCES `USER_INFORMATION_DETAILS`(`ID`));
+
+
+
+
+CREATE TABLE `CUSTOMERS_RMM` (
+`ID` int NOT NULL AUTO_INCREMENT,
+`Name` varchar(200) NOT NULL, 
+`Profile_Image_URL` varchar(100) NULL, 
+`Display_Order` int NOT NULL,
+`Promo` varchar(10) NULL, 
+`Status` varchar(50) NOT NULL, 
+`IsDelete` varchar(1) NULL, 
+`Created_By` int NOT NULL, 
+`Created_On` DATETIME NOT NULL, 
+`Modified_By` int NOT NULL, 
+`Modified_On` DATETIME NOT NULL,
+PRIMARY KEY (`ID`),
+FOREIGN KEY (`Created_By`) REFERENCES `USER_INFORMATION_DETAILS`(`ID`),
+FOREIGN KEY (`Modified_By`) REFERENCES `USER_INFORMATION_DETAILS`(`ID`));
+
+
+INSERT INTO `CUSTOMERS_RMM` (`ID`, `Name`, `Profile_Image_URL`, `Display_Order`, `Promo`, `Status`, `IsDelete`, `Created_By`, `Created_On`, `Modified_By`, `Modified_On`) VALUES
+(1, 'citi bank', 'assets/images/Clients/1.png', 1, 'Yes', 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-30 17:04:25'),
+(2, 'client', 'assets/images/Clients/2.png', 2, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(3, 'client', 'assets/images/Clients/3.png', 3, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(4, 'client', 'assets/images/Clients/4.png', 4, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(5, 'client', 'assets/images/Clients/5.png', 5, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(6, 'client', 'assets/images/Clients/6.png', 6, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(7, 'client', 'assets/images/Clients/7.png', 7, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(8, 'client', 'assets/images/Clients/8.png', 8, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(9, 'client', 'assets/images/Clients/9.png', 9, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(10, 'client', 'assets/images/Clients/10.png', 10, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(11, 'client', 'assets/images/Clients/11.png', 11, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(12, 'client', 'assets/images/Clients/12.png', 12, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(13, 'client', 'assets/images/Clients/13.png', 13, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(14, 'client', 'assets/images/Clients/14.png', 14, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(15, 'client', 'assets/images/Clients/15.png', 15, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(16, 'client', 'assets/images/Clients/16.png', 16, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(17, 'client', 'assets/images/Clients/17.png', 17, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(18, 'client', 'assets/images/Clients/18.png', 18, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(19, 'client', 'assets/images/Clients/19.png', 19, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(20, 'client', 'assets/images/Clients/20.png', 20, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(21, 'client', 'assets/images/Clients/21.png', 21, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(22, 'client', 'assets/images/Clients/22.png', 22, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(23, 'client', 'assets/images/Clients/23.png', 23, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(24, 'client', 'assets/images/Clients/24.png', 24, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(25, 'client', 'assets/images/Clients/25.png', 25, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(26, 'client', 'assets/images/Clients/26.png', 26, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(27, 'client', 'assets/images/Clients/27.png', 27, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(28, 'client', 'assets/images/Clients/28.png', 28, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(29, 'client', 'assets/images/Clients/29.png', 29, NULL, 'Inactive', NULL, 1, '2023-05-23 06:43:26', 1, '2023-06-03 13:36:15'),
+(30, 'client', 'assets/images/Clients/30.png', 30, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(31, 'client', 'assets/images/Clients/31.png', 31, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(32, 'client', 'assets/images/Clients/32.png', 32, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(33, 'client', 'assets/images/Clients/33.png', 33, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(34, 'client', 'assets/images/Clients/34.png', 34, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(35, 'client', 'assets/images/Clients/35.png', 35, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(36, 'client', 'assets/images/Clients/36.png', 36, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(37, 'client', 'assets/images/Clients/37.png', 37, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(38, 'client', 'assets/images/Clients/38.png', 38, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(39, 'client', 'assets/images/Clients/39.png', 39, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(40, 'client', 'assets/images/Clients/40.png', 40, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(41, 'client', 'assets/images/Clients/41.png', 41, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(42, 'client', 'assets/images/Clients/42.png', 42, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(43, 'client', 'assets/images/Clients/43.png', 43, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(44, 'client', 'assets/images/Clients/44.png', 44, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(45, 'client', 'assets/images/Clients/45.png', 45, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(46, 'client', 'assets/images/Clients/46.png', 46, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(47, 'client', 'assets/images/Clients/47.png', 47, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(48, 'client', 'assets/images/Clients/48.png', 48, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(49, 'client', 'assets/images/Clients/49.png', 49, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(50, 'client', 'assets/images/Clients/50.png', 50, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(51, 'client', 'assets/images/Clients/51.png', 51, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(52, 'client', 'assets/images/Clients/52.png', 52, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(53, 'client', 'assets/images/Clients/53.png', 53, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(54, 'client', 'assets/images/Clients/54.png', 54, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(55, 'client', 'assets/images/Clients/55.png', 55, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(56, 'CS', 'assets/images/Clients/55.png', 55, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26'),
+(57, 'KPMG', 'assets/images/Clients/56.png', 56, NULL, 'Active', NULL, 1, '2023-05-23 06:43:26', 1, '2023-05-23 06:43:26');
+
+
+
+
+CREATE TABLE `SOLUTIONS_RMM` (
+`ID` int(11) NOT NULL AUTO_INCREMENT,
+`Unique_ID` varchar(150) NOT NULL,
+`Name` varchar(200) NOT NULL,
+`Short_Description` varchar(1000) NOT NULL,
+`Description` varchar(5000) NOT NULL,
+`Url` varchar(250) NOT NULL,
+`Detail_Image_URL` varchar(500) NOT NULL,
+`Products_Details` TEXT DEFAULT NULL,
+`Display_Order` int(11) NOT NULL,
+`Status` varchar(50) NOT NULL,
+`IsDelete` varchar(1) DEFAULT NULL,
+`Created_By` int(11) NOT NULL,
+`Created_On` datetime NOT NULL,
+`Modified_By` int(11) NOT NULL,
+`Modified_On` DATETIME NOT NULL,
+PRIMARY KEY (`ID`),
+FOREIGN KEY (`Created_By`) REFERENCES `USER_INFORMATION_DETAILS`(`ID`),
+FOREIGN KEY (`Modified_By`) REFERENCES `USER_INFORMATION_DETAILS`(`ID`));
+
+
+INSERT INTO `SOLUTIONS_RMM` (`ID`, `Unique_ID`, `Name`, `Short_Description`, `Description`, `Products_Details`, `Url`, `Detail_Image_URL`, `Display_Order`, `Status`, `IsDelete`, `Created_By`, `Created_On`, `Modified_By`, `Modified_On`) VALUES
+(1, '', 'Data and Analytics (DNA)', 'Delivering traditional and advanced data and analytics solutions on premise and on the cloud', '										<p>\n										DNA is the largest practice at Resurgent bringing decades of experience focused on providing high value and ROI to clients in:</p><ul class=\"solutions-list\">\n										<li>Advanced Analytics</li>\n										<li>Information Management and Big Data</li>\n										<li>Integrated and Digital Analytics</li>\n										<li>Analytics as a Service (AaaS)</li>\n									</ul>										', '', 'Solutions/DNA/', 'assets/images/Solutions/DNA.jpg', 1, 'Active', NULL, 1, '2023-05-22 11:32:50', 1, '2023-06-08 12:03:28'),
+(2, '', 'ERP', 'Oracle complete cloud suite of SaaS applications brings consistent processes and a single source of truth across important business functions-from enterprise resource planning, supply chain management, and human capital management to increase your business agility that helps business react faster than ever.', '<p>\n										Oracle complete cloud suite of SaaS applications brings consistent processes and a single source of truth across important business functions-from enterprise resource planning, supply chain management, and human capital management to increase your business agility that helps business react faster than ever.\n									</p><ul class=\"solutions-list\">\n										<li>Advanced Analytics</li>\n										<li>Information Management and Big Data</li>\n										<li>Integrated and Digital Analytics</li>\n										<li>Analytics as a Service (AaaS)</li>\n									</ul>\n', '<div class=\"row\">\n						<div class=\"col-lg-4 col-md-5 m-b30\">\n							<aside class=\"sticky-top\">\n								<div class=\"\">\n									<ul class=\"service-list nav nav-pills\">\n										<li class=\"clientTitle\"><a class=\"active show\" data-toggle=\"pill\" href=\"#1\"><span>Supply Chain Management</span><i class=\"fa fa-angle-right\"></i> </a></li>\n										<li class=\"clientTitle\"><a data-toggle=\"pill\" href=\"#2\" class=\"\"><span>Project Portfolio Management</span><i class=\"fa fa-angle-right\"></i> </a></li>\n										<li class=\"clientTitle\"><a data-toggle=\"pill\" href=\"#3\" class=\"\"><span>Human Capital Management</span><i class=\"fa fa-angle-right\"></i> </a></li>\n										<li class=\"clientTitle\"><a data-toggle=\"pill\" href=\"#4\" class=\"\"><span>Financials</span><i class=\"fa fa-angle-right\"></i> </a></li>\n										<li class=\"clientTitle\"><a data-toggle=\"pill\" href=\"#5\" class=\"\"><span>Procurement</span><i class=\"fa fa-angle-right\"></i> </a></li>\n										<li class=\"clientTitle\"><a data-toggle=\"pill\" href=\"#6\" class=\"\"><span>Risk Management</span><i class=\"fa fa-angle-right\"></i> </a></li>\n									</ul>\n								</div>																\n							</aside>\n						</div>\n						<div class=\"col-lg-8 col-md-7 service-textarea portfolio-content clientDetailInfo\">\n							<div class=\"tab-content\">\n								<div id=\"1\" class=\"tab-pane fade active show\">\n									<div class=\"solutions-grid\">\n										<div class=\"solutions-grid-inner\">\n											<h3>Supply Chain Management</h3>\n											<ul class=\"solutions-list\">\n												<li>Procurement</li>\n												<li>Inventory and Costing</li>\n												<li>Order Management</li>\n												<li>Logistics</li>\n												<li>Manufacturing</li>\n												<li>Supply Chain Planning</li>\n												<li>Maintenance</li>\n												<li>PLM and Product MDM</li>\n												<li>IOT and blockchain</li>\n												<li>Collaboration and B2B</li>\n											</ul>\n										</div>\n									</div>\n								</div>\n								<div id=\"2\" class=\"tab-pane fade\">\n									<div class=\"solutions-grid\">\n										<div class=\"solutions-grid-inner\">\n											<h3>Project Portfolio Management</h3>\n											<ul class=\"solutions-list\">\n												<li>Cost Management</li>\n												<li>Billing and Revenue</li>\n												<li>Planning and Forecasting</li>\n												<li>Management and Scheduling</li>\n												<li>Resource Management</li>\n												<li>Grants Management</li>\n												<li>Task Management</li>\n												<li>Mobile Task, Time and Progress</li>\n											</ul>\n										</div>\n									</div>\n								</div>\n								<div id=\"3\" class=\"tab-pane fade \">\n									<div class=\"solutions-grid\">\n										<div class=\"solutions-grid-inner\">\n											<h3>Human Capital Management</h3>\n											<ul class=\"solutions-list\">\n												<li>Core HCM</li>\n												<li>HR Helpdesk</li>\n												<li>Recruit Cloud</li>\n												<li>Learn Cloud</li>\n												<li>Talent Management</li>\n												<li>Compensation</li>\n												<li>Time and Labour</li>\n												<li>Global Payroll</li>\n												<li>Strategic Workforce Planning</li>\n											</ul>\n										</div>\n									</div>\n								</div>\n								<div id=\"4\" class=\"tab-pane fade \">\n									<div class=\"solutions-grid\">\n										<div class=\"solutions-grid-inner\">\n											<h3>Financials</h3>\n											<ul class=\"solutions-list\">\n												<li>General Ledger</li>\n												<li>Payables and Assets</li>\n												<li>Receivables and Collections</li>\n												<li>Expense Management</li>\n												<li>Bill and Credit Management</li>\n												<li>Revenue Management</li>\n												<li>Accounting Hub</li>\n												<li>Subscription Management</li>\n												<li>Joint Venture Management</li>\n											</ul>\n										</div>\n									</div>\n								</div>\n								<div id=\"5\" class=\"tab-pane fade \">\n									<div class=\"solutions-grid\">\n										<div class=\"solutions-grid-inner\">\n											<h3>Procurement</h3>\n											<ul class=\"solutions-list\">\n												<li>Supplied Qualification Management</li>\n												<li>Sourcing</li>\n												<li>Procurement Contracts</li>\n												<li>Self Service Procurement</li>\n												<li>Mobile Self Service Procurement</li>\n												<li>Purchasing</li>\n												<li>Supplied Portal</li>\n											</ul>\n										</div>\n									</div>\n								</div>\n								<div id=\"6\" class=\"tab-pane fade \">\n									<div class=\"solutions-grid\">\n										<div class=\"solutions-grid-inner\">\n											<h3>Risk Management</h3>\n											<ul class=\"solutions-list\">\n												<li>Secure Role Design</li>\n												<li>Pre-Built SOD controls</li>\n												<li>Data Privacy Controls</li>\n												<li>Access Certifications</li>\n												<li>Payment/Fraud Controls</li>\n												<li>Config/Audit Controls</li>\n												<li>SOX Certifications</li>\n												<li>ERM Workflows</li>\n											</ul>\n										</div>\n									</div>\n								</div>\n							</div>\n\n						</div>\n					</div>', 'Solutions/ERP/', 'assets/images/Solutions/ERP.jpg', 2, 'Active', NULL, 1, '2023-05-22 11:32:50', 1, '2023-05-22 11:32:50'),
+(3, '', 'EPM', 'Enterprise Performance Management, Business Intelligence and Reporting. EPM encompasses the processes of planning, measuring', '\n											<p>\n										Enterprise Performance Management, Business Intelligence and Reporting. EPM encompasses the processes of planning, measuring and optimizing business results for enterprise organizations.</p><ul class=\"solutions-list\">\n										<li>Planning, Budgeting and Forecasting</li>\n										<li>Financial Consolidation and Close</li>\n										<li>Account Reconciliations</li>\n										<li>Profitability and Cost Management</li>\n										<li>Narrative Reporting</li>\n										<li>Enterprise Data Integration</li>\n									</ul>										', '<div class=\"row\">\n						<div class=\"col-lg-4 col-md-5 m-b30\">\n							<aside class=\"sticky-top\">\n								<div class=\"\">\n									<ul class=\"service-list nav nav-pills\">\n										<li class=\"clientTitle\"><a class=\"active show\" data-toggle=\"pill\" href=\"#1\"><span>Oracle EPM/BI On-Premise</span><i class=\"fa fa-angle-right\"></i> </a></li>\n										<li class=\"clientTitle\"><a data-toggle=\"pill\" href=\"#2\" class=\"\"><span>Oracle EPM/BI Cloud</span><i class=\"fa fa-angle-right\"></i> </a></li>\n									</ul>\n								</div>																\n							</aside>\n						</div>\n						<div class=\"col-lg-8 col-md-7 service-textarea portfolio-content clientDetailInfo\">\n							<div class=\"tab-content\">\n								<div id=\"1\" class=\"tab-pane fade active show\">\n									<div class=\"solutions-grid\">\n										<div class=\"solutions-grid-inner\">\n											<h3>Oracle EPM/BI On-Premise</h3>\n											<ul class=\"solutions-list\">\n												<li>Oracle Hyperion Essbase</li>\n												<li>Oracle Hyperion Planning</li>\n												<li>Oracle Hyperion Financial Management</li>\n												<li>Oracle Hyperion Strategic Finance</li>\n												<li>Oracle Hyperion Profitability and Cost Management</li>\n												<li>Oracle Hyperion Financial Close Management</li>\n												<li>Oracle Hyperion Account Reconciliation Manger (ARM)</li>\n												<li>Oracle Hyperion Data Relationship Management</li>\n												<li>Oracle Hyperion Tax Provision</li>\n												<li>Oracle Hyperion Financial Reporting</li>\n												<li>Oracle Hyperion Disclosure Management</li>\n												<li>Oracle Hyperion Shared Services</li>\n												<li>Oracle Hyperion Financial Data Management (FDMEE/FDQM)</li>\n												<li>Oracle Data Integrator (ODI)</li>\n												<li>Oracle Business Intelligence (OBIEE)</li>\n											</ul>\n										</div>\n									</div>\n								</div>\n								<div id=\"2\" class=\"tab-pane fade\">\n									<div class=\"solutions-grid\">\n										<div class=\"solutions-grid-inner\">\n											<h3>Oracle EPM/BI Cloud</h3>\n											<ul class=\"solutions-list\">\n												<li>Oracle Enterprise Planning Cloud (EPBCS/PBCS) with Groovy Scripting</li>\n												<li>Oracle Financial Consolidation and Close Cloud (FCCS)</li>\n												<li>Oracle Profitability and Cost Management Cloud (PCMCS)</li>\n												<li>Oracle Analytics Cloud Service (OACS)</li>\n												<li>Oracle Autonomous Analytics Cloud (OAACS)</li>\n												<li>Oracle Account Reconciliation Cloud (ARCS)</li>\n												<li>Oracle Tax Reporting Cloud (HTRCS)</li>\n												<li>Oracle Enterprise Data Management Cloud (EDMC)</li>\n												<li>Oracle Enterprise Performance Reporting Cloud (EPRCS)</li>\n												<li>Oracle Cloud Data Management (DM)</li>\n												<li>Oracle Business Intelligence Cloud (BICS)</li>\n												<li>Oracle Identity Cloud (IDCS)</li>\n											</ul>\n										</div>\n									</div>\n								</div>\n							</div>\n\n						</div>\n					</div>', 'Solutions/EPM/', 'assets/images/Solutions/EPM.jpg', 3, 'Active', NULL, 1, '2023-05-22 11:36:17', 1, '2023-06-06 13:26:09'),
+(4, '', 'Digital Transformation', 'Assisting enterprises navigate the world of digital disruption in business models, products, services and experiences', '<p>\n										Assisting enterprises navigate the world of digital disruption in business models, products, services and experiences around:\n									</p>\n									<ul class=\"solutions-list\">\n										<li>Blockchain</li>\n										<li>Artificial Intelligence and Machine Learning</li>\n										<li>Internet of Things (IoT)</li>\n										<li>Virtual and Augmented Reality (VR/AR)</li>\n									</ul>', '', 'Solutions/Digital-Transform/', 'assets/images/Solutions/DT.jpg', 4, 'Active', NULL, 1, '2023-05-22 11:36:17', 1, '2023-05-31 12:19:56');
+
+
+
+
+
+CREATE TABLE `SERVICES_RMM` (
+`ID` int(11) NOT NULL AUTO_INCREMENT,
+`Unique_ID` varchar(150) NOT NULL,
+`Name` varchar(200) NOT NULL,
+`Short_Description` varchar(1000) NOT NULL,
+`Description` varchar(5000) NOT NULL,
+`Url` varchar(250) NOT NULL,
+`Detail_Image_URL` varchar(500) NOT NULL,
+`Display_Order` int(11) NOT NULL,
+`Status` varchar(50) NOT NULL,
+`IsDelete` varchar(1) DEFAULT NULL,
+`Created_By` int(11) NOT NULL,
+`Created_On` datetime NOT NULL,
+`Modified_By` int(11) NOT NULL,
+`Modified_On` DATETIME NOT NULL,
+PRIMARY KEY (`ID`),
+FOREIGN KEY (`Created_By`) REFERENCES `USER_INFORMATION_DETAILS`(`ID`),
+FOREIGN KEY (`Modified_By`) REFERENCES `USER_INFORMATION_DETAILS`(`ID`));
+
+
+INSERT INTO `SERVICES_RMM` (`ID`, `Unique_ID`, `Name`, `Short_Description`, `Description`, `Url`, `Detail_Image_URL`, `Display_Order`, `Status`, `IsDelete`, `Created_By`, `Created_On`, `Modified_By`, `Modified_On`) VALUES
+(1, '', 'Managed Services', '<ul class=\"solutions-list\">\n										<li>Reduced Risk and Enhanced Compliance</li>\n										<li>Fixed Costs Aligned with Your Budget</li>\n										<li>Fit for Purpose Approach</li>\n										<li>Industry Best Practices Integrated with Core</li>\n										<li>Focus on Stakeholder Engagement/Alignment</li>\n										<li>Value Tracked and Realized at Greater Speed</li>\n									</ul>', '\r\n											\r\n											\r\n											\r\n											\r\n											\r\n											<ul class=\"solutions-list\">\r\n										<li>Reduced Risk and Enhanced Compliance</li>\r\n										<li>Fixed Costs Aligned with Your Budget</li>\r\n										<li>Fit for Purpose Approach</li>\r\n										<li>Industry Best Practices Integrated with Core</li>\r\n										<li>Focus on Stakeholder Engagement/Alignment</li>\r\n										<li>Value Tracked and Realized at Greater Speed</li>\r\n									</ul>																																																												', 'Services/index.php#services-', 'assets/images/Services/Managed-Services.jpg', 1, 'Active', NULL, 1, '2023-05-22 12:27:58', 1, '2023-05-31 12:12:16'),
+(2, '', 'Program & Project Management', '<ul class=\"solutions-list\">\r\n										<li>Project Planning and Tracking</li>\r\n										<li>Issue and Risk Management</li>\r\n										<li>Commercials Management</li>\r\n										<li>Business Case & Benefits Tracking</li>\r\n										<li>Quality Management</li>\r\n									</ul>', '<ul class=\"solutions-list\">\r\n										<li>Project Planning and Tracking</li>\r\n										<li>Issue and Risk Management</li>\r\n										<li>Commercials Management</li>\r\n										<li>Business Case & Benefits Tracking</li>\r\n										<li>Quality Management</li>\r\n									</ul>', 'Services/index.php#services-', 'assets/images/Services/PPM.jpg', 2, 'Active', NULL, 1, '2023-05-22 12:27:58', 1, '2023-05-22 12:27:58'),
+(3, '', 'Business Engagement', '<ul class=\"solutions-list\">\r\n										<li>Stakeholder Management</li>\r\n										<li>Global Business Requirements</li>\r\n										<li>Collaboration Hub Program</li>\r\n										<li>Program Communications</li>\r\n										<li>Future State View</li>\r\n									</ul>', '<ul class=\"solutions-list\">\r\n										<li>Stakeholder Management</li>\r\n										<li>Global Business Requirements</li>\r\n										<li>Collaboration Hub Program</li>\r\n										<li>Program Communications</li>\r\n										<li>Future State View</li>\r\n									</ul>', 'Services/index.php#services-', 'assets/images/Services/Business-Engagement.jpg', 3, 'Active', NULL, 1, '2023-05-22 12:30:16', 1, '2023-05-22 12:30:16'),
+(4, '', 'Technology Delivery', '<ul class=\"solutions-list\">\r\n										<li>Industry Best Practices Delivery</li>\r\n										<li>Existing Process and System Rationalization</li>\r\n										<li>Solution Governance</li>\r\n										<li>Adherence to Approach</li>\r\n										<li>Optimized Performance</li>\r\n										<li>Agile Methodologies</li>\r\n									</ul>', '<ul class=\"solutions-list\">\r\n										<li>Industry Best Practices Delivery</li>\r\n										<li>Existing Process and System Rationalization</li>\r\n										<li>Solution Governance</li>\r\n										<li>Adherence to Approach</li>\r\n										<li>Optimized Performance</li>\r\n										<li>Agile Methodologies</li>\r\n									</ul>', 'Services/index.php#services-', 'assets/images/Services/Technology-Delivery.jpg', 4, 'Active', NULL, 1, '2023-05-22 12:30:16', 1, '2023-05-22 12:30:16'),
+(5, '', 'Infrastructure Management', '<ul class=\"solutions-list\">\r\n										<li>Environment Management</li>\r\n										<li>Readiness Assessment</li>\r\n										<li>Infrastructure Build</li>\r\n										<li>Disaster Recovery</li>\r\n										<li>Instance Management</li>\r\n										<li>Service Introduction</li>\r\n										<li>QA</li>\r\n									</ul>', '<ul class=\"solutions-list\">\r\n										<li>Environment Management</li>\r\n										<li>Readiness Assessment</li>\r\n										<li>Infrastructure Build</li>\r\n										<li>Disaster Recovery</li>\r\n										<li>Instance Management</li>\r\n										<li>Service Introduction</li>\r\n										<li>QA</li>\r\n									</ul>', 'Services/index.php#services-', 'assets/images/Services/Infrastructure-Management.jpg', 5, 'Active', NULL, 1, '2023-05-22 12:31:38', 1, '2023-05-22 12:31:38');
+
+
+
+
+CREATE TABLE `TESTIMONIALS_RMM` (
+`ID` int(11) NOT NULL AUTO_INCREMENT,
+`Name` varchar(200) NOT NULL,
+`Designation` varchar(200) NOT NULL,
+`Description` varchar(2000) NOT NULL,
+`Display_Order` int(11) NOT NULL,
+`Status` varchar(50) NOT NULL,
+`IsDelete` varchar(1) DEFAULT NULL,
+`Created_By` int(11) NOT NULL,
+`Created_On` datetime NOT NULL,
+`Modified_By` int(11) NOT NULL,
+`Modified_On` DATETIME NOT NULL,
+PRIMARY KEY (`ID`),
+FOREIGN KEY (`Created_By`) REFERENCES `USER_INFORMATION_DETAILS`(`ID`),
+FOREIGN KEY (`Modified_By`) REFERENCES `USER_INFORMATION_DETAILS`(`ID`));
+
+
+INSERT INTO `TESTIMONIALS_RMM` (`ID`, `Name`, `Designation`, `Description`, `Display_Order`, `Status`, `IsDelete`, `Created_By`, `Created_On`, `Modified_By`, `Modified_On`) VALUES
+(1, 'Benjir Walton', 'Merketer Head', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.', 1, 'Inactive', NULL, 1, '2023-05-22 13:17:37', 1, '2023-06-03 12:58:28'),
+(2, 'Benjir Walton', 'Merketer Head', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.', 2, 'Inactive', NULL, 1, '2023-05-22 13:17:37', 1, '2023-06-03 12:58:21'),
+(3, 'Benjir Walton', 'Merketer Head', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.', 3, 'Inactive', NULL, 1, '2023-05-22 13:17:37', 1, '2023-06-03 13:00:59'),
+(4, 'Benjir Walton', 'Merketer Head', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.', 4, 'Inactive', NULL, 1, '2023-05-22 13:17:37', 1, '2023-06-03 12:58:24'),
+(5, 'Benjir Walton', 'Merketer Head', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.', 5, 'Inactive', NULL, 1, '2023-05-22 13:17:37', 1, '2023-06-03 12:58:18'),
+(6, 'Benjir Walton', 'Merketer Head', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.', 6, 'Inactive', NULL, 1, '2023-05-22 13:17:37', 1, '2023-06-03 12:58:26'),
+(7, 'Benjir Walton', 'Merketer Head', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.', 7, 'Inactive', NULL, 1, '2023-05-22 13:17:37', 1, '2023-06-03 12:58:11'),
+(8, 'Benjir Walton', 'Merketer Head', 'Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.', 8, 'Inactive', NULL, 1, '2023-05-22 13:17:37', 1, '2023-06-03 12:58:30');
+
+
+
+
+
+CREATE TABLE `TEAM_RMM` (
+`ID` int(11) NOT NULL AUTO_INCREMENT,
+`Name` varchar(200) NOT NULL,
+`Designation` varchar(200) NOT NULL,
+`Detail_Image_URL` varchar(500) NOT NULL,
+`Display_Order` int(11) NOT NULL,
+`Status` varchar(50) NOT NULL,
+`IsDelete` varchar(1) DEFAULT NULL,
+`Created_By` int(11) NOT NULL,
+`Created_On` datetime NOT NULL,
+`Modified_By` int(11) NOT NULL,
+`Modified_On` DATETIME NOT NULL,
+PRIMARY KEY (`ID`),
+FOREIGN KEY (`Created_By`) REFERENCES `USER_INFORMATION_DETAILS`(`ID`),
+FOREIGN KEY (`Modified_By`) REFERENCES `USER_INFORMATION_DETAILS`(`ID`));
+
+
+INSERT INTO `TEAM_RMM` (`ID`, `Name`, `Designation`, `Detail_Image_URL`, `Display_Order`, `Status`, `IsDelete`, `Created_By`, `Created_On`, `Modified_By`, `Modified_On`) VALUES
+(1, 'Jhon Fernandes', 'CEO & MD', 'assets/images/Background/user1.jpg', 1, 'Active', NULL, 1, '2023-05-23 06:33:26', 1, '2023-05-23 06:33:26'),
+(2, 'Jhon Fernandes', 'CEO & MD', 'assets/images/Background/user2.jpg', 2, 'Active', NULL, 1, '2023-05-23 06:33:26', 1, '2023-05-23 06:33:26'),
+(3, 'Jhon Fernandes', 'CEO & MD', 'assets/images/Background/user3.jpg', 3, 'Active', NULL, 1, '2023-05-23 06:33:26', 1, '2023-05-23 06:33:26'),
+(4, 'Jhon Fernandes', 'CEO & MD', 'assets/images/Background/user1.jpg', 4, 'Active', NULL, 1, '2023-05-23 06:33:26', 1, '2023-05-23 06:33:26'),
+(5, 'Jhon Fernandes', 'CEO & MD', 'assets/images/Background/user2.jpg', 5, 'Active', NULL, 1, '2023-05-23 06:33:26', 1, '2023-05-23 06:33:26');
