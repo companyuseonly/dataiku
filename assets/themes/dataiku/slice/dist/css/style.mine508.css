@@ -21944,7 +21944,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 @media (min-width:1200px) {
     .product-key-capability .text {
         width: 100%;
-        min-width: 400px
+        min-width: 400px;
     }
 }
 

@@ -234,8 +234,8 @@
                                                         <img
                                                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                                                             style="width:141px;" class="lazyloaded"
-                                                            data-lazy-src="<?php echo $folderPath ?>assets/images/background/demo-thumbnail.png"><noscript><img
-                                                                src="<?php echo $folderPath ?>assets/images/background/demo-thumbnail.png" style="width:141px;"
+                                                            data-lazy-src="<?php echo $folderPath ?>assets/images/background/2150041867.jpg"><noscript><img
+                                                                src="<?php echo $folderPath ?>assets/images/background/2150041867.jpg" style="width:141px;"
                                                                 class="lazyloaded"></noscript>
                                                     </div>
                                                     <div style="width: 500px; float:right; ">
@@ -336,8 +336,8 @@
                                                         <img
                                                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                                                             class="lazyloaded" style="width:141px;"
-                                                            data-lazy-src="<?php echo $folderPath ?>assets/images/background/Enable-NBO-Recommendations.png"><noscript><img
-                                                                src="<?php echo $folderPath ?>assets/images/background/Enable-NBO-Recommendations.png" class="lazyloaded"
+                                                            data-lazy-src="<?php echo $folderPath ?>assets/images/background/2150041849.jpg"><noscript><img
+                                                                src="<?php echo $folderPath ?>assets/images/background/2150041849.jpg" class="lazyloaded"
                                                                 style="width:141px;"></noscript>
                                                     </div>
                                                     <div style="width: 600px; float:right; ">
