@@ -8,7 +8,6 @@
 
   <section class="blog-section padlr">
     <div class="container">
-      <h4 class="bot20">Blogs</h4>
       <div class="blog-grid">
         <?php while ($row = $blogresult->fetch_assoc()) { ?>
           <div class="blog-card">

@@ -1,9 +1,9 @@
 <?php
     $folderPath = "../";
-    $pageTitle = "Blog";
+    $pageTitle = "Blogs";
     $pageMeta = "";
     $pageDescription = "";
-    $thisPage = "Blog";
+    $thisPage = "Blogs";
     
     include($folderPath . "Components/header.php");
 ?>
@@ -14,10 +14,10 @@
         <div class="container">
             <ul>
                 <!-- Breadcrumb NavXT 7.4.1 -->
-                <li class="home"><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to <?php echo $coName ?>." href="<?php echo $folderPath ?>index.php" class="home"><span property="name"><?php echo $coName ?></span></a>
+                <li class="home"><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Home." href="<?php echo $folderPath ?>index.php" class="home"><span property="name">Home</span></a>
                         <meta property="position" content="1">
                     </span></li>
-                <li class="post post-page current-item"><span class="post post-page current-item">Blog :: <?php echo $coName ?></span></li>
+                <li class="post post-page current-item"><span class="post post-page current-item">Blogs</span></li>
             </ul>
         </div>
     </div>
@@ -25,12 +25,11 @@
 
     <div class="container">
         <div class="holder">
-            <h1 class="bot20">Blog :: <?php echo $coName ?></h1>
+            <h1 class="bot20">Blogs</h1>
             <span>
                 <p class="bot10">
                 </p>
             </span>
-
         </div>
     </div>
 </section>

@@ -14,7 +14,7 @@
         <div class="container">
             <ul>
                 <!-- Breadcrumb NavXT 7.4.1 -->
-                <li class="home"><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to <?php echo $coName ?>." href="<?php echo $folderPath ?>index.php" class="home"><span property="name"><?php echo $coName ?></span></a>
+                <li class="home"><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Home." href="<?php echo $folderPath ?>index.php" class="home"><span property="name">Home</span></a>
                         <meta property="position" content="1">
                     </span></li>
                 <li class="post post-page current-item"><span class="post post-page current-item"><?php echo $coName . " " . $thisPage ?></span></li>
