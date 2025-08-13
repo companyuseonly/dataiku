@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 11, 2025 at 01:00 PM
+-- Generation Time: Aug 13, 2025 at 12:32 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `resurgent`
+-- Database: `RESURGENT`
 --
 
 -- --------------------------------------------------------
 
 --
--- TABLE STRUCTURE FOR TABLE `BANNERS_RMM`
+-- Table structure for table `BANNERS_RMM`
 --
 
 CREATE TABLE `BANNERS_RMM` (
@@ -55,7 +55,44 @@ INSERT INTO `BANNERS_RMM` (`ID`, `Name`, `SubTitle`, `Link`, `Link_Text`, `Detai
 -- --------------------------------------------------------
 
 --
--- TABLE STRUCTURE FOR TABLE `CLIENTS_RMM`
+-- Table structure for table `BLOGS_DETAILS_RMM`
+--
+
+CREATE TABLE `BLOGS_DETAILS_RMM` (
+  `ID` int(11) NOT NULL,
+  `Unique_ID` varchar(150) NOT NULL,
+  `Name` varchar(200) NOT NULL,
+  `Description` varchar(5000) NOT NULL,
+  `Category` varchar(200) DEFAULT NULL,
+  `Event_Date` datetime NOT NULL,
+  `Publish_Start_Date` datetime NOT NULL,
+  `Publish_End_Date` datetime DEFAULT NULL,
+  `Venue` varchar(50) NOT NULL,
+  `Event_Thumbnail_Image_URL` varchar(500) DEFAULT NULL,
+  `Detail_Image_URL` varchar(500) DEFAULT NULL,
+  `Short_Description` varchar(2000) DEFAULT NULL,
+  `Gallery_Folder_URL` varchar(500) DEFAULT NULL,
+  `Display_Order` varchar(11) NOT NULL,
+  `Status` varchar(50) NOT NULL,
+  `IsDelete` varchar(1) DEFAULT NULL,
+  `Created_By` int(11) DEFAULT NULL,
+  `Created_On` datetime NOT NULL,
+  `Modified_By` int(11) DEFAULT NULL,
+  `Modified_On` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `BLOGS_DETAILS_RMM`
+--
+
+INSERT INTO `BLOGS_DETAILS_RMM` (`ID`, `Unique_ID`, `Name`, `Description`, `Category`, `Event_Date`, `Publish_Start_Date`, `Publish_End_Date`, `Venue`, `Event_Thumbnail_Image_URL`, `Detail_Image_URL`, `Short_Description`, `Gallery_Folder_URL`, `Display_Order`, `Status`, `IsDelete`, `Created_By`, `Created_On`, `Modified_By`, `Modified_On`) VALUES
+(1, '', 'IFRS16/AS842 Solution on Oracle FCCS', 'Solution on Oracle FCCS - Is your organization still struggling with IFRS16 and AS842 compliance due January 01, 2019? Our latest end-to-end solution on Oracle FCCS helps manage the new lease standards including data collection, calculations, reporting and disclosures on a secure, collaborative, cloud-based platform. Contact Us to know more.', NULL, '2018-09-10 09:00:00', '2018-09-10 09:00:00', '2025-09-10 09:00:00', 'India', 'assets/images/Blogs/1.jpg', 'assets/images/Blogs/1.jpg', 'Is your organization still struggling with IFRS16 and AS842 compliance due January 01, 2019? Our latest end-to-end solution on Oracle FCCS helps manage the new lease standards including data collection, calculations, reporting and disclosures on a secure, collaborative, cloud-based platform.', 'assets/images/Blogs/', '1', 'Active', NULL, 1, '2022-12-14 09:00:00', 1, '2022-12-14 09:00:00'),
+(2, '', 'Oracle PBCS', 'Solution on Oracle FCCS	- Is your organization still struggling with IFRS16 and AS842 compliance due January 01, 2019? Our latest end-to-end solution on Oracle FCCS helps manage the new lease standards including data collection, calculations, reporting and disclosures on a secure, collaborative, cloud-based platform. Contact Us to know more.', NULL, '2018-07-15 09:00:00', '2018-09-10 09:00:00', '2025-09-10 09:00:00', 'India', 'assets/images/Blogs/2.jpg', 'assets/images/Blogs/2.jpg', 'Resurgent successfully delivered a four day comprehensive training on Oracle Planning and Budgeting Cloud Service (PBCS) to a Big4 consulting firm in Mumbai, India, from July 11 to July 14, 2018. A very excited audience and equally dynamic trainers made this event a huge success.', 'assets/images/Blogs/', '2', 'Active', NULL, 1, '2022-12-14 09:00:00', 1, '2022-12-14 09:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `CLIENTS_RMM`
 --
 
 CREATE TABLE `CLIENTS_RMM` (
@@ -128,27 +165,28 @@ INSERT INTO `CLIENTS_RMM` (`ID`, `Client_Image_URL`, `Group_ID`, `Display_Order`
 -- --------------------------------------------------------
 
 --
--- TABLE STRUCTURE FOR TABLE `CONTACT_DETAILS_RMM`
+-- Table structure for table `CONTACT_DETAILS`
 --
 
-CREATE TABLE `CONTACT_DETAILS_RMM` (
+CREATE TABLE `CONTACT_DETAILS` (
   `ID` int(11) NOT NULL,
   `Name` varchar(100) NOT NULL,
-  `Email` varchar(150) NOT NULL,
-  `Mobile_Number` varchar(20) DEFAULT NULL,
-  `Subject` varchar(200) NOT NULL,
-  `Description` text NOT NULL,
-  `IsDelete` tinyint(1) NOT NULL DEFAULT 0 COMMENT '0 = Active, 1 = Deleted',
-  `Created_By` varchar(100) DEFAULT 'Website Form',
-  `Created_On` datetime NOT NULL DEFAULT current_timestamp(),
-  `Modified_By` varchar(100) DEFAULT NULL,
-  `Modified_On` datetime DEFAULT NULL ON UPDATE current_timestamp()
+  `Email` varchar(50) DEFAULT NULL,
+  `Mobile_Number` varchar(50) NOT NULL,
+  `Product` varchar(150) NOT NULL,
+  `Subject` varchar(250) NOT NULL,
+  `Description` varchar(500) DEFAULT NULL,
+  `IsDelete` varchar(1) DEFAULT NULL,
+  `Created_By` int(11) DEFAULT NULL,
+  `Created_On` datetime NOT NULL,
+  `Modified_By` int(11) DEFAULT NULL,
+  `Modified_On` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
 --
--- TABLE STRUCTURE FOR TABLE `TESTIMONIALS_RMM`
+-- Table structure for table `TESTIMONIALS_RMM`
 --
 
 CREATE TABLE `TESTIMONIALS_RMM` (
@@ -174,6 +212,64 @@ INSERT INTO `TESTIMONIALS_RMM` (`ID`, `Company_Logo_URL`, `Testimonial_Quote`, `
 (3, 'assets/images/Clients/1.png', 'Resurgent’s Data and Analytics (DNA) solutions empowered our teams with real-time insights, driving smarter decisions across the enterprise. Their ERP and EPM implementations are truly world-class.', 'VP of Technology, Citibank', 3, 1, 'admin', '2025-08-11 11:58:41', NULL, '2025-08-11 11:58:41'),
 (4, 'assets/images/Clients/40.png', 'From business engagement to digital transformation, Resurgent delivers with precision and professionalism. Their commitment to innovation and client success is unmatched.', 'CIO, Mammut', 4, 1, 'admin', '2025-08-11 11:58:41', NULL, '2025-08-11 11:58:41');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `USER_INFORMATION_DETAILS`
+--
+
+CREATE TABLE `USER_INFORMATION_DETAILS` (
+  `ID` int(11) NOT NULL,
+  `Name` varchar(100) NOT NULL,
+  `Login_Name` varchar(100) NOT NULL,
+  `Mobile_Number` varchar(50) DEFAULT NULL,
+  `Roles` int(11) DEFAULT NULL,
+  `Unique_ID` varchar(150) NOT NULL,
+  `Password` varchar(50) NOT NULL,
+  `Description` varchar(500) DEFAULT NULL,
+  `Image_Url` varchar(500) DEFAULT NULL,
+  `IsDelete` varchar(1) DEFAULT NULL,
+  `Status` varchar(50) NOT NULL,
+  `Created_By` int(11) NOT NULL,
+  `Created_On` datetime NOT NULL,
+  `Modified_By` int(11) NOT NULL,
+  `Modified_On` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `USER_INFORMATION_DETAILS`
+--
+
+INSERT INTO `USER_INFORMATION_DETAILS` (`ID`, `Name`, `Login_Name`, `Mobile_Number`, `Roles`, `Unique_ID`, `Password`, `Description`, `Image_Url`, `IsDelete`, `Status`, `Created_By`, `Created_On`, `Modified_By`, `Modified_On`) VALUES
+(1, 'Administrator', 'test@rmmindia.com', '9880320879', 1, '1DB9D86BF32B4A529511180BBAE274DE', 'test@123', NULL, NULL, NULL, 'Active', 1, '2019-07-05 00:00:00', 1, '2019-07-05 00:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `USER_ROLES_DETAILS`
+--
+
+CREATE TABLE `USER_ROLES_DETAILS` (
+  `ID` int(11) NOT NULL,
+  `Name` varchar(100) NOT NULL,
+  `Description` varchar(500) DEFAULT NULL,
+  `Mask_Code` varchar(10) NOT NULL,
+  `Status` varchar(50) NOT NULL,
+  `IsDelete` varchar(1) DEFAULT NULL,
+  `IsDefault` varchar(1) DEFAULT NULL,
+  `Created_By` int(11) NOT NULL,
+  `Created_On` datetime NOT NULL,
+  `Modified_By` int(11) NOT NULL,
+  `Modified_On` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `USER_ROLES_DETAILS`
+--
+
+INSERT INTO `USER_ROLES_DETAILS` (`ID`, `Name`, `Description`, `Mask_Code`, `Status`, `IsDelete`, `IsDefault`, `Created_By`, `Created_On`, `Modified_By`, `Modified_On`) VALUES
+(1, 'Administrator', 'Administrator', '444444', 'Active', NULL, '1', 1, '2025-08-13 10:26:01', 1, '2025-08-13 10:26:01');
+
 --
 -- Indexes for dumped tables
 --
@@ -185,16 +281,42 @@ ALTER TABLE `BANNERS_RMM`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `CONTACT_DETAILS_RMM`
+-- Indexes for table `BLOGS_DETAILS_RMM`
 --
-ALTER TABLE `CONTACT_DETAILS_RMM`
-  ADD PRIMARY KEY (`ID`);
+ALTER TABLE `BLOGS_DETAILS_RMM`
+  ADD PRIMARY KEY (`ID`),
+  ADD KEY `Created_By` (`Created_By`),
+  ADD KEY `Modified_By` (`Modified_By`);
+
+--
+-- Indexes for table `CONTACT_DETAILS`
+--
+ALTER TABLE `CONTACT_DETAILS`
+  ADD PRIMARY KEY (`ID`),
+  ADD KEY `Created_By` (`Created_By`),
+  ADD KEY `Modified_By` (`Modified_By`);
 
 --
 -- Indexes for table `TESTIMONIALS_RMM`
 --
 ALTER TABLE `TESTIMONIALS_RMM`
   ADD PRIMARY KEY (`ID`);
+
+--
+-- Indexes for table `USER_INFORMATION_DETAILS`
+--
+ALTER TABLE `USER_INFORMATION_DETAILS`
+  ADD PRIMARY KEY (`ID`),
+  ADD KEY `Created_By` (`Created_By`),
+  ADD KEY `Modified_By` (`Modified_By`);
+
+--
+-- Indexes for table `USER_ROLES_DETAILS`
+--
+ALTER TABLE `USER_ROLES_DETAILS`
+  ADD PRIMARY KEY (`ID`),
+  ADD KEY `Created_By` (`Created_By`),
+  ADD KEY `Modified_By` (`Modified_By`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -207,16 +329,66 @@ ALTER TABLE `BANNERS_RMM`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `CONTACT_DETAILS_RMM`
+-- AUTO_INCREMENT for table `BLOGS_DETAILS_RMM`
 --
-ALTER TABLE `CONTACT_DETAILS_RMM`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+ALTER TABLE `BLOGS_DETAILS_RMM`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `CONTACT_DETAILS`
+--
+ALTER TABLE `CONTACT_DETAILS`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `TESTIMONIALS_RMM`
 --
 ALTER TABLE `TESTIMONIALS_RMM`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `USER_INFORMATION_DETAILS`
+--
+ALTER TABLE `USER_INFORMATION_DETAILS`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `USER_ROLES_DETAILS`
+--
+ALTER TABLE `USER_ROLES_DETAILS`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `BLOGS_DETAILS_RMM`
+--
+ALTER TABLE `BLOGS_DETAILS_RMM`
+  ADD CONSTRAINT `BLOGS_DETAILS_RMM_ibfk_1` FOREIGN KEY (`Created_By`) REFERENCES `USER_INFORMATION_DETAILS` (`ID`),
+  ADD CONSTRAINT `BLOGS_DETAILS_RMM_ibfk_2` FOREIGN KEY (`Modified_By`) REFERENCES `USER_INFORMATION_DETAILS` (`ID`);
+
+--
+-- Constraints for table `CONTACT_DETAILS`
+--
+ALTER TABLE `CONTACT_DETAILS`
+  ADD CONSTRAINT `CONTACT_DETAILS_ibfk_1` FOREIGN KEY (`Created_By`) REFERENCES `USER_INFORMATION_DETAILS` (`ID`),
+  ADD CONSTRAINT `CONTACT_DETAILS_ibfk_2` FOREIGN KEY (`Modified_By`) REFERENCES `USER_INFORMATION_DETAILS` (`ID`);
+
+--
+-- Constraints for table `USER_INFORMATION_DETAILS`
+--
+ALTER TABLE `USER_INFORMATION_DETAILS`
+  ADD CONSTRAINT `USER_INFORMATION_DETAILS_ibfk_1` FOREIGN KEY (`Created_By`) REFERENCES `USER_INFORMATION_DETAILS` (`ID`),
+  ADD CONSTRAINT `USER_INFORMATION_DETAILS_ibfk_2` FOREIGN KEY (`Modified_By`) REFERENCES `USER_INFORMATION_DETAILS` (`ID`);
+
+--
+-- Constraints for table `USER_ROLES_DETAILS`
+--
+ALTER TABLE `USER_ROLES_DETAILS`
+  ADD CONSTRAINT `USER_ROLES_DETAILS_ibfk_1` FOREIGN KEY (`Created_By`) REFERENCES `USER_INFORMATION_DETAILS` (`ID`),
+  ADD CONSTRAINT `USER_ROLES_DETAILS_ibfk_2` FOREIGN KEY (`Modified_By`) REFERENCES `USER_INFORMATION_DETAILS` (`ID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
