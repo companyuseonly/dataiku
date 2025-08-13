@@ -5402,3 +5402,7 @@ element.style {
 	text-decoration: none;
 	transition: background 0.3s ease;
 }
+
+.view-all {
+	text-align: center;
+}

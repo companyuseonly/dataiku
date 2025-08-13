@@ -73,6 +73,8 @@
         ?>
 
       </div>
+
+      <a href="<?php echo $folderPath ?>Blog/" class="blog-btn view-all" >View All</a>
     </div>
   </section>
 
