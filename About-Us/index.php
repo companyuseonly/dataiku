@@ -101,7 +101,7 @@
 </div>
 
 <section class="industry-section career-page padlr padtb">
-    <div class="container">
+    <div class="container padlr">
         <!-- Industries Title -->
         <h5 class="section-subtitle ">INDUSTRIES</h5>
         <h2 class="section-title">Sectors We Serve</h2>
