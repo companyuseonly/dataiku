@@ -123,6 +123,11 @@
 </head>
 
 <body class="">
+
+<div id="custom-preloader">
+  <span class="custom-loader"></span>
+</div>
+
     <div class="wrapper">
 
         <?php $menuMode = "1";

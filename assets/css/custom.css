@@ -1,3 +1,56 @@
+	/* Preloader background */
+#custom-preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999999;
+}
+
+/* Loader animation */
+.custom-loader {
+  transform: rotateZ(45deg);
+  perspective: 1000px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  color: #fff;
+}
+
+.custom-loader:before,
+.custom-loader:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  animation: custom-loader-spin 1s linear infinite;
+}
+
+.custom-loader:before {
+  border: 4px solid transparent;
+  border-top-color: var(--wp--preset--color--primary);
+}
+
+.custom-loader:after {
+  border: 4px solid transparent;
+  border-bottom-color: var(--wp--preset--color--primary);
+}
+
+@keyframes custom-loader-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
 .wp-block-button__link {
 	color: #fff;
 	background-color: #32373c;
@@ -165,7 +218,7 @@
 
 #mega-menu-wrap-menu-1.mega-keyboard-navigation>li.mega-menu-item>a.mega-menu-link:focus {
 	background: rgba(51, 51, 51, 0);
-	color: #2ab1ac;
+	color: var(--wp--preset--color--primary);
 	font-weight: bold;
 	text-decoration: underline;
 	border-color: #fff;
@@ -173,7 +226,7 @@
 
 @media only screen and (max-width: 1200px) {
 	#mega-menu-wrap-menu-1.mega-keyboard-navigation>li.mega-menu-item>a.mega-menu-link:focus {
-		color: #2ab1ac;
+		color: var(--wp--preset--color--primary);
 		background: #d6d6d6;
 		background: linear-gradient(to bottom, white, #d6d6d6);
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFFFF", endColorstr="#FFD6D6D6");
@@ -468,7 +521,7 @@
 	#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item>a.mega-menu-link:hover,
 	#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item>a.mega-menu-link:focus {
 		background: rgba(51, 51, 51, 0);
-		color: #2ab1ac;
+		color: var(--wp--preset--color--primary);
 		font-weight: bold;
 		text-decoration: underline;
 		border-color: #fff;
@@ -477,7 +530,7 @@
 
 #mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item.mega-toggle-on>a.mega-menu-link {
 	background: rgba(51, 51, 51, 0);
-	color: #2ab1ac;
+	color: var(--wp--preset--color--primary);
 	font-weight: bold;
 	text-decoration: underline;
 	border-color: #fff;
@@ -485,7 +538,7 @@
 
 @media only screen and (max-width: 1200px) {
 	#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item.mega-toggle-on>a.mega-menu-link {
-		color: #2ab1ac;
+		color: var(--wp--preset--color--primary);
 		background: #d6d6d6;
 		background: linear-gradient(to bottom, white, #d6d6d6);
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFFFF", endColorstr="#FFD6D6D6");
@@ -496,7 +549,7 @@
 #mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item.mega-current-menu-ancestor>a.mega-menu-link,
 #mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item.mega-current-page-ancestor>a.mega-menu-link {
 	background: rgba(51, 51, 51, 0);
-	color: #2ab1ac;
+	color: var(--wp--preset--color--primary);
 	font-weight: bold;
 	text-decoration: underline;
 	border-color: #fff;
@@ -507,7 +560,7 @@
 	#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item.mega-current-menu-item>a.mega-menu-link,
 	#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item.mega-current-menu-ancestor>a.mega-menu-link,
 	#mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item.mega-current-page-ancestor>a.mega-menu-link {
-		color: #2ab1ac;
+		color: var(--wp--preset--color--primary);
 		background: #d6d6d6;
 		background: linear-gradient(to bottom, white, #d6d6d6);
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFFFF", endColorstr="#FFD6D6D6");
@@ -1324,7 +1377,7 @@
 #mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-megamenu>ul.mega-sub-menu>li.mega-menu-item>a.mega-menu-link:focus,
 #mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li.mega-menu-item>a.mega-menu-link:hover,
 #mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li.mega-menu-item>a.mega-menu-link:focus {
-	color: #2ab1ac;
+	color: var(--wp--preset--color--primary);
 	/* Mega Menu > Menu Themes > Mega Menus > Second Level Menu Items (Hover) */
 	font-weight: bold;
 	text-decoration: none;
@@ -1850,7 +1903,7 @@
 #mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-2 .mega-toggle-animated-inner::after {
 	width: 40px;
 	height: 4px;
-	background-color: #2ab1ac;
+	background-color: var(--wp--preset--color--primary);
 	border-radius: 4px;
 	position: absolute;
 	transition-property: transform;
@@ -2434,7 +2487,7 @@
 
 #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu li#mega-menu-item-34399>a.mega-menu-link,
 #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item.mega-menu-flyout li.mega-menu-item>ul.mega-sub-menu li#mega-menu-item-34399>a.mega-menu-link {
-	background: #2ab1ac;
+	background: var(--wp--preset--color--primary);
 }
 
 #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu li#mega-menu-item-34399>a.mega-menu-link:hover,
@@ -2463,12 +2516,12 @@
 }
 
 #mega-menu-wrap-menu-1 #mega-menu-menu-1 li#mega-menu-item-34399>a.mega-menu-link {
-	background: #2ab1ac;
+	background: var(--wp--preset--color--primary);
 	font-size: 16px;
 	text-transform: uppercase;
 	padding-left: 16px;
 	padding-right: 16px;
-	border-color: #2ab1ac;
+	border-color: var(--wp--preset--color--primary);
 	border-style: solid;
 	border-top-width: 2px;
 	border-right-width: 2px;
@@ -2925,7 +2978,7 @@
 
 #mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-tabbed>ul.mega-sub-menu>li.mega-menu-item>ul.mega-sub-menu>li.mega-menu-item>a.mega-menu-link:hover,
 #mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-tabbed>ul.mega-sub-menu>li.mega-menu-item>ul.mega-sub-menu>li.mega-menu-item>a.mega-menu-link:focus {
-	color: #2ab1ac;
+	color: var(--wp--preset--color--primary);
 	font-weight: bold;
 	text-decoration: none;
 	background: rgba(0, 0, 0, 0);
@@ -3303,7 +3356,7 @@
 }
 
 .mega-sticky a.mega-menu-link:hover {
-	color: #2AB1ac !important;
+	color: var(--wp--preset--color--primary) !important;
 }
 
 .mega-sticky .menu-bottom-class a.mega-menu-link {
@@ -3391,7 +3444,7 @@
 }
 
 .top-nav-links:hover {
-	color: #2ab1ac;
+	color: var(--wp--preset--color--primary);
 }
 
 .image-width-height {
@@ -3423,12 +3476,12 @@
 }
 
 #mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item.mega-toggle-on>a.mega-menu-link {
-	color: #2ab1ac;
+	color: var(--wp--preset--color--primary);
 	font-weight: bold;
 	text-decoration: none;
 	border-color: #fff;
-	color: #2AB1ac !important;
-	/*border-bottom: 2px solid #2AB1ac;*/
+	color: var(--wp--preset--color--primary) !important;
+	/*border-bottom: 2px solid var(--wp--preset--color--primary);*/
 }
 
 .mega-stuck.menu-bottom-class a.mega-menu-link {
@@ -3458,7 +3511,7 @@
 }
 
 .menu-link-color:hover {
-	color: #2AB1ac !important;
+	color: var(--wp--preset--color--primary) !important;
 }
 
 .filldark .header .toggle-search svg {
@@ -3486,11 +3539,11 @@
 }
 
 .dark-text:hover a.mega-menu-link:hover {
-	color: #2ab1ac !important;
+	color: var(--wp--preset--color--primary) !important;
 }
 
 .dark-text:hover {
-	color: #2ab1ac !important;
+	color: var(--wp--preset--color--primary) !important;
 }
 
 .no-click-title {
@@ -3561,11 +3614,11 @@
 }
 
 .big-heading-hover-effect:hover .sub2 {
-	color: #2ab1ac;
+	color: var(--wp--preset--color--primary);
 }
 
 .big-heading-hover-effect:hover .sub i {
-	color: #2ab1ac;
+	color: var(--wp--preset--color--primary);
 	transform: scale(1.1, 1);
 	padding-left: 2px;
 }
@@ -3657,15 +3710,15 @@
 
 	/* .languages ul {left: calc(50% - 24px);}*/
 	#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner {
-		background-color: #2ab1ac !important;
+		background-color: var(--wp--preset--color--primary) !important;
 	}
 
 	#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::after {
-		background-color: #2ab1ac !important;
+		background-color: var(--wp--preset--color--primary) !important;
 	}
 
 	#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::before {
-		background-color: #2ab1ac !important;
+		background-color: var(--wp--preset--color--primary) !important;
 	}
 
 	#mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner,
@@ -4096,7 +4149,7 @@
 #mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item.mega-current-menu-ancestor>a.mega-menu-link,
 #mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item.mega-current-page-ancestor>a.mega-menu-link {
 	background: rgba(51, 51, 51, 0);
-	color: #2ab1ac;
+	color: var(--wp--preset--color--primary);
 	font-weight: bold;
 	text-decoration: none;
 	border-color: #fff;
@@ -4251,7 +4304,7 @@
 
 
 .get-started-mobile-button {
-	background: #2ab1ac;
+	background: var(--wp--preset--color--primary);
 	color: #fff;
 	font-size: 16px;
 	text-transform: uppercase;
@@ -4262,7 +4315,7 @@
 	line-height: 30px;
 	height: 30px;
 	padding: 2px 8px 2px 8px;
-	border-color: #2ab1ac;
+	border-color: var(--wp--preset--color--primary);
 	border-style: solid;
 	border-top-width: 2px;
 	border-right-width: 2px;
@@ -4743,8 +4796,8 @@ element.style {
 }
 
 .slick-dots .slick-active button {
-	background: #2AB1AC;
-	color: #2AB1AC;
+	background: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--primary);
 }
 
 .slick-dots li button:before {
@@ -5026,8 +5079,8 @@ element.style {
 }
 
 .slick-dots .slick-active button {
-	background: #2AB1AC;
-	color: #2AB1AC;
+	background: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--primary);
 }
 
 .slick-dots li button:before {
@@ -5348,7 +5401,7 @@ element.style {
 }
 
 .alert-danger a {
-	background: #2AB1ac;
+	background: var(--wp--preset--color--primary);
 	outline: none;
 	border: none;
 	color: #fff;

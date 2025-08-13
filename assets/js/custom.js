@@ -1,3 +1,12 @@
+window.addEventListener("load", () => {
+  const preloader = document.getElementById("custom-preloader");
+  const content = document.querySelector(".content");
+  
+  preloader.style.display = "none";
+  content.style.display = "block";
+});
+
+
 document.addEventListener("DOMContentLoaded", function (event) {
   $(".mega-menu-wrap").addClass("active");
   $(".parent").addClass("dark-text");

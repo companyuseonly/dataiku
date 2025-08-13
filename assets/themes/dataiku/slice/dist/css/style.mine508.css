@@ -1340,7 +1340,7 @@ h6 a:hover {
 }
 
 .content p a {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .no-touch .content p a:hover,
@@ -3189,7 +3189,7 @@ button {
 
 .no-touch .close-btn-white:hover,
 .no-touch .close-btn:hover {
-    color: #2ab1ac !important;
+    color: var(--wp--preset--color--primary) !important;
     background-color: transparent
 }
 
@@ -3197,12 +3197,12 @@ button {
 .no-touch .close-btn-white:hover::before,
 .no-touch .close-btn:hover::after,
 .no-touch .close-btn:hover::before {
-    background-color: #2ab1ac
+    background-color: var(--wp--preset--color--primary)
 }
 
 .close-btn:active,
 .close-btn:focus {
-    color: #2ab1ac !important
+    color: var(--wp--preset--color--primary) !important
 }
 
 .close-btn-white:active::after,
@@ -3213,7 +3213,7 @@ button {
 .close-btn:active::before,
 .close-btn:focus::after,
 .close-btn:focus::before {
-    background-color: #2ab1ac
+    background-color: var(--wp--preset--color--primary)
 }
 
 @media (min-width:1800px) {
@@ -3276,7 +3276,7 @@ button {
 
 .close-btn-white:active,
 .close-btn-white:focus {
-    color: #2ab1ac !important
+    color: var(--wp--preset--color--primary) !important
 }
 
 @media (min-width:1800px) {
@@ -3334,7 +3334,7 @@ button {
 .no-touch .sub-nav>li a[href]:hover,
 a.facts,
 blockquote a {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .no-touch .learn-more:hover::before {
@@ -8987,7 +8987,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
     }
 
     .jcf-list .jcf-option:hover {
-        color: #2ab1ac
+        color: var(--wp--preset--color--primary)
     }
 }
 
@@ -9231,7 +9231,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
     font-size: 24px;
     line-height: 30px;
     color: #fff;
-    background-color: #2ab1ac;
+    background-color: var(--wp--preset--color--primary);
     text-align: center
 }
 
@@ -9722,7 +9722,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 }
 
 .active-getstarted {
-    border: 4px solid #2ab1ac;
+    border: 4px solid var(--wp--preset--color--primary);
     -webkit-box-sizing: border-box;
     box-sizing: border-box
 }
@@ -9829,7 +9829,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 
 .active-getstarted .bottom-font,
 .no-touch .languages a:hover {
-    color: #2ab1ac !important
+    color: var(--wp--preset--color--primary) !important
 }
 
 .flex .col-get-started-left .bottom-font {
@@ -9934,7 +9934,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
     font-size: 22px;
     line-height: 28px;
     text-align: center;
-    color: #2ab1ac;
+    color: var(--wp--preset--color--primary);
     text-decoration: underline;
     text-underline-position: under
 }
@@ -11623,8 +11623,8 @@ body>.jcf-select-drop.jcf-drop-flipped {
 }
 
 .no-touch .header .get-started:hover {
-    color: #2ab1ac;
-    border-color: #2ab1ac
+    color: var(--wp--preset--color--primary);
+    border-color: var(--wp--preset--color--primary)
 }
 
 @media (min-width:1200px) {
@@ -11646,7 +11646,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 }
 
 .no-touch .header .toggle-search:hover svg path {
-    fill: #2ab1ac !important
+    fill: var(--wp--preset--color--primary) !important
 }
 
 @media (min-width:1200px) {
@@ -11922,8 +11922,8 @@ body>.jcf-select-drop.jcf-drop-flipped {
 }
 
 .no-touch .languages .current:hover::before {
-    border-top-color: #2ab1ac !important;
-    border-right-color: #2ab1ac !important
+    border-top-color: var(--wp--preset--color--primary) !important;
+    border-right-color: var(--wp--preset--color--primary) !important
 }
 
 .languages .current::before {
@@ -12037,7 +12037,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .no-touch .announcement-bar button:hover::before,
 .no-touch .burger:hover::after,
 .no-touch .burger:hover::before {
-    background-color: #2ab1ac
+    background-color: var(--wp--preset--color--primary)
 }
 
 .burger::after,
@@ -12300,7 +12300,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 
     .main-nav .search-panel .search-bar>ul>li.current,
     .main-nav .search-panel .search-bar>ul>li:hover {
-        color: #2ab1ac
+        color: var(--wp--preset--color--primary)
     }
 
     .main-nav .search-panel .search-bar>ul>li:last-child {
@@ -12369,7 +12369,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .no-touch .sharing-block ul a:hover svg,
 .no-touch .sharing-block-web-series ul a.linkedin:hover svg,
 .no-touch .sharing-block-web-series ul a:hover svg {
-    fill: #2ab1ac
+    fill: var(--wp--preset--color--primary)
 }
 
 .main-nav .ais-SearchBox-reset {
@@ -12694,23 +12694,23 @@ body>.jcf-select-drop.jcf-drop-flipped {
     .no-touch .reverse-colors .main-menu>li:hover,
     .no-touch .revert-colors .main-menu>li:hover,
     .no-touch .show-searchbar .main-menu>li:hover {
-        color: #2ab1ac
+        color: var(--wp--preset--color--primary)
     }
 }
 
 @media (min-width:1200px) {
     .sticky-header .main-menu>li:hover {
-        color: #2ab1ac
+        color: var(--wp--preset--color--primary)
     }
 }
 
 .main-menu>li.current {
     pointer-events: visible !important;
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .main-menu>li.current>a {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .main-menu>li.current .dropdown {
@@ -12742,12 +12742,12 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .main-menu>li.current-menu-item>a,
 .sticky-header .main-menu>li.current-menu-item,
 .sticky-header .main-menu>li.current-menu-item a {
-    color: #2ab1ac !important
+    color: var(--wp--preset--color--primary) !important
 }
 
 @media (min-width:1200px) {
     .main-menu>li.current-menu-item button {
-        color: #2ab1ac !important
+        color: var(--wp--preset--color--primary) !important
     }
 
     .main-menu>li.current-menu-item button::after,
@@ -12794,7 +12794,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 
 @media (min-width:1200px) {
     .main-menu>li>a[href]:hover {
-        color: #2ab1ac
+        color: var(--wp--preset--color--primary)
     }
 }
 
@@ -12814,7 +12814,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .revert-colors .main-menu>li>a:hover,
 .show-searchbar .main-menu>li>a:hover,
 .sticky-header .main-menu>li>a:hover {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .footer .subscribe label,
@@ -13288,7 +13288,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .content-learn ul li a:hover,
 .no-touch .footer .copy ul a:hover,
 .no-touch .footer-nav a:hover {
-    color: #2ab1ac;
+    color: var(--wp--preset--color--primary);
     text-decoration: underline
 }
 
@@ -15798,7 +15798,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 
 .aside-posts-filter .custom-links a {
     display: inline-block;
-    color: #2ab1ac;
+    color: var(--wp--preset--color--primary);
     font-weight: 600;
     font-size: 16px;
     line-height: 26px
@@ -16089,12 +16089,12 @@ body>.jcf-select-drop.jcf-drop-flipped {
 
 .no-touch .pagination a:hover,
 .no-touch .watch-video:hover {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .no-touch .watch-video:hover svg path {
-    fill: #2ab1ac;
-    stroke: #2ab1ac
+    fill: var(--wp--preset--color--primary);
+    stroke: var(--wp--preset--color--primary)
 }
 
 .no-touch .watch-video svg path {
@@ -16223,7 +16223,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 
 .no-touch .popup-wrapper .popup-header button:hover,
 .pagination .current {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .pagination .nextpostslink,
@@ -16702,7 +16702,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 }
 
 .no-touch .popup-wrapper .popup-header button:hover svg {
-    stroke: #2ab1ac
+    stroke: var(--wp--preset--color--primary)
 }
 
 .popup-wrapper .popup-header button svg {
@@ -17002,7 +17002,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 
 .authentication .h2,
 .authentication h2 {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 @media (min-width:1800px) {
@@ -17070,7 +17070,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: #2ab1ac;
+    background-color: var(--wp--preset--color--primary);
     border: 0
 }
 
@@ -18153,7 +18153,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 }
 
 .post-item.custom-bg .text {
-    background-color: #2ab1ac;
+    background-color: var(--wp--preset--color--primary);
     color: #fff
 }
 
@@ -18220,7 +18220,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 
 .featured-posts .post-item:first-child .text {
     color: rgba(255, 255, 255, .8);
-    background-color: #2ab1ac
+    background-color: var(--wp--preset--color--primary)
 }
 
 @media (min-width:1024px) {
@@ -18318,16 +18318,16 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .no-touch .featured-posts-solutions .post-item:first-child:hover .h5,
 .no-touch .featured-posts-solutions .post-item:first-child:hover .learn-more,
 .no-touch .featured-posts-solutions .post-item:first-child:hover h5 {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .no-touch .featured-posts-solutions .post-item:first-child:hover .learn-more span {
-    border-color: #2ab1ac
+    border-color: var(--wp--preset--color--primary)
 }
 
 .no-touch .featured-posts-solutions .post-item:first-child:hover .learn-more::after,
 .no-touch .featured-posts-solutions .post-item:first-child:hover .learn-more::before {
-    background-color: #2ab1ac
+    background-color: var(--wp--preset--color--primary)
 }
 
 @media (min-width:768px) {
@@ -19225,16 +19225,16 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .no-touch .post-item:hover .learn-more,
 .no-touch .post-item:hover h5,
 .no-touch .post-item:hover h6 {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .no-touch .post-item:hover .learn-more span {
-    border-color: #2ab1ac
+    border-color: var(--wp--preset--color--primary)
 }
 
 .no-touch .post-item:hover .learn-more::after,
 .no-touch .post-item:hover .learn-more::before {
-    background-color: #2ab1ac
+    background-color: var(--wp--preset--color--primary)
 }
 
 @media (min-width:768px) {
@@ -19837,7 +19837,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 }
 
 .post-item-learn.custom-bg .text {
-    background-color: #2ab1ac;
+    background-color: var(--wp--preset--color--primary);
     color: #fff
 }
 
@@ -19906,7 +19906,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 
 .featured-posts .post-item-learn:first-child .text {
     color: rgba(255, 255, 255, .8);
-    background-color: #2ab1ac
+    background-color: var(--wp--preset--color--primary)
 }
 
 @media (min-width:1024px) {
@@ -20540,16 +20540,16 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .no-touch .post-item-learn:hover h6,
 .no-touch .posts-filter li a:hover,
 .posts-filter li.active a {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .no-touch .post-item-learn:hover .learn-more span {
-    border-color: #2ab1ac
+    border-color: var(--wp--preset--color--primary)
 }
 
 .no-touch .post-item-learn:hover .learn-more::after,
 .no-touch .post-item-learn:hover .learn-more::before {
-    background-color: #2ab1ac
+    background-color: var(--wp--preset--color--primary)
 }
 
 @media (min-width:768px) {
@@ -21508,7 +21508,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .no-touch .product-overview-item h3 a:hover,
 .sticky-cards .no-touch .product-overview-item .h4 a:hover,
 .sticky-cards .no-touch .product-overview-item h4 a:hover {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .product-overview-item p {
@@ -21768,7 +21768,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .no-touch .product-overview-item-home h3 a:hover,
 .sticky-cards .no-touch .product-overview-item-home .h4 a:hover,
 .sticky-cards .no-touch .product-overview-item-home h4 a:hover {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .product-overview-item-home p {
@@ -22024,7 +22024,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .no-touch .product-key-capability h3 a:hover,
 .sticky-cards .no-touch .product-key-capability .h4 a:hover,
 .sticky-cards .no-touch .product-key-capability h4 a:hover {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .product-key-capability p {
@@ -23672,7 +23672,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 }
 
 .cookie-bar .learn-more {
-    color: #2ab1ac;
+    color: var(--wp--preset--color--primary);
     font-weight: 600;
     font-size: 14px;
     border: 0;
@@ -23688,12 +23688,12 @@ body>.jcf-select-drop.jcf-drop-flipped {
 
 .cookie-bar .learn-more::after,
 .cookie-bar .learn-more::before {
-    background-color: #2ab1ac
+    background-color: var(--wp--preset--color--primary)
 }
 
 .cookie-bar .learn-more span {
-    border-top-color: #2ab1ac;
-    border-right-color: #2ab1ac
+    border-top-color: var(--wp--preset--color--primary);
+    border-right-color: var(--wp--preset--color--primary)
 }
 
 .customer-logos {
@@ -24163,7 +24163,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 }
 
 .category-cards .item:nth-of-type(3n-2) .number {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .category-cards .item:nth-of-type(3n-2) .h3 a,
@@ -24172,7 +24172,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .category-cards .item:nth-of-type(3n-2) h3 a,
 .sticky-cards .category-cards .item:nth-of-type(3n-2) .h4 a,
 .sticky-cards .category-cards .item:nth-of-type(3n-2) h4 a {
-    border-bottom-color: #2ab1ac
+    border-bottom-color: var(--wp--preset--color--primary)
 }
 
 .category-cards .item:nth-of-type(3n-1) .number {
@@ -24564,7 +24564,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 }
 
 .item-4-col:nth-of-type(3n-2) .number {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .item-4-col:nth-of-type(3n-2) .h3 a,
@@ -24573,7 +24573,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .item-4-col:nth-of-type(3n-2) h3 a,
 .sticky-cards .item-4-col:nth-of-type(3n-2) .h4 a,
 .sticky-cards .item-4-col:nth-of-type(3n-2) h4 a {
-    border-bottom-color: #2ab1ac
+    border-bottom-color: var(--wp--preset--color--primary)
 }
 
 .item-4-col:nth-of-type(3n-1) .number {
@@ -24629,7 +24629,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .more-section {
     padding: 50px 20px;
     margin: 0 10px 40px;
-    background-color: #2ab1ac
+    background-color: var(--wp--preset--color--primary)
 }
 
 @media (min-width:1200px) {
@@ -26141,13 +26141,13 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .no-touch .page-link-quotes:hover,
 .no-touch .page-link-white:hover,
 .no-touch .page-link:hover {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .no-touch .page-link-quotes:hover::before,
 .no-touch .page-link-white:hover::before,
 .no-touch .page-link:hover::before {
-    border-bottom-color: #2ab1ac
+    border-bottom-color: var(--wp--preset--color--primary)
 }
 
 .page-link::before {
@@ -26186,7 +26186,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 }
 
 .no-touch .page-link.prev:hover::before {
-    border-left-color: #2ab1ac
+    border-left-color: var(--wp--preset--color--primary)
 }
 
 .page-link.prev::before {
@@ -26209,7 +26209,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 }
 
 .no-touch .page-link.next:hover::before {
-    border-right-color: #2ab1ac
+    border-right-color: var(--wp--preset--color--primary)
 }
 
 .page-link.next::before {
@@ -26261,7 +26261,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 }
 
 .no-touch .page-link-quotes.prev:hover::before {
-    border-left-color: #2ab1ac
+    border-left-color: var(--wp--preset--color--primary)
 }
 
 .page-link-quotes.prev::before,
@@ -26285,7 +26285,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 }
 
 .no-touch .page-link-quotes.next:hover::before {
-    border-right-color: #2ab1ac
+    border-right-color: var(--wp--preset--color--primary)
 }
 
 .page-link-white {
@@ -26357,7 +26357,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 }
 
 .no-touch .page-link-white.prev:hover::before {
-    border-left-color: #2ab1ac
+    border-left-color: var(--wp--preset--color--primary)
 }
 
 .page-link-white.prev::before {
@@ -26375,7 +26375,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 }
 
 .no-touch .page-link-white.next:hover::before {
-    border-right-color: #2ab1ac
+    border-right-color: var(--wp--preset--color--primary)
 }
 
 .page-link-white.next::before {
@@ -27450,7 +27450,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
     font-weight: 600;
     -webkit-box-shadow: 10px 10px 50px rgba(0, 0, 0, .1);
     box-shadow: 10px 10px 50px rgba(0, 0, 0, .1);
-    border-top: 3px solid #2ab1ac;
+    border-top: 3px solid var(--wp--preset--color--primary);
     padding: 20px 15px;
     margin: 0 10px 30px
 }
@@ -28424,11 +28424,11 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .form-section .subtitle time {
     display: block;
     font-weight: 600;
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .form-section .subtitle a {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .form-section .subtitle p {
@@ -29410,11 +29410,11 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .form-section-web-series .subtitle time {
     display: block;
     font-weight: 600;
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .form-section-web-series .subtitle a {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .form-section-web-series .subtitle p {
@@ -29935,11 +29935,11 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .form-section-get-started .subtitle time {
     display: block;
     font-weight: 600;
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .form-section-get-started .subtitle a {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .form-section-get-started .subtitle p {
@@ -30564,11 +30564,11 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .form-section-end-cta .subtitle time {
     display: block;
     font-weight: 600;
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .form-section-end-cta .subtitle a {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .form-section-end-cta .subtitle p {
@@ -31183,7 +31183,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .no-touch .cta-section.three-column .form-section-end-cta .hbspt-form input:hover[type=submit],
 .no-touch .cta-section.three-column .form-section-get-started .hbspt-form input:hover[type=submit],
 .no-touch .cta-section.three-column .form-section-web-series .hbspt-form input:hover[type=submit] {
-    background-color: #2ab1ac
+    background-color: var(--wp--preset--color--primary)
 }
 
 .cta-section:last-child {
@@ -31754,7 +31754,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .no-touch .ways-to-learn h5 a:hover,
 .no-touch .ways-to-learn-3-col .h5 a:hover,
 .no-touch .ways-to-learn-3-col h5 a:hover {
-    color: #2ab1ac;
+    color: var(--wp--preset--color--primary);
     text-decoration: none
 }
 
@@ -32008,7 +32008,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .no-touch .reviews-slider .slick-arrow:hover svg,
 .no-touch .reviews-slider-solutions .slick-arrow:hover svg,
 .no-touch .search-field button:hover svg {
-    fill: #2ab1ac
+    fill: var(--wp--preset--color--primary)
 }
 
 .learn-dataiku .slider-controls button.prev {
@@ -32925,7 +32925,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 
 .learn-search-results .h5,
 .learn-search-results h5 {
-    color: #2ab1ac;
+    color: var(--wp--preset--color--primary);
     margin-bottom: 15px
 }
 
@@ -32964,7 +32964,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 
 .no-touch .learn-search-results .h6 a:hover,
 .no-touch .learn-search-results h6 a:hover {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .learn-search-results li {
@@ -32982,7 +32982,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 }
 
 .learn-search-results mark {
-    color: #2ab1ac;
+    color: var(--wp--preset--color--primary);
     background-color: transparent;
     font-weight: 600
 }
@@ -33387,7 +33387,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #2ab1ac;
+    background-color: var(--wp--preset--color--primary);
     opacity: 0;
     -webkit-transition: opacity .3s;
     transition: opacity .3s
@@ -33777,7 +33777,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 
 .smart-applications .anchor-link {
     position: relative;
-    color: #2ab1ac;
+    color: var(--wp--preset--color--primary);
     font-weight: 600;
     text-transform: uppercase;
     font-size: 16px;
@@ -34220,7 +34220,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 
 .smart-applications-online .anchor-link {
     position: relative;
-    color: #2ab1ac;
+    color: var(--wp--preset--color--primary);
     font-weight: 600;
     text-transform: uppercase;
     font-size: 16px;
@@ -34442,7 +34442,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
     margin: 0 auto;
     font-weight: 600;
     text-transform: uppercase;
-    color: #2ab1ac;
+    color: var(--wp--preset--color--primary);
     font-size: 16px;
     line-height: 1.2
 }
@@ -34456,7 +34456,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .charts .heading-table a:not(.blue) {
     display: inline;
     padding-bottom: 2px;
-    border-bottom: 2px solid #2ab1ac
+    border-bottom: 2px solid var(--wp--preset--color--primary)
 }
 
 @media (min-width:1800px) {
@@ -34663,7 +34663,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
     padding-right: 20px;
     background-color: transparent;
     font-family: "Source Sans Pro", sans-serif;
-    color: #2ab1ac;
+    color: var(--wp--preset--color--primary);
     font-weight: 600;
     font-size: 14px;
     text-transform: uppercase;
@@ -35782,7 +35782,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .reviews-slider a {
     position: relative;
     display: inline-block;
-    color: #2ab1ac;
+    color: var(--wp--preset--color--primary);
     text-transform: uppercase;
     margin-top: 26px
 }
@@ -35801,7 +35801,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #2ab1ac;
+    background-color: var(--wp--preset--color--primary);
     opacity: 1;
     -webkit-transition: opacity .3s;
     transition: opacity .3s
@@ -35966,7 +35966,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .reviews-slider-solutions a {
     position: relative;
     display: inline-block;
-    color: #2ab1ac;
+    color: var(--wp--preset--color--primary);
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
@@ -35996,8 +35996,8 @@ body>.jcf-select-drop.jcf-drop-flipped {
 }
 
 .slick-dots .slick-active button {
-    background: #2ab1ac;
-    color: #2ab1ac
+    background: var(--wp--preset--color--primary);
+    color: var(--wp--preset--color--primary)
 }
 
 .rating.rating-fill {
@@ -36123,7 +36123,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 .sticky-cards .no-touch .recent-posts .featured-post .h4 a:hover,
 .sticky-cards .no-touch .recent-posts .featured-post h3 a:hover,
 .sticky-cards .no-touch .recent-posts .featured-post h4 a:hover {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .recent-posts .recent-post {
@@ -36565,8 +36565,8 @@ body>.jcf-select-drop.jcf-drop-flipped {
 }
 
 .no-touch .subscribe-section input[type=submit]:hover {
-    background-color: #2ab1ac !important;
-    border-color: #2ab1ac !important;
+    background-color: var(--wp--preset--color--primary) !important;
+    border-color: var(--wp--preset--color--primary) !important;
     color: #fff !important
 }
 
@@ -37038,7 +37038,7 @@ body>.jcf-select-drop.jcf-drop-flipped {
 
 .blog-posts-section .blog-filter li.active {
     font-weight: 600;
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .search-posts {
@@ -38959,7 +38959,7 @@ input {
 }
 
 .gs-title:hover {
-    color: #2ab1ac !important;
+    color: var(--wp--preset--color--primary) !important;
     text-decoration: underline
 }
 
@@ -40077,7 +40077,7 @@ h1.web-series-dark {
 }
 
 .overlay-color:hover h4 {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 p.intro {
@@ -40602,7 +40602,7 @@ p.intro {
 .gray-quote-span,
 .green-quote-span {
     display: inline-block;
-    color: #2ab1ac !important
+    color: var(--wp--preset--color--primary) !important
 }
 
 .gray-quote-span {
@@ -40638,7 +40638,7 @@ p.intro {
 }
 
 .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
-    background-color: #2ab1ac
+    background-color: var(--wp--preset--color--primary)
 }
 
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
@@ -50083,7 +50083,7 @@ body {
 .no-touch .search-field__suggestions li a:hover,
 .no-touch .search-results .h5 a:hover,
 .no-touch .search-results h5 a:hover {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .no-touch .learn-more-icon:hover::before {
@@ -52649,7 +52649,7 @@ span[style] {
 
 .hs-search-field__suggestions .hs-search-highlight,
 .search-field__suggestions .hs-search-highlight {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .hs-search-results__listing,
@@ -52855,12 +52855,12 @@ span[style] {
 }
 
 .search-filter li.active a {
-    color: #2ab1ac;
+    color: var(--wp--preset--color--primary);
     font-weight: 600
 }
 
 .no-touch .search-filter a:hover {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .search-navigation {
@@ -52997,7 +52997,7 @@ span[style] {
 }
 
 .mega-sticky a.mega-menu-link:hover {
-    color: #2ab1ac !important
+    color: var(--wp--preset--color--primary) !important
 }
 
 .filldark .header .toggle-search svg {
@@ -53036,7 +53036,7 @@ span[style] {
 }
 
 .big-heading-hover-effect:hover .sub i {
-    color: #2ab1ac;
+    color: var(--wp--preset--color--primary);
     -webkit-transform: scale(1.1, 1);
     transform: scale(1.1, 1);
     padding-left: 2px
@@ -53074,7 +53074,7 @@ span[style] {
     #mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner,
     #mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::after,
     #mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::before {
-        background-color: #2ab1ac !important;
+        background-color: var(--wp--preset--color--primary) !important;
         width: 25px;
         height: 4px;
         border-radius: 2px;
@@ -53392,7 +53392,7 @@ span[style] {
 .mega-sticky .menu-bottom-class a.mega-menu-link {
     margin-top: -5px !important;
     color: #fff !important;
-    border-color: #2ab1ac !important;
+    border-color: var(--wp--preset--color--primary) !important;
     border-style: solid !important;
     border-width: 2px !important;
     line-height: 26px !important
@@ -53400,7 +53400,7 @@ span[style] {
 
 .mega-sticky .menu-bottom-class:hover a.mega-menu-link:hover {
     margin-top: -5px !important;
-    color: #2ab1ac !important;
+    color: var(--wp--preset--color--primary) !important;
     background: #fff !important
 }
 
@@ -53409,7 +53409,7 @@ span[style] {
 .mega-sticky .menu-bottom-class:hover a.mega-menu-link:hover {
     font-size: 16px;
     text-transform: uppercase;
-    border-color: #2ab1ac !important;
+    border-color: var(--wp--preset--color--primary) !important;
     border-style: solid !important;
     border-width: 2px !important;
     border-top-left-radius: 15px;
@@ -53420,12 +53420,12 @@ span[style] {
 }
 
 .active .menu-bottom-class a.mega-menu-link {
-    background: #2ab1ac !important;
+    background: var(--wp--preset--color--primary) !important;
     color: #fff !important
 }
 
 .active .menu-bottom-class:hover a.mega-menu-link:hover {
-    color: #2ab1ac !important;
+    color: var(--wp--preset--color--primary) !important;
     background: #fff !important
 }
 
@@ -53448,7 +53448,7 @@ span[style] {
 
 .big-heading-hover-effect:hover .sub2,
 .top-nav-links:hover {
-    color: #2ab1ac
+    color: var(--wp--preset--color--primary)
 }
 
 .image-width-height {
@@ -53477,7 +53477,7 @@ span[style] {
     font-weight: 700;
     text-decoration: none;
     border-color: #fff;
-    color: #2ab1ac !important
+    color: var(--wp--preset--color--primary) !important
 }
 
 .mega-stuck.menu-bottom-class a.mega-menu-link {
@@ -53508,7 +53508,7 @@ span[style] {
 .dark-text:hover,
 .dark-text:hover a.mega-menu-link:hover,
 .menu-link-color:hover {
-    color: #2ab1ac !important
+    color: var(--wp--preset--color--primary) !important
 }
 
 .highlight-menu {
@@ -53652,7 +53652,7 @@ span[style] {
     #mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner,
     #mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::after,
     #mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::before {
-        background-color: #2ab1ac !important;
+        background-color: var(--wp--preset--color--primary) !important;
         width: 25px;
         height: 4px;
         border-radius: 2px;
@@ -54035,7 +54035,7 @@ span[style] {
 #mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item.mega-current-menu-item>a.mega-menu-link,
 #mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item.mega-current-page-ancestor>a.mega-menu-link {
     background: 0 0;
-    color: #2ab1ac;
+    color: var(--wp--preset--color--primary);
     font-weight: 700;
     text-decoration: none;
     border-color: #fff
