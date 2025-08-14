@@ -98,25 +98,17 @@
     <script type="text/javascript" src="<?php echo $folderPath ?>assets/themes/dataiku/slice/assets/js/libs/jquery.min1e93.js?ver=1744898817" id="jquery-js"></script>
     <script type="text/javascript" src="<?php echo $folderPath ?>assets/cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min0af8.js?ver=5.12.2" id="lottie-js"></script>
 
-    <link rel="icon" href="<?php echo $folderPath; ?>assets/images/logo.png" type="image/x-icon" />
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $folderPath; ?>assets/images/logo.png" />
-    <link rel="icon" href="<?php echo $folderPath ?>assets/images/logo.png" sizes="32x32" />
-    <link rel="icon" href="<?php echo $folderPath ?>assets/images/logo.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="<?php echo $folderPath ?>assets/images/logo.png" />
+    <link rel="icon" href="<?php echo $folderPath; ?>assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="<?php echo $folderPath; ?>assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<?php echo $folderPath ?>assets/images/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" href="<?php echo $folderPath ?>assets/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="<?php echo $folderPath ?>assets/images/logo1.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="<?php echo $folderPath ?>assets/images/apple-touch-icon.png" />
+    <link rel="android-chrome-icon" href="<?php echo $folderPath ?>assets/images/android-chrome-512x512.png" />
 
     <link rel="stylesheet" href="<?php echo $folderPath ?>assets/css/fontawesome.css" type="text/css">
     <link rel="stylesheet" href="<?php echo $folderPath ?>assets/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" id="wp-custom-css" href="<?php echo $folderPath ?>assets/css/custom.css" type="text/css" media="all">
-
-    <noscript>
-        <style id="rocket-lazyload-nojs-css">
-            .rll-youtube-player,
-            [data-lazy-src] {
-                display: none !important;
-            }
-        </style>
-    </noscript>
-
     <link rel="stylesheet" href="<?php echo $folderPath ?>assets/css/banner.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php echo $folderPath ?>assets/css/custom.css" type="text/css" media="all" />
 
